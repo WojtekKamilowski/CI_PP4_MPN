@@ -33,12 +33,16 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
    - [Libraries & Frameworks](#libraries-&-frameworks)
 8. [Features](#features)
 9. [Validation](#validation)
-10. [Testing](#testing)
-11. [Creating the app using Django](#creating-the-app-using-django)
-12. [Bugs](#bugs)
-13. [Deployment](#deployment)
-14. [Credits](#credits)
-15. [Acknowledgements](#acknowledgements)
+10. [Accessibility](#accessibility)
+11. [Performance](#performance)
+12. [Device Testing](#device-testing)
+13. [Browser compatibility](#browser-compatibility)
+14. [Testing](#testing)
+15. [Creating the app using Django](#creating-the-app-using-django)
+16. [Bugs](#bugs)
+17. [Deployment](#deployment)
+18. [Credits](#credits)
+19. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -107,7 +111,10 @@ As an Admin I want to:
 - [Gitpod](https://gitpod.io/)
 - [Heroku](https://id.heroku.com/)
 - [Lucidchart](https://lucid.app/)
+- [Fontawesome](https://fontawesome.com/)
+- [Balsamiq](https://balsamiq.com/)
 - [CI Python Linter](https://pep8ci.herokuapp.com/)
+
 
 ### Languages
 
@@ -115,6 +122,8 @@ As an Admin I want to:
 
 
 ### Libraries & Frameworks
+
+
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -129,6 +138,14 @@ As an Admin I want to:
 
 [Back to Table Of Contents](#table-of-contents)
 
+## Accessibility
+
+## Performance
+
+## Device Testing
+
+## Browser compatibility
+
 ## Testing
 
 <details><summary>Click to see user stories testing</summary>
@@ -138,6 +155,8 @@ As an Admin I want to:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | | |  |  |
+
+</details>
 
 
 [Back to Table Of Contents](#table-of-contents)
@@ -161,7 +180,14 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 [Back to Table Of Contents](#table-of-contents)
 
 ## Credits 
+
+- Information regarding food waste found on <a href="https://www.epa.ie/our-services/monitoring--assessment/waste/national-waste-statistics/food/">the Environmental Protection Agency (EPA) website</a>.
+
 - based on <a href=""></a>.
+
+### Media
+
+- All icons found on <a href="https://fontawesome.com/">Fontawesome</a>.
 
 
 [Back to Table Of Contents](#table-of-contents)
