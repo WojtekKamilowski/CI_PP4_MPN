@@ -98,6 +98,8 @@ As an Admin I want to:
 
 ## Database Diagram
 
+![Database Diagram](./docs/database-diagram.png)
+
 ## Messages and Interaction With Users
 
 
@@ -184,6 +186,7 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 - Information regarding food waste found on <a href="https://www.epa.ie/our-services/monitoring--assessment/waste/national-waste-statistics/food/">the Environmental Protection Agency (EPA) website</a>.
 
 - based on <a href=""></a>.
+
 
 ### Media
 
