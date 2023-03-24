@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 class Stocklist(models.Model):
-    name = models.CharField(max_length=150)
+    name = models.CharField(max_length=150, default='Your Stock List')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stock_list')
 
 class Storagespace(models.Model):
@@ -29,9 +29,9 @@ UOM_CHOICES = [
 
 class Stockitem(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    storage = models.ManyToManyField(Storagespace)
-    expiry_date = models.DateField(null=True, blank=True)
-    remarks = models.TextField()
+    storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
+    expiry_date = models.DateField(null=True, blank=False)
+    remarks = models.TextField(blank=True)
     product_image = CloudinaryField('image', default='placeholder')
     min_temp = models.IntegerField(default=-30)
     max_temp = models.IntegerField(default= 30)
