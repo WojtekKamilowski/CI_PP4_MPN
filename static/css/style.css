@@ -1,12 +1,19 @@
+body {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
 /* background img taken from https://css-tricks.com/snippets/css/transparent-background-images/ */
 
 body::before {
     content: "";
     background: url('../images/background.jpg');
-    background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
-    opacity: 0.1;
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
