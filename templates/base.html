@@ -41,14 +41,14 @@
                         <a class="nav-link border-start" href="{% url 'home' %}">User:<p>userlogin</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link border-start" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link border-start" href="">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link border-start" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link border-start" href="">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link border-start" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link border-start" href="">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -100,7 +100,7 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <a href="{% url 'contact' %}">
+                <a href="">
                     <i class="fa-regular fa-envelope"></i>                    
                 </a>
             </div>
