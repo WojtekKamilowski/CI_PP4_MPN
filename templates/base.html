@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="{% url 'home' %}">
             <i class="fa-solid fa-clipboard-list"></i>
-            <p>MyPantryNote</p>
+            <h1>MyPantryNote</h1>
         </a>
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -38,17 +38,17 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">User:<p>userlogin</p></a>
+                        <a class="nav-link border-start" href="{% url 'home' %}">User:<p>userlogin</p></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link border-start" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link border-start" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link border-start" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
