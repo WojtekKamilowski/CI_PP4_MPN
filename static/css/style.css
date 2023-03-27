@@ -1,9 +1,7 @@
-body {
-    color: black;
-}
 
-.nav-link {
-    color: black;
+
+body {
+    color: #000000;
 }
 
 /* background img taken from https://css-tricks.com/snippets/css/transparent-background-images/ */
@@ -20,4 +18,27 @@ body::before {
     right: 0;
     position: fixed;
     z-index: -1;   
+}
+
+.navbar, .footer {
+    background-color: #7ec63f;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+#mission-box {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    background-color: #7ec63f;
+}
+/* footer external platforms icons with links */
+
+#platforms li {
+    list-style-type: none;
+}
+
+a {
+    color: #000000;
 }
