@@ -185,6 +185,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Information regarding food waste found on <a href="https://www.epa.ie/our-services/monitoring--assessment/waste/national-waste-statistics/food/">the Environmental Protection Agency (EPA) website</a>.
 
+- Background image taken from <a href="https://css-tricks.com/snippets/css/transparent-background-images">CSS Tricks</a>.
+
 - based on <a href=""></a>.
 
 
