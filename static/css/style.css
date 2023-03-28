@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Serif&display=swap");
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Fira Sans', sans-serif;
     color: #000000;
-}
-
-h2 {
-    font-family: 'PT Serif', serif;    
-}
-
-.nav-item {
-    font-family: 'PT Serif', serif;
 }
 
 /* background img taken from https://css-tricks.com/snippets/css/transparent-background-images/ */
@@ -29,6 +23,15 @@ body::before {
     z-index: -1;   
 }
 
+h2 {
+    font-family: 'PT Serif', serif;    
+}
+
+.nav-item {
+    font-family: 'PT Serif', serif;
+}
+
+
 .navbar, .footer {
     background-color: #7ec63f;
 }
@@ -39,7 +42,7 @@ body::before {
 
 #mission-box {
     margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     background-color: #7ec63f;
     border:solid #000000;
     padding: 0.5% 3%;
@@ -53,4 +56,25 @@ body::before {
 
 a {
     color: #000000;
+}
+
+/* media queries */
+
+@media screen and (max-width: 576px) { 
+
+    h1 {
+        margin: 0;
+        font-size: 80%;
+    }
+
+    #platforms, #contact-icon {
+        margin: 0;
+        padding: 0;
+    }
+
+    #mission-box {
+        margin-top: 10vh;
+        padding: 1px;
+        width: 90%;
+    }
 }
