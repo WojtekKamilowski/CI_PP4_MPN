@@ -114,6 +114,7 @@ As an Admin I want to:
 - [Heroku](https://id.heroku.com/)
 - [Lucidchart](https://lucid.app/)
 - [Fontawesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/?fbclid=IwAR0M5mybiiO6URy8GMzAKIYHRdX_lQHlJhwcmI6h-bNFuL90-osnCNZaC8Q)
 - [Balsamiq](https://balsamiq.com/)
 - [CI Python Linter](https://pep8ci.herokuapp.com/)
 
@@ -187,6 +188,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Website's background based on <a href="https://css-tricks.com/snippets/css/transparent-background-images">CSS Tricks</a>.
 
+- Some of the styles inspired by the knowledge from my Project Portfolio 2:<a href="https://github.com/WojtekKamilowski/CI_PP2_WOTM">what'sOnTheMenu</a>.
+
 - based on <a href=""></a>.
 
 
@@ -194,6 +197,9 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - All icons found on <a href="https://fontawesome.com/">Fontawesome</a>.
 
+- Font Fira Sans found on <a href="https://fonts.google.com/specimen/Fira+Sans?fbclid=IwAR0M5mybiiO6URy8GMzAKIYHRdX_lQHlJhwcmI6h-bNFuL90-osnCNZaC8Q">Google Fonts</a>.
+
+- Font PT Serif found on <a href="https://fonts.google.com/specimen/PT+Serif?fbclid=IwAR0M5mybiiO6URy8GMzAKIYHRdX_lQHlJhwcmI6h-bNFuL90-osnCNZaC8Q&query=PT+Serif">Google Fonts</a>.
 
 [Back to Table Of Contents](#table-of-contents)
 

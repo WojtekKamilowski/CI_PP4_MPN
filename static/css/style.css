@@ -1,7 +1,16 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Serif&display=swap");
 
 body {
+    font-family: 'Fira Sans', sans-serif;
     color: #000000;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;    
+}
+
+.nav-item {
+    font-family: 'PT Serif', serif;
 }
 
 /* background img taken from https://css-tricks.com/snippets/css/transparent-background-images/ */
@@ -32,7 +41,10 @@ body::before {
     margin-top: 15vh;
     margin-bottom: 10vh;
     background-color: #7ec63f;
+    border:solid #000000;
+    padding: 0.5% 3%;
 }
+
 /* footer external platforms icons with links */
 
 #platforms li {
