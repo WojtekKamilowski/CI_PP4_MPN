@@ -83,6 +83,10 @@ As an Admin I want to:
 
 ### Colors
 
+- #7EC63F from <a href="https://coolors.co/contrast-checker/000000-7ec63f">Coolors</a>.
+
+- #C8D363 from <a href="https://coolors.co/contrast-checker/000000-defdc3">Coolors</a>.
+
 
 ### Typhography
 
@@ -190,6 +194,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Some of the styles inspired by the knowledge from my Project Portfolio 2:<a href="https://github.com/WojtekKamilowski/CI_PP2_WOTM">what'sOnTheMenu</a>.
 
+- Placeholder color from <a href="https://www.w3schools.com/howto/howto_css_placeholder.asp">W3Schools</a> 
+
 - based on <a href=""></a>.
 
 
@@ -200,6 +206,10 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 - Font Fira Sans found on <a href="https://fonts.google.com/specimen/Fira+Sans?fbclid=IwAR0M5mybiiO6URy8GMzAKIYHRdX_lQHlJhwcmI6h-bNFuL90-osnCNZaC8Q">Google Fonts</a>.
 
 - Font PT Serif found on <a href="https://fonts.google.com/specimen/PT+Serif?fbclid=IwAR0M5mybiiO6URy8GMzAKIYHRdX_lQHlJhwcmI6h-bNFuL90-osnCNZaC8Q&query=PT+Serif">Google Fonts</a>.
+
+
+
+- Colors from <a href="https://coolors.co/">Coolors</a>.
 
 [Back to Table Of Contents](#table-of-contents)
 

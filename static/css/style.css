@@ -7,7 +7,7 @@ body {
     color: #000000;
 }
 
-/* background img taken from https://css-tricks.com/snippets/css/transparent-background-images/ */
+/* Background img taken from https://css-tricks.com/snippets/css/transparent-background-images/ */
 
 body::before {
     content: "";
@@ -23,9 +23,14 @@ body::before {
     z-index: -1;   
 }
 
+.my-bg {
+    background-color: #C8D363;
+}
+
 h2 {
     font-family: 'PT Serif', serif;    
 }
+
 
 .nav-item {
     font-family: 'PT Serif', serif;
@@ -48,7 +53,32 @@ h2 {
     padding: 0.5% 3%;
 }
 
-/* footer external platforms icons with links */
+/* Login form */
+
+#id_login, #id_password {
+    background-color: #C8D363;
+}
+
+/* Placeholder color from: https://www.w3schools.com/howto/howto_css_placeholder.asp */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }
+
+#not-registered {
+    text-decoration: none;
+}
+
+/* Footer external platforms icons with links */
 
 #platforms li {
     list-style-type: none;
@@ -58,7 +88,7 @@ a {
     color: #000000;
 }
 
-/* media queries */
+/* Media queries */
 
 @media screen and (max-width: 576px) { 
 
