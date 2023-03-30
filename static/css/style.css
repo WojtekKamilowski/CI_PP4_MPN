@@ -55,7 +55,7 @@ h2 {
 
 /* Login form */
 
-#id_login, #id_password {
+#id_login, #id_password, #id_username, #id_email, #id_password1, #id_password2 {
     background-color: #C8D363;
 }
 
@@ -74,7 +74,7 @@ h2 {
     color: black;
   }
 
-#not-registered {
+#not-registered, #registered {
     text-decoration: none;
 }
 
