@@ -23,8 +23,8 @@ body::before {
     z-index: -1;   
 }
 
-.my-bg {
-    background-color: #C8D363;
+.my-bg-green {
+    background-color: #55D54E;
 }
 
 h2 {

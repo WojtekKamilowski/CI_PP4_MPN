@@ -87,6 +87,7 @@ As an Admin I want to:
 
 - #C8D363 from <a href="https://coolors.co/contrast-checker/000000-defdc3">Coolors</a>.
 
+- #55D54E from <a href="https://coolors.co/contrast-checker/000000-55d54e">Coolors</a>.
 
 ### Typhography
 

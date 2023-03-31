@@ -17,11 +17,11 @@
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button type="submit" class="my-bg">{% trans "Register" %} &raquo;</button>
+          <button type="submit" class="my-bg-green">{% trans "Register" %} &raquo;</button>
         </form>            
         <div class="mt-3">
           <a href="{{ login_url }}" class="my-auto" id="registered">
-            <button class="secondaryAction offset-md-3 my-bg">
+            <button class="secondaryAction offset-md-3 my-bg-green">
               <p>{% blocktrans %}
                 <div class="mt-1">
                   Already have an account? Then please Login <i class="fa-solid fa-user-large"></i> 
