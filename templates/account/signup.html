@@ -8,7 +8,7 @@
 
 <!-- Register Box -->
 <div class="row">
-  <div id="mission-box" class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md">
+  <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
       <h2 class="text-center my-4"><i class="fa-solid fa-user-plus"></i> {% trans "Register" %}</h2>
       <div class="my-4">  
         <form class="signup offset-md-3" id="signup_form" method="post" action="{% url 'account_signup' %}">
@@ -17,11 +17,11 @@
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button type="submit" class="my-bg-green">{% trans "Register" %} &raquo;</button>
+          <button type="submit" class="cst-bg-green">{% trans "Register" %} &raquo;</button>
         </form>            
         <div class="mt-3">
           <a href="{{ login_url }}" class="my-auto" id="registered">
-            <button class="secondaryAction offset-md-3 my-bg-green">
+            <button class="secondaryAction offset-md-3 cst-bg-green">
               <p>{% blocktrans %}
                 <div class="mt-1">
                   Already have an account? Then please Login <i class="fa-solid fa-user-large"></i> 

@@ -23,7 +23,7 @@ body::before {
     z-index: -1;   
 }
 
-.my-bg-green {
+.cst-bg-green {
     background-color: #55D54E;
 }
 
@@ -45,7 +45,7 @@ h2 {
     color: #000000;
 }
 
-#mission-box {
+.main-box {
     margin-top: 15vh;
     margin-bottom: 15vh;
     background-color: #7ec63f;
@@ -97,7 +97,7 @@ a {
         padding: 0;
     }
 
-    #mission-box {
+    .main-box {
         margin-top: 10vh;
         padding: 1px;
         width: 90%;
