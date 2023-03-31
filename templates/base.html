@@ -36,8 +36,11 @@
                         <a class="nav-link fs-3" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
+                    
+                    {% load account %}
+
                     <li class="nav-item">
-                        <a class="nav-link border-start border-black fs-3" href="{% url 'home' %}">User:userlogin</a>
+                        <a class="nav-link border-start border-black fs-3" href="{% url 'home' %}">User: {% user_display user %}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link border-start border-black fs-3" href="{% url 'account_logout' %}">Logout</a>
