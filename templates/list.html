@@ -4,16 +4,16 @@
 
 <!-- Stocklist Box -->
 <div class="row">
-    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
         <h2 class="text-center my-4" id="stocklist-name">Your Stock List <i class="fa-solid fa-pen-to-square"></i></h2>
-        <h3 class="text-center my-4">Your Storage Spaces:</h2>
-        <div class="mt-4">
-            <button>Add a new storage space <i class="fa-solid fa-circle-plus"></i></button>
+        <h3 class="text-center my-2">Your Storage Spaces:</h2>
+        <div class="mt-2 d-flex justify-content-center">
+            <button class="cst-bg-green px-5 py-2">Add a new storage space <i class="fa-solid fa-circle-plus"></i></button>
         </div>
-        <div class="my-4">
-            <ul id="storage-spaces">
+        <div>
+            <ul id="storage-spaces" class="my-4 d-flex justify-content-center">
                 <li>
-                    <button class="storage-btn">cupboard</button>
+                    <button class="storage-btn my-4 d-flex justify-content-center"><span class="ms-5">cupboard</span><span class="ms-5"><i class="fa-solid fa-sort-down storage-sortdown"></i></span></button>
                 </li>
             </ul>
         </div>

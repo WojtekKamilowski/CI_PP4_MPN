@@ -89,6 +89,20 @@ h2 {
     font-size: 40%;
 }
 
+#storage-spaces {
+    list-style: none;
+    padding: 0;
+}
+
+.storage-btn {
+    padding: 1vh 1vw;
+    background-color: #CCC731;
+}
+
+.storage-sortdown {
+    font-size: 120%;
+}
+
 /* Footer external platforms icons with links */
 
 #platforms li {

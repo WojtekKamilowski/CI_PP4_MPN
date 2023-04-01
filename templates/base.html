@@ -40,7 +40,7 @@
                     {% load account %}
 
                     <li class="nav-item">
-                        <a class="nav-link border-start border-black fs-3" href="{% url 'home' %}">User: {% user_display user %}</a>
+                        <a class="nav-link border-start border-black fs-3" href="{% url 'list' %}">{% user_display user %}'s Stocklist</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link border-start border-black fs-3" href="{% url 'account_logout' %}">Logout</a>
