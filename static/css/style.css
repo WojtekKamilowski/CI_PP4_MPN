@@ -90,6 +90,7 @@ h2 {
 }
 
 #storage-spaces {
+    display: none;
     list-style: none;
     padding: 0;
 }
