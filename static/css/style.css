@@ -78,6 +78,17 @@ h2 {
     text-decoration: none;
 }
 
+/* Stocklist */
+
+#stocklist-name {
+    background-color: #C8D363;
+    border: solid #000000;
+}
+
+.fa-pen-to-square {
+    font-size: 40%;
+}
+
 /* Footer external platforms icons with links */
 
 #platforms li {

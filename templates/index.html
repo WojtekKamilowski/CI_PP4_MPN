@@ -8,13 +8,15 @@
         <h2 class="text-center my-4">Our Mission:</h2>
         <div class="my-4">
             {% if user.is_authenticated %}
-
             <p class="text-center">
                 In 2020 households in Ireland generated 241 tonnes of food waste and were its biggest producers(31% of the total waste in Ireland). In line with UN Sustainable Development Goals and EU targets the Irish Government has already committed to reduce food waste by 50% by 2030. -Environmental Protection Agency (EPA).
             </p>
             <p class="text-center">
                 MyPantryNote has been created to help YOU to make a difference in this matter. You can easily truck your food stock to make sure it's always used before it expires so you can eliminate the costs of unnecessary grocery shopping now.
             </p>
+            <h3 class="text-center">
+                <a href="{% url 'list' %}">Manage Your Pantry Now</a>
+            </h3>
             {% else %}
             <p class="text-center">
                 In 2020 households in Ireland generated 241 tonnes of food waste and were its biggest producers(31% of the total waste in Ireland). In line with UN Sustainable Development Goals and EU targets the Irish Government has already committed to reduce food waste by 50% by 2030. -Environmental Protection Agency (EPA).
