@@ -19,3 +19,4 @@ class PantryStoragespaces(generic.ListView):
     model = Storagespace
     queryset = Storagespace.objects.all()
     template_name = 'spaces.html'
+    paginate_by = 6
