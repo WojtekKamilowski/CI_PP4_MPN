@@ -23,9 +23,16 @@ body::before {
     z-index: -1;   
 }
 
+/* Colors */
+
 .cst-bg-green {
     background-color: #55D54E;
 }
+
+.cst-bg-yellow {
+    background-color: #CCC731;
+}
+
 
 h2 {
     font-family: 'PT Serif', serif;    
@@ -89,20 +96,24 @@ h2 {
     font-size: 40%;
 }
 
-#storage-spaces {
-    display: none;
+.storage-spaces-btn {
+    min-width: 250px;
+    width: 20vw;
     list-style: none;
-    padding: 0;
+    padding: 5px;
 }
 
+
+
+
+/*
 .storage-btn {
     padding: 1vh 1vw;
-    background-color: #CCC731;
 }
 
 .storage-sortdown {
     font-size: 120%;
-}
+} */
 
 /* Footer external platforms icons with links */
 
@@ -138,5 +149,10 @@ a {
 
     .navbar-toggler {
         font-size: 60%;
+    }
+
+    .storage-spaces-btn {
+        min-width: 100px;
+        width: 90%;
     }
 }
