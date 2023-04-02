@@ -8,12 +8,15 @@
         <h2 class="text-center mt-5"> Your Storage Spaces:</h2>
         <div>
            <ul id="storagespaces-list" class="my-2 d-flex justify-content-center">
-                {% for storagespace in storagespace_list %}
                 <li>
-                    <a href="#" class="text-decoration-none"><button class="storage-spaces-btn cst-bg-yellow my-4 d-flex justify-content-center"><span class="storage-name">{{ storagespace.str_name }}</span><span class="storage-name"><i class="fa-regular fa-folder-open"></i></span></button></a>
+                    {% for storagespace in storagespace_list %}
+                    <a href="#" class="text-decoration-none"><button class="storage-spaces-btn cst-bg-yellow my-4 d-flex justify-content-center"><span class="storage-name">{{ storagespace.storage_name }}</span><span class="storage-name"><i class="fa-regular fa-folder-open"></i></span></button></a>
+                    {% endfor %}
                 </li>
-                {% endfor %}
             </ul>
+        </div>
+        <div class="mb-5 d-flex justify-content-center">
+            <a href="{% url 'list' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return <i class="fa-solid fa-rotate-left"></i></button></a>
         </div>
     </div>
 </div>

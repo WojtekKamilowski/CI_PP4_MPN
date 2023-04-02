@@ -12,7 +12,7 @@ class Stocklist(models.Model):
         ordering = ['-created_on']
 
 class Storagespace(models.Model):
-    str_name = models.CharField(max_length=150, unique=True)
+    storage_name = models.CharField(max_length=150, unique=True)
     stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space')
     temp = models.IntegerField(default=21)
 
@@ -51,4 +51,4 @@ class Stockitem(models.Model):
         ordering: ['-expiry_date']
     
     def __str__(self):
-        return self.name
+        return self.item_name

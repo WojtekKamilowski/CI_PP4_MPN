@@ -11,10 +11,9 @@ class StocklistAdmin(SummernoteModelAdmin):
 @admin.register(Storagespace)
 class StocklistAdmin(SummernoteModelAdmin):
 
-    list_display = ('str_name',)
-    search_fields = ('str_name',)
-    summernote_fields = ('remarks')
-
+    list_display = ('storage_name',)
+    search_fields = ('storage_name',)
+    
 @admin.register(Stockitem)
 class StocklistAdmin(SummernoteModelAdmin):
 
