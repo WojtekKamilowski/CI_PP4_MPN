@@ -11,4 +11,5 @@ def home(request):
 
 class PantryStocklist(generic.ListView):
     model = Stocklist
+    queryset = Stocklist.objects.all()
     template_name = 'list.html'
