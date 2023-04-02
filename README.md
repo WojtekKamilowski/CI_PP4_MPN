@@ -201,7 +201,9 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Some of code based on <a href="https://github.com/Code-Institute-Solutions/Django3blog">Code Institue's "I Think Therefore I Blog" Walkthrough project</a>
 
-- based on <a href=""></a>.
+- get_queryset(self) view function based on <a href="https://github.com/4n4ru/CI-PP4-Meal-Planner">CI-PP4-Meal-Planner</a>
+
+- based on <a href=""></a>
 
 
 ### Media
