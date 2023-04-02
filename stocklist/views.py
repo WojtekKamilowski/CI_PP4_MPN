@@ -11,12 +11,17 @@ def home(request):
 
 class PantryStocklist(generic.ListView):
     model = Stocklist
-    queryset = Stocklist.objects.filter(user=1)
     template_name = 'list.html'
+
+    def get_queryset(self):
+        """
+        Returns Stocklist of a specific user        
+        """
+        return Stocklist.objects.filter(user=self.request.user)
 
 
 class PantryStoragespaces(generic.ListView):
     model = Storagespace
-    queryset = Storagespace.objects.filter(stocklist)
+    queryset = Storagespace.objects.filter(stocklist=True)
     template_name = 'spaces.html'
     paginate_by = 6
