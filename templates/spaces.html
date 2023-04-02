@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Storagespaces Box -->
+<div class="row">
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
+        <h2 class="text-center mt-5"> Your Storage Spaces:</h2>
+        <div>
+           <ul class="my-4 d-flex justify-content-center">
+                {% for storagespace in storagespace_list %}
+                <li>
+                    <button class="storage-btn my-4 d-flex justify-content-center"><span class="ms-5">{{ storagespace.str_name }}</span><span class="ms-5"><i class="fa-solid fa-sort-down storage-sortdown"></i></span></button>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
