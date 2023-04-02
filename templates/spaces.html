@@ -10,11 +10,29 @@
            <ul id="storagespaces-list" class="my-2 d-flex justify-content-center">
                 <li>
                     {% for storagespace in storagespace_list %}
-                    <a href="#" class="text-decoration-none"><button class="storage-spaces-btn cst-bg-yellow my-4 d-flex justify-content-center"><span class="storage-name">{{ storagespace.storage_name }}</span><span class="storage-name"><i class="fa-regular fa-folder-open"></i></span></button></a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-center">
+                        <button class="storage-spaces-btn cst-bg-yellow my-2 row">
+                            <span class="col-8 p-0 ms-5" >{{ storagespace.storage_name }}</span>
+                            <span class="col-1"><i class="fa-regular fa-folder-open"></i></span>
+                        </button>
+                    </a>
                     {% endfor %}
                 </li>
             </ul>
         </div>
+        {% if is_paginated %}
+        <!-- Based on CI's "I Think Therefore I Blog" Walkthrough project -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li><a href="?page={{ page_obj.previous_page_number }}">&laquo; PREV </a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}"> NEXT &raquo;</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
         <div class="mb-5 d-flex justify-content-center">
             <a href="{% url 'list' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return <i class="fa-solid fa-rotate-left"></i></button></a>
         </div>

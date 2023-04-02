@@ -199,6 +199,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Placeholder color from <a href="https://www.w3schools.com/howto/howto_css_placeholder.asp">W3Schools</a> 
 
+- Some of code based on <a href="https://github.com/Code-Institute-Solutions/Django3blog">Code Institue's "I Think Therefore I Blog" Walkthrough project</a>
+
 - based on <a href=""></a>.
 
 
