@@ -8,9 +8,16 @@ class StocklistAdmin(SummernoteModelAdmin):
     list_display = ('name','created_on', 'updated_on')
     list_filter = ('created_on', 'updated_on')
 
-@admin.register(Storagespace, Stockitem)
+@admin.register(Storagespace)
 class StocklistAdmin(SummernoteModelAdmin):
 
-    list_display = ('name',)
-    search_fields = ('name',)
+    list_display = ('str_name',)
+    search_fields = ('str_name',)
+    summernote_fields = ('remarks')
+
+@admin.register(Stockitem)
+class StocklistAdmin(SummernoteModelAdmin):
+
+    list_display = ('item_name',)
+    search_fields = ('item_name',)
     summernote_fields = ('remarks')

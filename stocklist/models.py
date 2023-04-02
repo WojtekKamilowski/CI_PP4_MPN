@@ -12,7 +12,7 @@ class Stocklist(models.Model):
         ordering = ['-created_on']
 
 class Storagespace(models.Model):
-    name = models.CharField(max_length=150, unique=True)
+    str_name = models.CharField(max_length=150, unique=True)
     stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space')
     temp = models.IntegerField(default=21)
 
@@ -33,7 +33,7 @@ UOM_CHOICES = [
     ]
 
 class Stockitem(models.Model):
-    name = models.CharField(max_length=50, unique=True)
+    item_name = models.CharField(max_length=50, unique=True)
     storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)

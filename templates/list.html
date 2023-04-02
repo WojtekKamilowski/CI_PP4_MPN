@@ -13,13 +13,10 @@
             <button class="cst-bg-green px-5 py-2">Add a new storage space <i class="fa-solid fa-circle-plus"></i></button>
         </div>
         <div>
-            
             <ul id="storage-spaces" class="my-4 d-flex justify-content-center">
-                {% for storagespace in storage_spaces %}
                 <li>
-                    <button class="storage-btn my-4 d-flex justify-content-center"><span class="ms-5">{{ storagespace.name }}</span><span class="ms-5"><i class="fa-solid fa-sort-down storage-sortdown"></i></span></button>
+                    <button class="storage-btn my-4 d-flex justify-content-center"><span class="ms-5">{{ stocklist.str_name }}</span><span class="ms-5"><i class="fa-solid fa-sort-down storage-sortdown"></i></span></button>
                 </li>
-                {% endfor %}
             </ul>
         </div>
     </div>

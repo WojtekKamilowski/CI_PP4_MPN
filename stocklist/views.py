@@ -8,7 +8,6 @@ def home(request):
     context = {}
     return render(request, template_name, context)
 
-
 class PantryStocklist(generic.ListView):
     model = Stocklist
     queryset = Stocklist.objects.all()
