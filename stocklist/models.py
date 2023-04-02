@@ -4,6 +4,7 @@ from cloudinary.models import CloudinaryField
 
 class Stocklist(models.Model):
     name = models.CharField(max_length=150, default='Your Stock List')
+    list_image = CloudinaryField('image', default='placeholder')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stock_list')
     created_on = models.DateTimeField(auto_now_add=True, null=True)
     updated_on = models.DateTimeField(auto_now=True, null=True)

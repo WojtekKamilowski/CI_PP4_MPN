@@ -4,10 +4,11 @@
 
 <!-- Storagespaces Box -->
 <div class="row">
+    <!-- Storagespace List -->
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
         <h2 class="text-center mt-5"> Your Storage Spaces:</h2>
-        <div>
-           <ul id="storagespaces-list" class="my-2 d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+           <ul id="storagespaces-list" class="my-2 p-0">
                 <li>
                     {% for storagespace in storagespace_list %}
                     <a href="#" class="text-decoration-none d-flex justify-content-center">
@@ -33,6 +34,11 @@
             </ul>
         </nav>
         {% endif %}
+        <!-- Add Storage Space -->
+        <div class="mb-5 d-flex justify-content-center">
+            <a href="#" class="text-decoration-none"><button class="cst-bg-green storage-spaces-btn">Add a new Storage Space <i class="fa-solid fa-circle-plus"></i></button></a>
+        </div>
+        <!-- Return -->
         <div class="mb-5 d-flex justify-content-center">
             <a href="{% url 'list' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return <i class="fa-solid fa-rotate-left"></i></button></a>
         </div>
