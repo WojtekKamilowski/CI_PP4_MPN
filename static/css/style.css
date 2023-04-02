@@ -103,17 +103,15 @@ h2 {
     padding: 5px;
 }
 
+/* Storagespaces List */ 
 
-
-
-/*
-.storage-btn {
-    padding: 1vh 1vw;
+#storagespaces-list {
+    list-style-type: none;
 }
 
-.storage-sortdown {
-    font-size: 120%;
-} */
+.storage-name {
+    margin-left: 7vw;
+}
 
 /* Footer external platforms icons with links */
 
