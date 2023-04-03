@@ -5,37 +5,35 @@
 <!-- Items Box -->
 <div class="row">
     <!-- Items List -->
-    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
-        <h2 class="text-center mt-5">{% storagespace_display storage_name %}</h2>
-        {% for item in item_list %}
-        <div class="d-flex justify-content-center row">
-            <div class="col-6">
-                <p>{% storagespace_display temp %}</p>
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
+        <h2 class="text-center my-5">#</h2>
+        <div class="row">
+            <div class="col-6 text-center">
+                <p>#</p>
             </div>
-            <div class="col-6">
-                <p>{% stocklist_display updated_on %}</p>
+            <div class="col-6 text-center">
+                <p>#</p>
             </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <table>
-                <tr>
-                    <th>Pieces</th>
-                    <th>Unit</th>
-                    <th>Product</th>
-                    <th>Expiry Date</th>
-                </tr>
-                <tr>
-                   <td>{{ item.quantity }}</td>
-                   <td>{{ item.uom }}</td>
-                   <td>{{ item.item_name }}</td>
-                   <td>{{ item.expiry_date }}</td>
-                </tr>
-                <tr>
-                    <img src="{{ Stockitem.product_image.url }}" text="center" alt="{{ item.item_name }} image">
-                </tr>
-            </table>
-            {% endfor %}
-        </div>
+        <div class="row">
+           <div class="col-12 my-5">
+                <table class="mx-auto">
+                    {% for stockitem in stockitem_list %}
+                    <tr>
+                        <th>Pieces</th>
+                        <th>Unit</th>
+                        <th>Product</th>
+                        <th>Expiry Date</th>
+                    </tr>
+                    <tr>
+                        <td>{{ stockitem.quantity }}</td>
+                        <td>{{ stockitem.uom }}</td>
+                        <td>{{ stockitem.item_name }}</td>
+                        <td>{{ stockitem.expiry_date }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div> 
         {% if is_paginated %}
         <!-- Based on CI's "I Think Therefore I Blog" Walkthrough project -->
         <nav aria-label="Page navigation">

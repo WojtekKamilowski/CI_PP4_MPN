@@ -42,4 +42,4 @@ class PantryStockitems(generic.ListView):
         """
         Returns items of a specific storagespace
         """       
-        return Stockitem.objects.select_related('storage').filter(storage__user=self.request.user)
+        return Stockitem.objects.select_related('storage').filter(storage__stocklist__user=self.request.user)
