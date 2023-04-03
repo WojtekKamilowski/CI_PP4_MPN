@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic, View
-from .models import Stocklist, Storagespace
+from .models import Stocklist, Storagespace, Stockitem
 
 
 def home(request):
@@ -43,4 +43,3 @@ class PantryStockitems(generic.ListView):
         Returns items of a specific storagespace
         """       
         return Stockitem.objects.select_related('storage').filter(storage__user=self.request.user)
-        
