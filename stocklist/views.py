@@ -26,9 +26,9 @@ class PantryStoragespaces(generic.ListView):
     template_name = 'spaces.html'
     paginate_by = 6
 
-    # def storage_queryset(self):
-    #     """
-    #     Returns Storagespaces of a specific stocklist
+    def get_queryset(self):
+        """
+        Returns Storagespaces of a specific stocklist
 
-    #     """       
-    #     return Stocklist.objects.filter(stocklist=self.request.stocklist)
+        """       
+        return Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
