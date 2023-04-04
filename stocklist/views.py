@@ -30,14 +30,18 @@ class PantryStoragespaces(generic.ListView):
         """
         Returns list of storagespaces of a specific stocklist
         """
+
         return Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
 
 
 # class PantryStockitems(View):
 
-
-#     def stockitems:
+#     def get(get, request, slug, *args, **kwargs):
 #         """
 #         Returns items of a specific storagespace
 #         """
-#         return Stockitem.objects.select_related('storage').filter(storage__stocklist__user=self.request.user)
+#         queryset = Stockitem.objects.filter.all()
+#         storage_space = get_object_or_404(queryset, slug=slug)
+#         storagespace_name = 
+
+        

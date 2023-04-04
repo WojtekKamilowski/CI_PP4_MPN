@@ -41,7 +41,6 @@ UOM_CHOICES = [
 
 class Stockitem(models.Model):
     item_name = models.CharField(max_length=50, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
     storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)
