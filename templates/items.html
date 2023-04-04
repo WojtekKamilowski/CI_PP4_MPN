@@ -6,8 +6,8 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
-        {% for stockitem in stockitem_list %}
         <h2 class="text-center my-5">{{ storagespace.storage_name }}</h2>
+        {% for stockitem in stockitem_list %}
         <div class="row">
             <div class="col-4 text-center">
                 <p>Temperature: {{ stockitem.storage.temp }} °C</p>
