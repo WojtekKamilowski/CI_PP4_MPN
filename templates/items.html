@@ -6,19 +6,19 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
-        <h2 class="text-center my-5">#</h2>
+        {% for stockitem in stockitem_list %}
+        <h2 class="text-center my-5">{{ stockitem.storage.storage_name }}</h2>
         <div class="row">
             <div class="col-6 text-center">
-                <p>#</p>
+                <p>Temperature: {{ stockitem.storage.temp }} °C</p>
             </div>
             <div class="col-6 text-center">
-                <p>#</p>
+                <p>Last updated: {{ stockitem.storage.stocklist.updated_on }}</p>
             </div>
         </div>
         <div class="row">
            <div class="col-12 my-5">
                 <table class="mx-auto">
-                    {% for stockitem in stockitem_list %}
                     <tr>
                         <th>Pieces</th>
                         <th>Unit</th>
@@ -31,7 +31,6 @@
                         <td>{{ stockitem.item_name }}</td>
                         <td>{{ stockitem.expiry_date }}</td>
                     </tr>
-                    {% endfor %}
                 </table>
             </div> 
         {% if is_paginated %}
@@ -55,6 +54,7 @@
         <div class="mb-5 d-flex justify-content-center">
             <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return <i class="fa-solid fa-rotate-left"></i></button></a>
         </div>
+        {% endfor %}
     </div>
 </div>
 

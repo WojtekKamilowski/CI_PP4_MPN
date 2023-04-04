@@ -15,7 +15,7 @@ class PantryStocklist(generic.ListView):
 
     def get_queryset(self):
         """
-        Returns Stocklist of a specific user
+        Returns stocklist of a specific user
         Based on CI-PP4-Meal-Planner
         """
         return Stocklist.objects.filter(user=self.request.user)
@@ -28,7 +28,7 @@ class PantryStoragespaces(generic.ListView):
 
     def get_queryset(self):
         """
-        Returns Storagespaces of a specific stocklist
+        Returns list of storagespaces of a specific stocklist
         """       
         return Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
 
@@ -36,10 +36,11 @@ class PantryStoragespaces(generic.ListView):
 class PantryStockitems(generic.ListView):
     model = Stockitem
     template_name = 'items.html'
-    paginate_by = 20
+    paginate_by = 10
+    
 
     def get_queryset(self):
         """
         Returns items of a specific storagespace
-        """       
+        """ 
         return Stockitem.objects.select_related('storage').filter(storage__stocklist__user=self.request.user)

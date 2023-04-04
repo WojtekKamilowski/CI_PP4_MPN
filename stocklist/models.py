@@ -42,6 +42,7 @@ class Stockitem(models.Model):
     min_temp = models.IntegerField(default=-30)
     max_temp = models.IntegerField(default= 30)
     quantity = models.IntegerField(default= 1)
+    item_updated_on = models.DateTimeField(auto_now=True, null=True)
     uom = models.CharField(
         max_length=50,
         choices=UOM_CHOICES,
