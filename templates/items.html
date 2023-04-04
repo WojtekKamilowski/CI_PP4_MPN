@@ -9,15 +9,15 @@
         {% for stockitem in stockitem_list %}
         <h2 class="text-center my-5">{{ stockitem.storage.storage_name }}</h2>
         <div class="row">
-            <div class="col-6 text-center">
+            <div class="col-4 text-center">
                 <p>Temperature: {{ stockitem.storage.temp }} °C</p>
             </div>
-            <div class="col-6 text-center">
-                <p>Last updated: {{ stockitem.storage.stocklist.updated_on }}</p>
+            <div class="col-8 text-center">
+                <p>Last updated: {{ stockitem.item_updated_on }}</p>
             </div>
         </div>
         <div class="row">
-           <div class="col-12 my-5">
+           <div class="col-12 my-4">
                 <table class="mx-auto">
                     <tr>
                         <th>Pieces</th>
