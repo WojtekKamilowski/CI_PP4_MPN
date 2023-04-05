@@ -6,34 +6,35 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
-        {% for s in stock_item %}
-        <h2 class="text-center my-5">{{ s.storage.storage_name }}</h2>
+        <h2 class="text-center my-5">{{ storage_space.storage_name }}</h2>
         <div class="row">
             <div class="col-4 text-center">
-                <p>Temperature: {{ s.storage.temp }} °C</p>
+                <p>Temperature: {{ storage_space.temp }} °C</p>
             </div>
             <div class="col-8 text-center">
-                <p>Last updated: {{ s.item_updated_on }}</p>
+                <p>Last updated: {{ storage_space.storage_updated_on }}</p>
             </div>
         </div>
         <div class="row">
            <div class="col-12 my-4">
                 <table class="mx-auto">
+                    
                     <tr>
                         <th>Pieces</th>
                         <th>Unit</th>
                         <th>Product</th>
                         <th>Expiry Date</th>
                     </tr>
+                    {% for s in stock_item %}
                     <tr>
                         <td>{{ s.quantity }}</td>
                         <td>{{ s.uom }}</td>
                         <td>{{ s.item_name }}</td>
                         <td>{{ s.expiry_date }}</td>
                     </tr>
+                    {% endfor %}
                 </table>
             </div>
-        {% endfor %}
         {% if is_paginated %}
         <!-- Based on CI's "I Think Therefore I Blog" Walkthrough project -->
         <nav aria-label="Page navigation">

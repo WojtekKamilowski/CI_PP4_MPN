@@ -18,6 +18,7 @@ class Storagespace(models.Model):
     storage_name = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space')
+    storage_updated_on = models.DateTimeField(auto_now=True, null=True)
     temp = models.IntegerField(default=21)
 
 
@@ -47,7 +48,6 @@ class Stockitem(models.Model):
     min_temp = models.IntegerField(default=-30)
     max_temp = models.IntegerField(default=30)
     quantity = models.IntegerField(default=1)
-    item_updated_on = models.DateTimeField(auto_now=True, null=True)
     uom = models.CharField(
         max_length=50,
         choices=UOM_CHOICES,
