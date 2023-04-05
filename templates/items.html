@@ -6,7 +6,7 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
-        <h2 class="text-center my-5">{{ storage_space.storage_name }}</h2>
+        <h2 id="storage-name" class="text-center my-5">{{ storage_space.storage_name }}</h2>
         <div class="row">
             <div class="col-4 text-center">
                 <p>Temperature: {{ storage_space.temp }} °C</p>
@@ -17,9 +17,8 @@
         </div>
         <div class="row">
            <div class="col-12 my-4">
-                <table class="mx-auto">
-                    
-                    <tr>
+                <table id="items-table" class="mx-auto">
+                    <tr class="cst-bg-yellow">
                         <th>Pieces</th>
                         <th>Unit</th>
                         <th>Product</th>
@@ -27,10 +26,10 @@
                     </tr>
                     {% for s in stock_item %}
                     <tr>
-                        <td>{{ s.quantity }}</td>
-                        <td>{{ s.uom }}</td>
-                        <td>{{ s.item_name }}</td>
-                        <td>{{ s.expiry_date }}</td>
+                        <td class="text-center">{{ s.quantity }}</td>
+                        <td class="text-center">{{ s.uom }}</td>
+                        <td class="text-center">{{ s.item_name }}</td>
+                        <td class="text-center">{{ s.expiry_date }}</td>
                     </tr>
                     {% endfor %}
                 </table>

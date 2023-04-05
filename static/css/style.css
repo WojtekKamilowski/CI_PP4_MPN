@@ -14,7 +14,7 @@ body::before {
     background: url('../images/background.jpg');
     background-size: contain;
     height: 100vh;
-    opacity: 0.6;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -33,16 +33,13 @@ body::before {
     background-color: #CCC731;
 }
 
-
 h2 {
     font-family: 'PT Serif', serif;    
 }
 
-
 .nav-item {
     font-family: 'PT Serif', serif;
 }
-
 
 .navbar, .footer {
     background-color: #7ec63f;
@@ -113,6 +110,23 @@ h2 {
     margin-left: 7vw;
 }
 
+/* Stock items */
+
+#storage-name {
+    background-color: #C8D363;
+    border: solid #000000;
+}
+
+#items-table {
+    border: solid #000000;
+    background-color: #CAF3C8;
+}
+
+#items-table th {
+    padding: 2vh 1.5vw;
+    border: solid #000000;
+}
+
 /* Footer external platforms icons with links */
 
 #platforms li {
@@ -152,5 +166,11 @@ a {
     .storage-spaces-btn {
         min-width: 100px;
         width: 90%;
+    }
+
+    #items-table th,  #items-table {
+        border: none;
+        height: auto;
+        padding: 1px;
     }
 }
