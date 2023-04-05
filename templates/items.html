@@ -32,6 +32,11 @@
                         <td>{{ s.item_name }}</td>
                         <td>{{ s.expiry_date }}</td>
                     </tr>
+                    <tr>
+                        <td>
+                            <img src="{{ s.product_image.url }}" text="center" alt="{{ s.item_name }} image">
+                        </td>
+                    </tr>
                     {% endfor %}
                 </table>
             </div> 
