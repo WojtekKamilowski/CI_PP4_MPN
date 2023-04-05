@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Stocklist, Storagespace
+from .models import Stocklist, Storagespace, Stockitem
 
 
 def home(request):
@@ -39,14 +39,16 @@ class PantryStockitems(View):
         """
         Returns items of a specific storagespace
         """
-        queryset = Stockitem.objects.select_related('storage').filter(stockitem)
-        storage_space = get_object_or_404(queryset, slug=slug)
+        queryset = Stockitem.objects.select_related('storage').filter(storage__slug=slug)
+        stock_item = queryset
+        storage_spaces = Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
+        storage_space = get_object_or_404(storage_spaces, slug=slug)
 
         return render (
             request,
             'items.html',
             {
                 'storage_space': storage_space,
-                'stockitem': stockitem,
+                'stock_item': stock_item,
             },
         )
