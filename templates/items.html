@@ -5,7 +5,6 @@
 <!-- Items Box -->
 <div class="row">
     <!-- Items List -->
-    
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
         {% for s in stock_item %}
         <h2 class="text-center my-5">{{ s.storage.storage_name }}</h2>
@@ -32,14 +31,9 @@
                         <td>{{ s.item_name }}</td>
                         <td>{{ s.expiry_date }}</td>
                     </tr>
-                    <tr>
-                        <td>
-                            <img src="{{ s.product_image.url }}" text="center" alt="{{ s.item_name }} image">
-                        </td>
-                    </tr>
-                    {% endfor %}
                 </table>
-            </div> 
+            </div>
+        {% endfor %}
         {% if is_paginated %}
         <!-- Based on CI's "I Think Therefore I Blog" Walkthrough project -->
         <nav aria-label="Page navigation">

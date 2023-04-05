@@ -44,7 +44,6 @@ class Stockitem(models.Model):
     storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)
-    product_image = CloudinaryField('image', default='placeholder')
     min_temp = models.IntegerField(default=-30)
     max_temp = models.IntegerField(default=30)
     quantity = models.IntegerField(default=1)
