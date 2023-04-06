@@ -91,6 +91,8 @@ As an Admin I want to:
 
 - #CCC731 from <a href="https://coolors.co/contrast-checker/000000-ccc731">Coolors</a>.
 
+- #CAF3C8 from <a href="https://coolors.co/contrast-checker/000000-caf3c8">Coolors</a>. 
+
 ### Typhography
 
 
@@ -215,6 +217,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 - Font PT Serif found on <a href="https://fonts.google.com/specimen/PT+Serif?fbclid=IwAR0M5mybiiO6URy8GMzAKIYHRdX_lQHlJhwcmI6h-bNFuL90-osnCNZaC8Q&query=PT+Serif">Google Fonts</a>.
 
 - Background image from <a href="https://www.freepik.com/free-vector/flat-design-pantry_10892283.htm#query=food%20shelf&position=37&from_view=search&track=ais">Freepik</a>.
+
+- Image replacing default Cloudinary placeholder for list_image from <a href="https://pixabay.com/photos/zero-waste-plastic-free-3749854/">Pixabay</a>.
 
 - Colors from <a href="https://coolors.co/">Coolors</a>.
 

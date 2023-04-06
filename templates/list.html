@@ -7,7 +7,15 @@
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
         {% for stocklist in stocklist_list %}
         <h2 class="text-center mt-5" id="stocklist-name"> {{ stocklist.name }} <a href="#"><i class="fa-solid fa-pen-to-square"></i></a></h2>
-        <img src="{{ stocklist.list_image.url }}" text="center" alt="{{ stocklist.name }} image">
+        {% if "placeholder" in stocklist.list_image.url %} 
+        <img src="https://res.cloudinary.com/dwczzqdrv/image/upload/v1680766117/zero-waste-g55833f373_640_bjge74.jpg" text="center" alt="default stocklist image" class="mt-4">
+        {% else %}
+        <img src=" {{ stocklist.list_image.url }} " text="center" alt="{{ stocklist.name }} image" class="mt-4">
+        {% endif %}
+        {% empty %}
+        <div class="mt-5 d-flex justify-content-center">
+            <a href="#" class="text-decoration-none"><button class="cst-bg-green storage-spaces-btn">Create your stocklist now! <i class="fa-solid fa-file-circle-plus"></i></button></a>
+        </div>
         {% endfor %}
         <div class="my-5 d-flex justify-content-center">
             <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-yellow storage-spaces-btn">Storage Spaces <i class="fa-solid fa-box"></i></button></a>
