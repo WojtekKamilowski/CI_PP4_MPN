@@ -203,7 +203,11 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Some of code based on <a href="https://github.com/Code-Institute-Solutions/Django3blog">Code Institue's "I Think Therefore I Blog" Walkthrough project</a>
 
-- get_queryset(self) view function based on <a href="https://github.com/4n4ru/CI-PP4-Meal-Planner">CI-PP4-Meal-Planner</a>
+- Some of code based on <a href="https://github.com/Code-Institute-Solutions/HelloDjango">Code Institue's "HelloDjango" Walkthrough project</a>
+
+- get_queryset(self) function in PantryStocklist class view based on <a href="https://github.com/4n4ru/CI-PP4-Meal-Planner">CI-PP4-Meal-Planner</a>
+
+- add_stocklist(request) view function inspired by <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
 
 - based on <a href=""></a>
 

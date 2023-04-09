@@ -6,3 +6,4 @@ class StocklistForm(forms.ModelForm):
     class Meta:
         model = Stocklist
         fields = ['name', 'list_image']
+        

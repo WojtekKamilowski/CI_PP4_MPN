@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import Stocklist, Storagespace, Stockitem
+from .forms import StocklistForm
 
 
 def home(request):
@@ -19,6 +20,22 @@ class PantryStocklist(generic.ListView):
         Based on CI-PP4-Meal-Planner
         """
         return Stocklist.objects.filter(user=self.request.user)
+
+
+def add_stocklist(request):
+    """
+    Inspired by CI_PP4_the_diplomat
+    """
+        form = StocklistForm(data=request.POST)
+
+        if form.is_valid():
+            stocklist = form.save(commit=False)
+            stocklist.user = request.user
+            stocklist.save()
+            return redirect('list')
+
+        return render(request, 'add_stocklist.html',
+                      {'form': form})
 
 
 class PantryStoragespaces(generic.ListView):
@@ -52,16 +69,3 @@ class PantryStockitems(View):
                 'stock_item': stock_item,
             },
         )
-
-
-def add_stocklist(request):
-    if request.method == 'POST':
-        form = ItemForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('get_todo_list')
-    form = StocklistForm()
-    context = {
-        'form': form
-    }
-    return render(request, 'list/add_stocklist.html', context)
