@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+import cloudinary
+import cloudinary.uploader
 
 
 class Stocklist(models.Model):

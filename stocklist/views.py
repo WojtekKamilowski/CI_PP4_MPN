@@ -25,16 +25,20 @@ class PantryStocklist(generic.ListView):
 def add_stocklist(request):
     """
     Inspired by CI_PP4_the_diplomat
+    https://alphacoder.xyz/image-upload-with-django-and-cloudinary/
     """
-    form = StocklistForm(data=request.POST)
-    if form.is_valid():
-        stocklist = form.save(commit=False)
-        stocklist.user = request.user
-        stocklist.save()
-        return redirect('list')    
+    if request.method == "POST":
+        form = StocklistForm(request.POST, request.FILES)
+        if form.is_valid():
+            stocklist = Stocklist()
+            stocklist.user = request.user
+            stocklist.name = request.POST.get('name')
+            stocklist.save()
+            return redirect('list')    
+    else:
+        form = StocklistForm()
 
-    return render(request, 'add_stocklist.html',
-    {'form': form})
+    return render(request, 'add_stocklist.html', {'form': form})
 
 
 class PantryStoragespaces(generic.ListView):
