@@ -26,16 +26,15 @@ def add_stocklist(request):
     """
     Inspired by CI_PP4_the_diplomat
     """
-        form = StocklistForm(data=request.POST)
+    form = StocklistForm(data=request.POST)
+    if form.is_valid():
+        stocklist = form.save(commit=False)
+        stocklist.user = request.user
+        stocklist.save()
+        return redirect('list')    
 
-        if form.is_valid():
-            stocklist = form.save(commit=False)
-            stocklist.user = request.user
-            stocklist.save()
-            return redirect('list')
-
-        return render(request, 'add_stocklist.html',
-                      {'form': form})
+    return render(request, 'add_stocklist.html',
+    {'form': form})
 
 
 class PantryStoragespaces(generic.ListView):
