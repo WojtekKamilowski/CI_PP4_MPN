@@ -57,9 +57,9 @@ h2 {
     padding: 0.5% 3%;
 }
 
-/* Login form */
+/* Forms inputs background color */
 
-#id_login, #id_password, #id_username, #id_email, #id_password1, #id_password2 {
+#id_login, #id_password, #id_username, #id_email, #id_password1, #id_password2, #id_name {
     background-color: #C8D363;
 }
 
