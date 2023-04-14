@@ -36,6 +36,27 @@ def add_stocklist(request):
     return render(request, 'add_stocklist.html', {'form': form})
 
 
+class PantryStocklistEdit(View):
+
+    def edit_stocklist(self, request, slug, *args, **kwargs):
+        """
+        Inspired by HelloDjango
+        """
+        stocklist = get_object_or_404(Stocklist, slug=slug)
+        if request.method == 'POST':
+            form = StocklistForm(request.POST, instance=stocklist)
+            if form.is_valid():
+                form.save()
+                stocklist.user = request.user
+                stocklist.slug = stocklist.user
+                return redirect('list')
+        form = StocklistForm(instance=stocklist)
+        context = {
+            'form': form
+        }
+        return render(request, 'list/edit_stocklist.html', context)
+
+
 class PantryStoragespaces(generic.ListView):
     model = Storagespace
     template_name = 'spaces.html'
