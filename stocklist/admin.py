@@ -8,6 +8,7 @@ class StocklistAdmin(SummernoteModelAdmin):
 
     list_display = ('name', 'created_on', 'updated_on')
     list_filter = ('created_on', 'updated_on')
+    prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(Storagespace)

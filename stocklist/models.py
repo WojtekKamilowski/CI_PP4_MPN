@@ -1,13 +1,14 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.utils.text import slugify
 # import cloudinary
 # import cloudinary.uploader
 
 
 class Stocklist(models.Model):
     name = models.CharField(max_length=150, default='Your Stock List')
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200)
     list_image = CloudinaryField('image', default='placeholder')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stock_list')
     created_on = models.DateTimeField(auto_now_add=True, null=True)
@@ -15,6 +16,10 @@ class Stocklist(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(Stocklist, self).save(*args, **kwargs)
 
     class Meta:
         ordering = ['-created_on']

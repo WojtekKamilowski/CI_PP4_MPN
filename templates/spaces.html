@@ -11,7 +11,7 @@
            <ul id="storagespaces-list" class="my-2 p-0">
                 <li>
                     {% for storagespace in storagespace_list %}
-                    <a href="{% url 'items' storagespace.slug  %}" class="text-decoration-none d-flex justify-content-center">
+                    <a href="{% url 'items' storagespace.slug %}" class="text-decoration-none d-flex justify-content-center">
                         <button class="storage-spaces-btn cst-bg-yellow my-2 row">
                             <span class="col-8 p-0 ms-5" >{{ storagespace.storage_name }}</span>
                             <span class="col-1"><i class="fa-regular fa-folder-open"></i></span>
