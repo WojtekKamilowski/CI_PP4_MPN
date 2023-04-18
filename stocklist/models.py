@@ -7,7 +7,7 @@ from django.utils.text import slugify
 
 
 class Stocklist(models.Model):
-    name = models.CharField(max_length=150, default='Your Stock List')
+    name = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(max_length=200)
     list_image = CloudinaryField('image', default='placeholder')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stock_list')
