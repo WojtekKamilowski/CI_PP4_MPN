@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import Stocklist, Storagespace, Stockitem
-from .forms import StocklistForm
+from .forms import StocklistForm, StorageForm
 
 
 def home(request):
@@ -36,7 +36,6 @@ def add_stocklist(request):
     return render(request, 'add_stocklist.html', {'form': form})
 
 
-
 def edit_stocklist(request, slug):
     """
     Inspired by HelloDjango
@@ -65,6 +64,19 @@ class PantryStoragespaces(generic.ListView):
         Returns list of storagespaces of a specific stocklist
         """
         return Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
+
+
+def add_storagespace(request):
+        """
+        Inspired by CI_PP4_the_diplomat
+        """
+        form = StorageForm(data=request.POST)
+        if form.is_valid():
+            storage = form.save(commit=False)
+            storage.save()
+            return redirect('spaces')
+
+        return render(request, 'add_storage.html', {'form': form})
 
 
 class PantryStockitems(View):

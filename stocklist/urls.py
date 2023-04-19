@@ -8,5 +8,6 @@ urlpatterns = [
     path('add_stocklist/', views.add_stocklist, name='add_stocklist'),
     path('list/edit_stocklist/<slug:slug>', views.edit_stocklist, name='edit_stocklist'),
     path('spaces/', views.PantryStoragespaces.as_view(), name='spaces'),
+    path('add_storage/', views.add_storagespace, name='add_storage'),
     path('items/<slug:slug>', views.PantryStockitems.as_view(), name='items'),
 ]
