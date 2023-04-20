@@ -74,10 +74,9 @@ def add_storagespace(request):
         form = StorageForm(request.POST, request.FILES)
         if form.is_valid():
             storage_space = form.save(commit=False)
-            stocklist = get_object_or_404(Stocklist)
-            storage_space.stocklist = stocklist.get_user(request)
+            stocklist = get_object_or_404(Stocklist, pk=1)
             storagespace = form.save()
-            return redirect(reversed('spaces')) 
+            return redirect(reversed('spaces'))
     else:
         form = StorageForm()
         
