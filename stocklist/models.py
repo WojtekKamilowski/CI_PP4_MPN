@@ -26,11 +26,15 @@ class Stocklist(models.Model):
 
 
 class Storagespace(models.Model):
-    storage_name = models.CharField(max_length=150, unique=True)
+    storage_name = models.CharField(max_length=150)
     slug = models.SlugField(max_length=200, unique=True)
-    stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space')
+    stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space', null=True)
     storage_updated_on = models.DateTimeField(auto_now=True, null=True)
     temp = models.IntegerField(default=21)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.storage_name)
+        super(Storagespace, self).save(*args, **kwargs)
 
 
 PIECE = 'PC'

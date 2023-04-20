@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, HttpResponse, redirect, get_object_or_404
 from django.views import generic, View
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm
@@ -67,16 +67,26 @@ class PantryStoragespaces(generic.ListView):
 
 
 def add_storagespace(request):
-        """
-        Inspired by CI_PP4_the_diplomat
-        """
-        form = StorageForm(data=request.POST)
+    """
+    
+    """
+    if request.method == 'POST':
+        form = StorageForm(request.POST, request.FILES)
         if form.is_valid():
-            storage = form.save(commit=False)
-            storage.save()
-            return redirect('spaces')
+            storage_space = form.save(commit=False)
+            stocklist = get_object_or_404(Stocklist)
+            storage_space.stocklist = stocklist.get_user(request)
+            storagespace = form.save()
+            return redirect(reversed('spaces')) 
+    else:
+        form = StorageForm()
+        
+    template = 'add_storage.html'
+    context = {
+        'form': form,
+    }
 
-        return render(request, 'add_storage.html', {'form': form})
+    return render(request, template, context)
 
 
 class PantryStockitems(View):
