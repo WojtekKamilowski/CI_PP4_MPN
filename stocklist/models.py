@@ -40,7 +40,8 @@ class Storagespace(models.Model):
     temp = models.IntegerField(default=21)
 
     class Meta:
-      unique_together = 'stocklist', 'storage_name'
+        # Found on Stackoverflow
+        unique_together = 'stocklist', 'storage_name'
 
     def save(self, *args, **kwargs):
         """
@@ -50,6 +51,12 @@ class Storagespace(models.Model):
         string = "%s-%s" % (strtime[7:], self.storage_name)
         self.slug = slugify(string)
         super(Storagespace, self).save(*args, **kwargs)
+
+    def clean(self):
+        """
+        Found on Stackoverflow
+        """
+        self.storage_name = self.storage_name.capitalize()
 
 
 PIECE = 'PC'

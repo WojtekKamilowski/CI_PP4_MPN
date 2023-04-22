@@ -211,6 +211,10 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Unique slug fields found on: <a href="https://stackoverflow.com/questions/3816307/how-to-create-a-unique-slug-in-django">Stackoverflow</a>
 
+- Unique together found on: <a href="https://stackoverflow.com/questions/66142733/how-do-i-go-about-making-a-django-model-field-unique-but-only-for-individual-use">Stackoverflow</a>
+
+- Capitalize field on form found on: <a href="https://stackoverflow.com/questions/11996963/how-to-automatically-capitalize-field-on-form-submission-in-django">Stackoverflow</a>
+
 - based on <a href=""></a>
 
 ### Media
