@@ -2,13 +2,15 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
+import datetime
+
 # import cloudinary
 # import cloudinary.uploader
 
 
 class Stocklist(models.Model):
-    name = models.CharField(max_length=150, unique=True)
-    slug = models.SlugField(max_length=200)
+    name = models.CharField(max_length=150)
+    slug = models.SlugField(max_length=200, unique=True)
     list_image = CloudinaryField('image', default='placeholder')
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='stock_list')
     created_on = models.DateTimeField(auto_now_add=True, null=True)
@@ -18,7 +20,12 @@ class Stocklist(models.Model):
         return self.name
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.name)
+        """
+        Found on Stackoverflow
+        """
+        strtime = "".join(str(datetime.datetime.now()).split("."))
+        string = "%s-%s" % (strtime[7:], self.name)
+        self.slug = slugify(string)
         super(Stocklist, self).save(*args, **kwargs)
 
     class Meta:
@@ -32,8 +39,16 @@ class Storagespace(models.Model):
     storage_updated_on = models.DateTimeField(auto_now=True, null=True)
     temp = models.IntegerField(default=21)
 
+    class Meta:
+      unique_together = 'stocklist', 'storage_name'
+
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.storage_name)
+        """
+        Found on Stackoverflow
+        """
+        strtime = "".join(str(datetime.datetime.now()).split("."))
+        string = "%s-%s" % (strtime[7:], self.storage_name)
+        self.slug = slugify(string)
         super(Storagespace, self).save(*args, **kwargs)
 
 

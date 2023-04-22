@@ -209,8 +209,9 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - add_stocklist(request) view function inspired by <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
 
-- based on <a href=""></a>
+- Unique slug fields found on: <a href="https://stackoverflow.com/questions/3816307/how-to-create-a-unique-slug-in-django">Stackoverflow</a>
 
+- based on <a href=""></a>
 
 ### Media
 
