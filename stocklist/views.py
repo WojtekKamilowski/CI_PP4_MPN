@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm
@@ -69,14 +69,15 @@ class PantryStoragespaces(generic.ListView):
 def add_storagespace(request):
     """
     
-    """
+    """    
     if request.method == 'POST':
         form = StorageForm(request.POST, request.FILES)
         if form.is_valid():
             storage_space = form.save(commit=False)
-            stocklist = get_object_or_404(Stocklist, pk=1)
+            stocklist = get_object_or_404(Stocklist, user=request.user)
+            storage_space.stocklist = stocklist
             storagespace = form.save()
-            return redirect(reversed('spaces'))
+            return redirect('spaces')
     else:
         form = StorageForm()
         
@@ -85,7 +86,7 @@ def add_storagespace(request):
         'form': form,
     }
 
-    return render(request, template, context)
+    return render(request, 'add_storage.html', context)
 
 
 class PantryStockitems(View):

@@ -13,7 +13,8 @@ class Stocklist(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stock_list')
     created_on = models.DateTimeField(auto_now_add=True, null=True)
     updated_on = models.DateTimeField(auto_now=True, null=True)
-
+    created_by = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
+    
     def __str__(self):
         return self.name
 
