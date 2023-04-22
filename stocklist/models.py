@@ -10,10 +10,9 @@ class Stocklist(models.Model):
     name = models.CharField(max_length=150, unique=True)
     slug = models.SlugField(max_length=200)
     list_image = CloudinaryField('image', default='placeholder')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='stock_list')
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='stock_list')
     created_on = models.DateTimeField(auto_now_add=True, null=True)
     updated_on = models.DateTimeField(auto_now=True, null=True)
-    created_by = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     
     def __str__(self):
         return self.name
