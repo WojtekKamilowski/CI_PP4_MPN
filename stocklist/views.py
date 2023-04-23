@@ -108,3 +108,5 @@ class PantryStockitems(View):
                 'stock_item': stock_item,
             },
         )
+
+    
