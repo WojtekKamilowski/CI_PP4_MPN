@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Add Item Box -->
+<div class="row">
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
+        <h2 class="text-center mt-5">Create a New Item:</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div>
+                <p>
+                    <button type="submit" class="cst-bg-green">Confirm <i class="fa-solid fa-check"></i></button>
+                </p>
+            </div>
+        </form>
+        <!-- Return -->
+        <div class="mb-5 d-flex justify-content-left">
+            <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1">Return <i class="fa-solid fa-rotate-left"></i></button></a>
+        </div>
+    </div>
+</div>
+{%endblock%}

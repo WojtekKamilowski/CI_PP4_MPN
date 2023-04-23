@@ -99,3 +99,9 @@ class Stockitem(models.Model):
     def __str__(self):
 
         return self.item_name
+    
+    def clean(self):
+        """
+        Found on Stackoverflow
+        """
+        self.item_name = self.item_name.capitalize()
