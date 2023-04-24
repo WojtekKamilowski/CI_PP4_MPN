@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm, ItemForm
+from django.http import HttpResponseRedirect
 
 
 def home(request):
@@ -109,24 +110,21 @@ class PantryStockitems(View):
             },
         )
 
-    def add_item(request):
-        """
-        
-        """    
-        if request.method == 'POST':
-            form = ItemForm(request.POST, request.FILES)
-            if form.is_valid():
-                stock_item = form.save(commit=False)
-                storage = get_object_or_404(Storagespace)
-                stock_item.storage = storage
-                stockitem = form.save()
-                return redirect('spaces')
-        else:
-            form = ItemForm()
-            
-        template = 'add_item.html'
-        context = {
-            'form': form,
-        }
+def add_item(request, slug):
+    """
+                
+    """
+    storagespace = get_object_or_404(Storagespace, slug=slug)
+    if request.method == 'POST':
+        form = ItemForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('items')
+    form = ItemForm()
+           
+    template = 'add_item.html'
+    context = {
+        'form': form,
+    }
 
-        return render(request, template, context)
+    return render(request, template, context)

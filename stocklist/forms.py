@@ -18,3 +18,7 @@ class ItemForm(forms.ModelForm):
     class Meta:
         model = Stockitem
         fields = ['item_name','expiry_date','remarks','min_temp','max_temp','quantity','uom']
+
+    
+
+        
