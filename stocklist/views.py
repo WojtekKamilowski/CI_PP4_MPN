@@ -70,7 +70,7 @@ class PantryStoragespaces(generic.ListView):
 def add_storagespace(request):
     """
     
-    """    
+    """
     if request.method == 'POST':
         form = StorageForm(request.POST, request.FILES)
         if form.is_valid():
@@ -81,7 +81,7 @@ def add_storagespace(request):
             return redirect('spaces')
     else:
         form = StorageForm()
-        
+
     template = 'add_storage.html'
     context = {
         'form': form,
@@ -110,25 +110,55 @@ class PantryStockitems(View):
             },
         )
 
-def add_item(request, slug, *args, **kwargs):
-    """
-                
-    """
-    if request.method == 'POST':
-        form = ItemForm(request.POST, request.FILES)
-        if form.is_valid():
-            stock_item = form.save(commit=False)
-            storagespace = get_object_or_404(Storagespace, slug=slug)
-            stock_item.storagespace = storagespace
-            form.post = post
-            form.save()
-            return redirect(reverse('items', args=[slug]))
-    else:
-        form = ItemForm()
-        
-    template = 'add_item.html'
-    context = {
-        'form': form,
-    }
+    # def item_create(request, slug, *args, **kwargs):
 
-    return render(request, template, context)
+
+    #     storage_spaces = Storagespace.objects.select_related('stocklist').filter(stocklist__user=request.user)
+    #     storage_space = get_object_or_404(storage_spaces, slug=slug)
+
+    #     if request.method == 'POST':
+    #         form = ItemForm(request.POST, request.FILES)
+    #         if form.is_valid():
+    #             instance = form.save(commit=False)
+    #             instance.user = request.user
+    #             instance.save()
+    #             return redirect(reverse('items', args=[slug]))
+    #     else:
+    #         form = ItemForm()                                              
+    #         form.fields["storage"].queryset=Stockitem.objects.filter(stocklist__user=request.user)
+
+    #     template = 'add_item.html'
+    #     context = {
+    #         'form': form,
+    #     }
+
+    #     return render(request, template, context)
+
+
+# def add_item(request, slug, *args, **kwargs):
+#     """
+                
+#     """
+    
+
+
+
+    # if request.method == 'POST':
+    #     form = ItemForm(request.POST, request.FILES)
+    #     if form.is_valid():
+    #         stock_item.storagespace = stocklist
+    #         stock_item = form.save(commit=False)
+    #         stocklist = get_object_or_404(Stocklist, user=request.user)
+    #         # storagespace_ = Storagespace.objects.get(slug=slug, stocklist=stocklist_)
+    #         # stock_item.storagespace = storagespace_
+    #         stock_item.save()
+    #         return redirect(reverse('items', args=[slug]))
+    # else:
+    #     form = ItemForm()
+        
+    # template = 'add_item.html'
+    # context = {
+    #     'form': form,
+    # }
+
+    # return render(request, template, context)

@@ -17,8 +17,10 @@ class StorageForm(forms.ModelForm):
 class ItemForm(forms.ModelForm):
     class Meta:
         model = Stockitem
-        fields = ['item_name','expiry_date','remarks','min_temp','max_temp','quantity','uom']
+        fields = ['storage','item_name','expiry_date','remarks','min_temp','max_temp','quantity','uom']
 
-    
-
-        
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        user = kwargs.get('stocklist')
+        if user:
+            fields['storage'].queryset = user.storage_set.all()

@@ -39,6 +39,9 @@ class Storagespace(models.Model):
     storage_updated_on = models.DateTimeField(auto_now=True, null=True)
     temp = models.IntegerField(default=21)
 
+    def __str__(self):
+        return self.slug
+
     class Meta:
         # Found on Stackoverflow
         unique_together = 'stocklist', 'storage_name'
