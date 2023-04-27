@@ -96,7 +96,7 @@ class PantryStockitems(View):
         """
         Returns items of a specific storagespace
         """
-        queryset = Stockitem.objects.select_related('storage').filter(storage__slug=slug)
+        queryset = Stockitem.objects.select_related('storage').filter(storage__slug=slug).order_by('expiry_date')
         stock_item = queryset
         storage_spaces = Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
         storage_space = get_object_or_404(storage_spaces, slug=slug)

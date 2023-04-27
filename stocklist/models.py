@@ -95,8 +95,8 @@ class Stockitem(models.Model):
     )
 
     class Meta:
-        ordering: ['-expiry_date']
-        # Found on Stackoverflow
+        ordering: ['expiry_date']
+        # Unique_together found on Stackoverflow
         unique_together = 'storage', 'item_name'
 
     def __str__(self):
