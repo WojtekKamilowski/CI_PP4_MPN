@@ -136,7 +136,7 @@ class PantryStockitems(View):
 
         return render(request, template, context)
     
-    def edit_stockitem(self, slug, request, *args, **kwargs):
+    def edit_stockitem(request, slug, *args, **kwargs):
         """
         
         """
@@ -147,7 +147,7 @@ class PantryStockitems(View):
                 instance = form.save(commit=False)
                 instance.user = request.user
                 instance.save()
-                return redirect(reverse('items', args=[slug]))
+                return redirect('spaces')
         else:
             form = ItemForm(instance=stockitem)                                              
             form.fields["storage"].queryset=Storagespace.objects.select_related('stocklist').filter(stocklist__user=request.user)
