@@ -117,6 +117,13 @@ h2 {
     border: solid #000000;
 }
 
+#storage-icons {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 60%;
+}
+
 #items-table {
     border: solid #000000;
     background-color: #CAF3C8;

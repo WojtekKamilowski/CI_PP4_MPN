@@ -23,36 +23,36 @@ class PantryStocklist(generic.ListView):
         return Stocklist.objects.filter(user=self.request.user)
 
 
-def add_stocklist(request):
-    """
-    Inspired by CI_PP4_the_diplomat
-    """
-    form = StocklistForm(data=request.POST)
-    if form.is_valid():
-        stocklist = form.save(commit=False)
-        stocklist.user = request.user
-        stocklist.save()
-        return redirect('list')
-
-    return render(request, 'add_stocklist.html', {'form': form})
-
-
-def edit_stocklist(request, slug):
-    """
-    Inspired by HelloDjango
-    """
-    stocklist = get_object_or_404(Stocklist, slug=slug)
-    if request.method == 'POST':
-        form = StocklistForm(request.POST, instance=stocklist)
+    def add_stocklist(request):
+        """
+        Inspired by CI_PP4_the_diplomat
+        """
+        form = StocklistForm(data=request.POST)
         if form.is_valid():
+            stocklist = form.save(commit=False)
             stocklist.user = request.user
-            form.save()
+            stocklist.save()
             return redirect('list')
-    form = StocklistForm(instance=stocklist)
-    context = {
-        'form': form
-    }
-    return render(request, 'edit_stocklist.html', context)
+
+        return render(request, 'add_stocklist.html', {'form': form})
+
+
+    def edit_stocklist(request, slug):
+        """
+        Inspired by HelloDjango
+        """
+        stocklist = get_object_or_404(Stocklist, slug=slug)
+        if request.method == 'POST':
+            form = StocklistForm(request.POST, instance=stocklist)
+            if form.is_valid():
+                stocklist.user = request.user
+                form.save()
+                return redirect('list')
+        form = StocklistForm(instance=stocklist)
+        context = {
+            'form': form
+        }
+        return render(request, 'edit_stocklist.html', context)
 
 
 class PantryStoragespaces(generic.ListView):
@@ -66,28 +66,43 @@ class PantryStoragespaces(generic.ListView):
         """
         return Storagespace.objects.select_related('stocklist').filter(stocklist__user=self.request.user)
 
+    def add_storagespace(request):
+        """
+        
+        """
+        if request.method == 'POST':
+            form = StorageForm(request.POST, request.FILES)
+            if form.is_valid():
+                storage_space = form.save(commit=False)
+                stocklist = get_object_or_404(Stocklist, user=request.user)
+                storage_space.stocklist = stocklist
+                storagespace = form.save()
+                return redirect('spaces')
+        else:
+            form = StorageForm()
 
-def add_storagespace(request):
-    """
-    
-    """
-    if request.method == 'POST':
-        form = StorageForm(request.POST, request.FILES)
-        if form.is_valid():
-            storage_space = form.save(commit=False)
-            stocklist = get_object_or_404(Stocklist, user=request.user)
-            storage_space.stocklist = stocklist
-            storagespace = form.save()
-            return redirect('spaces')
-    else:
-        form = StorageForm()
+        template = 'add_storage.html'
+        context = {
+            'form': form,
+        }
 
-    template = 'add_storage.html'
-    context = {
-        'form': form,
-    }
+        return render(request, template, context)
 
-    return render(request, template, context)
+    def edit_storagespace(request, slug):
+        """
+        Inspired by HelloDjango
+        """
+        storagespace = get_object_or_404(Storagespace, slug=slug)
+        if request.method == 'POST':
+            form = StorageForm(request.POST, instance=storagespace)
+            if form.is_valid():
+                form.save()
+                return redirect('spaces')
+        form = StorageForm(instance=storagespace)
+        context = {
+            'form': form
+        }
+        return render(request, 'edit_storage.html', context)
 
 
 class PantryStockitems(View):

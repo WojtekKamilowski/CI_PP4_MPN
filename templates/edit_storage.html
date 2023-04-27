@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Edit Item Box -->
+<!-- Edit Storage Box -->
 <div class="row">
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
-        <h2 class="text-center mt-1">Edit Item:</h2>
+        <h2 class="text-center mt-5">Edit Storagespace:</h2>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
@@ -14,6 +14,10 @@
                 </p>
             </div>
         </form>
+        <!-- Return -->
+        <div class="mb-5 d-flex justify-content-left">
+            <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1">Return <i class="fa-solid fa-rotate-left"></i></button></a>
+        </div>
     </div>
 </div>
 {%endblock%}
