@@ -215,6 +215,9 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Capitalize field on form found on: <a href="https://stackoverflow.com/questions/11996963/how-to-automatically-capitalize-field-on-form-submission-in-django">Stackoverflow</a>
 
+- Storage spaces selection for 'Add a new item' associated with user found on: <a href="https://stackoverflow.com/questions/53478438/django-forms-how-to-show-only-objects-associated-with-user-in-dropdown">Stackoverflow</a>
+
+
 - based on <a href=""></a>
 
 ### Media

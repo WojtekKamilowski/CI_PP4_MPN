@@ -23,6 +23,7 @@
                         <th>Unit</th>
                         <th>Product</th>
                         <th>Expiry Date</th>
+                        <th>Remarks</th>
                     </tr>
                     {% for s in stock_item %}
                     <tr>
@@ -30,6 +31,7 @@
                         <td class="text-center">{{ s.uom }}</td>
                         <td class="text-center">{{ s.item_name }}</td>
                         <td class="text-center">{{ s.expiry_date }}</td>
+                        <td class="text-center">{{ s.remarks }}</td>
                     </tr>
                     {% endfor %}
                 </table>

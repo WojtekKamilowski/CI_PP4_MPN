@@ -40,7 +40,7 @@ class Storagespace(models.Model):
     temp = models.IntegerField(default=21)
 
     def __str__(self):
-        return self.slug
+        return self.storage_name
 
     class Meta:
         # Found on Stackoverflow

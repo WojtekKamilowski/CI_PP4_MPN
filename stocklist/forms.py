@@ -17,7 +17,7 @@ class StorageForm(forms.ModelForm):
 class ItemForm(forms.ModelForm):
     class Meta:
         model = Stockitem
-        fields = ['storage','item_name','expiry_date','remarks','min_temp','max_temp','quantity','uom']
+        fields = ['item_name','expiry_date','storage','remarks','min_temp','max_temp','quantity','uom']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
