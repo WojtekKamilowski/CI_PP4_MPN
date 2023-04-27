@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Edit Item Box -->
+<div class="row">
+    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
+        {% for s in stock_item %}
+        <h2 class="text-center mt-5">Edit Item: {{ s.item_name }}:</h2>
+        {% endfor %}
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div>
+                <p>
+                    <button type="submit" class="cst-bg-green">Confirm <i class="fa-solid fa-check"></i></button>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+{%endblock%}

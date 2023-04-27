@@ -136,23 +136,23 @@ class PantryStockitems(View):
 
         return render(request, template, context)
     
-    # def edit_stockitem(self, slug, request, *args, **kwargs):
-    #     """
+    def edit_stockitem(self, slug, request, *args, **kwargs):
+        """
         
-    #     """
-    #     stockitem = get_object_or_404(Stockitem, id=kwargs['id'])
-    #     if request.method == 'POST':
-    #         form = ItemForm(request.POST, instance=stockitem)
-    #         if form.is_valid():
-    #             instance = form.save(commit=False)
-    #             instance.user = request.user
-    #             instance.save()
-    #             return redirect(reverse('items', args=[slug]))
-    #     else:
-    #         form = ItemForm(instance=stockitem)                                              
-    #         form.fields["storage"].queryset=Storagespace.objects.select_related('stocklist').filter(stocklist__user=request.user)
+        """
+        stockitem = get_object_or_404(Stockitem, id=kwargs['id'])
+        if request.method == 'POST':
+            form = ItemForm(request.POST, instance=stockitem)
+            if form.is_valid():
+                instance = form.save(commit=False)
+                instance.user = request.user
+                instance.save()
+                return redirect(reverse('items', args=[slug]))
+        else:
+            form = ItemForm(instance=stockitem)                                              
+            form.fields["storage"].queryset=Storagespace.objects.select_related('stocklist').filter(stocklist__user=request.user)
 
-    #     context = {
-    #         'form': form
-    #     }
-    #     return render(request, 'edit_item.html', context)
+        context = {
+            'form': form
+        }
+        return render(request, 'edit_item.html', context)

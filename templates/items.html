@@ -33,7 +33,7 @@
                         <td class="text-center">{{ s.item_name }}</td>
                         <td class="text-center">{{ s.expiry_date }}</td>
                         <td class="text-center">{{ s.remarks }}</td>
-                        <td class="text-center"><i class="fa-solid fa-pen-to-square"></i> <i class="fa-regular fa-trash-can"></i></td>
+                        <td class="text-center"><a href="{% url 'edit_item' s.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <i class="fa-regular fa-trash-can"></i></td>
                     </tr>
                     {% endfor %}
                 </table>
