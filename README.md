@@ -217,6 +217,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Storage spaces selection for 'Add a new item' associated with user found on: <a href="https://stackoverflow.com/questions/53478438/django-forms-how-to-show-only-objects-associated-with-user-in-dropdown">Stackoverflow</a>
 
+- Datepicker for Expiry Date in ItemForm found on <a href="https://stackoverflow.com/questions/3367091/whats-the-cleanest-simplest-to-get-running-datepicker-in-django">Stackoverflow</a>
+
 
 - based on <a href=""></a>
 
