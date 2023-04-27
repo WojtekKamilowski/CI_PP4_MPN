@@ -6,7 +6,7 @@
 <div class="row">
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
         {% for stocklist in stocklist_list %}
-        <h2 class="text-center mt-5" id="stocklist-name"> {{ stocklist.name }} <a href="{% url 'edit_stocklist' stocklist.slug %}"><i class="fa-solid fa-pen-to-square"></i></a></h2>     
+        <h2 class="text-center mt-5" id="stocklist-name"> {{ stocklist.name }} <a href="{% url 'edit_stocklist' stocklist.slug %}"><i id="list-edit" class="fa-solid fa-pen-to-square"></i></a></h2>     
         {% if "placeholder" in stocklist.list_image.url %} 
         <img src="https://res.cloudinary.com/dwczzqdrv/image/upload/v1680766117/zero-waste-g55833f373_640_bjge74.jpg" text="center" alt="default stocklist image" class="mt-4">
         {% else %}

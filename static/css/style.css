@@ -89,7 +89,7 @@ h2 {
     border: solid #000000;
 }
 
-.fa-pen-to-square {
+#list-edit {
     font-size: 40%;
 }
 
@@ -123,7 +123,7 @@ h2 {
 }
 
 #items-table th {
-    padding: 2vh 1.5vw;
+    padding: 2vh 3vw;
     border: solid #000000;
 }
 
@@ -151,9 +151,14 @@ a {
         padding: 1px;
         width: 90%;
     }
+
+    #items-table {
+        font-size: 70%;
+    }
+
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 350px) {
 
     h1 {
         font-size: 80%;
@@ -171,6 +176,14 @@ a {
     #items-table th,  #items-table {
         border: none;
         height: auto;
-        padding: 1px;
+        padding: 5px;
     }
+}
+
+@media screen and (max-width: 260px) {
+
+    #items-table {
+        font-size: 40%;
+    }
+
 }

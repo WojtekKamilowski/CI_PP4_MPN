@@ -5,7 +5,7 @@
 <!-- Items Box -->
 <div class="row">
     <!-- Items List -->
-    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
+    <div class="col-lg-8 col-sm-10 container-md main-box">
         <h2 id="storage-name" class="text-center my-5 py-2">{{ storage_space.storage_name }}</h2>
         <div class="row">
             <div class="col-4 text-center">
@@ -24,6 +24,7 @@
                         <th>Product</th>
                         <th>Expiry Date</th>
                         <th>Remarks</th>
+                        <th class="px-1 text-center"><i class="fa-solid fa-gear"></i></th>
                     </tr>
                     {% for s in stock_item %}
                     <tr>
@@ -32,6 +33,7 @@
                         <td class="text-center">{{ s.item_name }}</td>
                         <td class="text-center">{{ s.expiry_date }}</td>
                         <td class="text-center">{{ s.remarks }}</td>
+                        <td class="text-center"><i class="fa-solid fa-pen-to-square"></i> <i class="fa-regular fa-trash-can"></i></td>
                     </tr>
                     {% endfor %}
                 </table>
