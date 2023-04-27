@@ -82,6 +82,7 @@ UOM_CHOICES = [
 
 class Stockitem(models.Model):
     item_name = models.CharField(max_length=50)
+    slug = models.SlugField(max_length=200, unique=True)
     storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)
@@ -98,6 +99,15 @@ class Stockitem(models.Model):
         ordering: ['expiry_date']
         # Unique_together found on Stackoverflow
         unique_together = 'storage', 'item_name'
+    
+    def save(self, *args, **kwargs):
+        """
+        Found on Stackoverflow
+        """
+        strtime = "".join(str(datetime.datetime.now()).split("."))
+        string = "%s-%s" % (strtime[7:], self.item_name)
+        self.slug = slugify(string)
+        super(Stockitem, self).save(*args, **kwargs)
 
     def __str__(self):
 

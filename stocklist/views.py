@@ -140,7 +140,7 @@ class PantryStockitems(View):
         """
         
         """
-        stockitem = get_object_or_404(Stockitem, id=kwargs['id'])
+        stockitem = get_object_or_404(Stockitem, slug=slug)
         if request.method == 'POST':
             form = ItemForm(request.POST, instance=stockitem)
             if form.is_valid():

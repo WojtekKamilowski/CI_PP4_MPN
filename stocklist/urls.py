@@ -11,5 +11,5 @@ urlpatterns = [
     path('add_storage/', views.add_storagespace, name='add_storage'),
     path('items/<slug:slug>', views.PantryStockitems.as_view(), name='items'),
     path('items/<slug:slug>/add_item/', views.PantryStockitems.item_create, name='add_item'),
-    path('items/<slug:slug>/edit_item/<int:id>', views.PantryStockitems.edit_stockitem, name='edit_item'),
+    # path('items/<slug:slug>/edit_item/<slug:slug>', views.PantryStockitems.edit_stockitem, name='edit_item'),
 ]
