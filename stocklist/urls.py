@@ -13,4 +13,5 @@ urlpatterns = [
     path('items/<slug:slug>', views.PantryStockitems.as_view(), name='items'),
     path('items/<slug:slug>/add_item/', views.PantryStockitems.item_create, name='add_item'),
     path('items/edit_item/<slug:slug>', views.PantryStockitems.edit_stockitem, name='edit_item'),
+    path('items/delete_item/<slug:slug>', views.PantryStockitems.delete_stockitem, name='delete_item'),
 ]

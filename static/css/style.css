@@ -185,6 +185,10 @@ a {
         height: auto;
         padding: 5px;
     }
+
+    #items-table {
+        font-size: 60%;
+    }
 }
 
 @media screen and (max-width: 260px) {

@@ -1,9 +1,17 @@
+# Imports
+# ~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
+from django.urls import reverse
+from django.http import HttpResponse, HttpResponseNotFound
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+# ~~~~~~~~~~~~
+# Internal:
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm, ItemForm
-from django.urls import reverse
-
+# ~~~~~~~~~~~~
 
 def home(request):
     template_name = 'index.html'
@@ -171,3 +179,17 @@ class PantryStockitems(View):
             'form': form
         }
         return render(request, 'edit_item.html', context)
+    
+    def delete_stockitem(request, slug, *args, **kwargs):
+        """
+        Based on Stackoverflow & CI_PP4_the_diplomat
+        """
+        stock_item = get_object_or_404(Stockitem, slug=slug)
+
+        if request.method == 'POST':
+            stock_item.delete()
+            messages.success(request, "Item deleted!")                                                   
+            return redirect('spaces')    
+
+        return render(request, 'delete_item.html', {'stock_item': stock_item})                                           
+        

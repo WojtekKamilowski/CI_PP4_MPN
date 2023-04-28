@@ -219,6 +219,7 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Datepicker for Expiry Date in ItemForm found on <a href="https://stackoverflow.com/questions/3367091/whats-the-cleanest-simplest-to-get-running-datepicker-in-django">Stackoverflow</a>
 
+- Delete from <a href="https://stackoverflow.com/questions/19754103/django-how-to-delete-an-object-using-a-view">Stackoverflow</a>
 
 - based on <a href=""></a>
 
