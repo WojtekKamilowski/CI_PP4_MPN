@@ -221,6 +221,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Delete from <a href="https://stackoverflow.com/questions/19754103/django-how-to-delete-an-object-using-a-view">Stackoverflow</a>
 
+- Delete confirmation inspired by <a href="https://stackoverflow.com/questions/31843145/deleteview-with-confirmation-template-and-post-method">Stackoverflow</a>
+
 - based on <a href=""></a>
 
 ### Media
