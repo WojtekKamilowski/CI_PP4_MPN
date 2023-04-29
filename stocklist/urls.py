@@ -9,6 +9,7 @@ urlpatterns = [
     path('list/edit_stocklist/<slug:slug>', views.PantryStocklist.edit_stocklist, name='edit_stocklist'),
     path('spaces/', views.PantryStoragespaces.as_view(), name='spaces'),
     path('spaces/edit_storage/<slug:slug>', views.PantryStoragespaces.edit_storagespace, name='edit_storage'),
+    path('spaces/delete_storage/<slug:slug>', views.PantryStoragespaces.delete_storagespace, name='delete_storage'),
     path('add_storage/', views.PantryStoragespaces.add_storagespace, name='add_storage'),
     path('items/<slug:slug>', views.PantryStockitems.as_view(), name='items'),
     path('items/<slug:slug>/add_item/', views.PantryStockitems.item_create, name='add_item'),

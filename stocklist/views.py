@@ -101,6 +101,7 @@ class PantryStoragespaces(generic.ListView):
         Inspired by HelloDjango
         """
         storagespace = get_object_or_404(Storagespace, slug=slug)
+
         if request.method == 'POST':
             form = StorageForm(request.POST, instance=storagespace)
             if form.is_valid():
@@ -111,6 +112,19 @@ class PantryStoragespaces(generic.ListView):
             'form': form
         }
         return render(request, 'edit_storage.html', context)
+    
+    def delete_storagespace(request, slug):
+        """
+        Based on Stackoverflow & CI_PP4_the_diplomat
+        """
+        storagespace = get_object_or_404(Storagespace, slug=slug)
+
+        if request.method == 'POST':
+            storagespace.delete()
+            messages.success(request, "Storagespace deleted!")                                                   
+            return redirect('spaces')    
+
+        return render(request, 'delete_storage.html', {'storagespace': storagespace})    
 
 
 class PantryStockitems(View):

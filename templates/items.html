@@ -6,7 +6,7 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-lg-8 col-sm-10 container-md main-box">
-        <h2 id="storage-name" class="text-center my-5 py-2">{{ storage_space.storage_name }} <span id="storage-icons"><a href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <i class="fa-regular fa-trash-can"></i></span></h2>
+        <h2 id="storage-name" class="text-center my-5 py-2">{{ storage_space.storage_name }} <span id="storage-icons"><a href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a href="{% url 'delete_storage' storage_space.slug %}"><i class="fa-regular fa-trash-can"></i></span></a></h2>
         <div class="row">
             <div class="col-4 text-center">
                 <p>Temperature: {{ storage_space.temp }} °C</p>
