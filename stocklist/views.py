@@ -4,7 +4,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from django.urls import reverse
-from django.http import HttpResponse, HttpResponseNotFound
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 # ~~~~~~~~~~~~
