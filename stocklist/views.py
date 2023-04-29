@@ -13,6 +13,7 @@ from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm, ItemForm
 # ~~~~~~~~~~~~
 
+
 def home(request):
     template_name = 'index.html'
     context = {}
@@ -30,7 +31,6 @@ class PantryStocklist(generic.ListView):
         """
         return Stocklist.objects.filter(user=self.request.user)
 
-
     def add_stocklist(request):
         """
         Inspired by CI_PP4_the_diplomat
@@ -43,7 +43,6 @@ class PantryStocklist(generic.ListView):
             return redirect('list')
 
         return render(request, 'add_stocklist.html', {'form': form})
-
 
     def edit_stocklist(request, slug):
         """
@@ -76,7 +75,7 @@ class PantryStoragespaces(generic.ListView):
 
     def add_storagespace(request):
         """
-        
+
         """
         if request.method == 'POST':
             form = StorageForm(request.POST, request.FILES)
@@ -112,7 +111,7 @@ class PantryStoragespaces(generic.ListView):
             'form': form
         }
         return render(request, 'edit_storage.html', context)
-    
+
     def delete_storagespace(request, slug):
         """
         Based on Stackoverflow & CI_PP4_the_diplomat
@@ -121,10 +120,10 @@ class PantryStoragespaces(generic.ListView):
 
         if request.method == 'POST':
             storagespace.delete()
-            messages.success(request, "Storagespace deleted!")                                                   
-            return redirect('spaces')    
+            messages.success(request, "Storagespace deleted!")
+            return redirect('spaces')
 
-        return render(request, 'delete_storage.html', {'storagespace': storagespace})    
+        return render(request, 'delete_storage.html', {'storagespace': storagespace})
 
 
 class PantryStockitems(View):
@@ -163,7 +162,7 @@ class PantryStockitems(View):
                 instance.save()
                 return redirect(reverse('items', args=[slug]))
         else:
-            form = ItemForm()                                              
+            form = ItemForm()
             form.fields["storage"].queryset=Storagespace.objects.select_related('stocklist').filter(stocklist__user=request.user)
 
         template = 'add_item.html'
@@ -172,10 +171,10 @@ class PantryStockitems(View):
         }
 
         return render(request, template, context)
-    
+
     def edit_stockitem(request, slug, *args, **kwargs):
         """
-        
+
         """
         stockitem = get_object_or_404(Stockitem, slug=slug)
         if request.method == 'POST':
@@ -186,14 +185,14 @@ class PantryStockitems(View):
                 instance.save()
                 return redirect('spaces')
         else:
-            form = ItemForm(instance=stockitem)                                              
+            form = ItemForm(instance=stockitem)
             form.fields["storage"].queryset=Storagespace.objects.select_related('stocklist').filter(stocklist__user=request.user)
 
         context = {
             'form': form
         }
         return render(request, 'edit_item.html', context)
-    
+
     def delete_stockitem(request, slug, *args, **kwargs):
         """
         Based on Stackoverflow & CI_PP4_the_diplomat
@@ -202,8 +201,7 @@ class PantryStockitems(View):
 
         if request.method == 'POST':
             stock_item.delete()
-            messages.success(request, "Item deleted!")                                                   
-            return redirect('spaces')    
+            messages.success(request, "Item deleted!")
+            return redirect('spaces')
 
-        return render(request, 'delete_item.html', {'stock_item': stock_item})                                           
-        
+        return render(request, 'delete_item.html', {'stock_item': stock_item})
