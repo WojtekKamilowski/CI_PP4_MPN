@@ -40,6 +40,7 @@ class PantryStocklist(generic.ListView):
             stocklist = form.save(commit=False)
             stocklist.user = request.user
             stocklist.save()
+            messages.success(request, "Stocklist added!")
             return redirect('list')
 
         return render(request, 'add_stocklist.html', {'form': form})
@@ -54,6 +55,7 @@ class PantryStocklist(generic.ListView):
             if form.is_valid():
                 stocklist.user = request.user
                 form.save()
+                messages.success(request, "Stocklist edit completed!")
                 return redirect('list')
         form = StocklistForm(instance=stocklist)
         context = {
@@ -84,6 +86,7 @@ class PantryStoragespaces(generic.ListView):
                 stocklist = get_object_or_404(Stocklist, user=request.user)
                 storage_space.stocklist = stocklist
                 storagespace = form.save()
+                messages.success(request, "A new storagespace has been added!")
                 return redirect('spaces')
         else:
             form = StorageForm()
@@ -105,6 +108,7 @@ class PantryStoragespaces(generic.ListView):
             form = StorageForm(request.POST, instance=storagespace)
             if form.is_valid():
                 form.save()
+                messages.success(request, "Storagespace edit completed!")
                 return redirect('spaces')
         form = StorageForm(instance=storagespace)
         context = {
@@ -160,6 +164,7 @@ class PantryStockitems(View):
                 instance = form.save(commit=False)
                 instance.user = request.user
                 instance.save()
+                messages.success(request, "A new stockitem has been added!")
                 return redirect(reverse('items', args=[slug]))
         else:
             form = ItemForm()
@@ -183,6 +188,7 @@ class PantryStockitems(View):
                 instance = form.save(commit=False)
                 instance.user = request.user
                 instance.save()
+                messages.success(request, "Stockitem edit completed!")
                 return redirect('spaces')
         else:
             form = ItemForm(instance=stockitem)
