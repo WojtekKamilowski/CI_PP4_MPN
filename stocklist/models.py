@@ -4,9 +4,6 @@ from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 import datetime
 
-# import cloudinary
-# import cloudinary.uploader
-
 
 class Stocklist(models.Model):
     name = models.CharField(max_length=150)
