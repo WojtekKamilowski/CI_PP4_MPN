@@ -6,7 +6,10 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-lg-8 col-sm-10 container-md main-box">
-        <h2 id="storage-name" class="text-center my-5 py-2">{{ storage_space.storage_name }} <span id="storage-icons"><a href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a href="{% url 'delete_storage' storage_space.slug %}"><i class="fa-regular fa-trash-can"></i></span></a></h2>
+        <h2 id="storage-name" class="text-center my-5 py-2">{{ storage_space.storage_name }} <span id="storage-icons"><a
+                    href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a
+                    href="{% url 'delete_storage' storage_space.slug %}"><i
+                        class="fa-regular fa-trash-can"></i></a></span></h2>
         <div class="row">
             <div class="col-4 text-center">
                 <p>Temperature: {{ storage_space.temp }} °C</p>
@@ -16,7 +19,7 @@
             </div>
         </div>
         <div class="row">
-           <div class="col-12 my-4">
+            <div class="col-12 my-4">
                 <table id="items-table" class="mx-auto">
                     <tr class="cst-bg-yellow">
                         <th>Pieces</th>
@@ -33,18 +36,23 @@
                         <td class="text-center">{{ s.item_name }}</td>
                         <td class="text-center">{{ s.expiry_date }}</td>
                         <td class="text-center">{{ s.remarks }}</td>
-                        <td class="text-center"><a href="{% url 'edit_item' s.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a href="{% url 'delete_item' s.slug %}"><i class="fa-regular fa-trash-can"></i></a></td>
+                        <td class="text-center"><a href="{% url 'edit_item' s.slug %}"><i
+                                    class="fa-solid fa-pen-to-square"></i></a> <a
+                                href="{% url 'delete_item' s.slug %}"><i class="fa-regular fa-trash-can"></i></a></td>
                     </tr>
                     {% endfor %}
                 </table>
             </div>
             <!-- Add Item -->
             <div class="mb-5 d-flex justify-content-center">
-                <a href="{% url 'add_item' storage_space.slug %}" class="text-decoration-none"><button class="cst-bg-green storage-spaces-btn">Add a new Item <i class="fa-solid fa-plus"></i></button></a>
+                <a href="{% url 'add_item' storage_space.slug %}" class="text-decoration-none"><button
+                        class="cst-bg-green storage-spaces-btn">Add a new Item <i
+                            class="fa-solid fa-plus"></i></button></a>
             </div>
             <!-- Return -->
             <div class="mb-5 d-flex justify-content-center">
-                <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return <i class="fa-solid fa-rotate-left"></i></button></a>
+                <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return
+                        <i class="fa-solid fa-rotate-left"></i></button></a>
             </div>
         </div>
     </div>
