@@ -11,38 +11,44 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 
 ## Table of Contents
 
-1. [Project Goals](#project-goals)
+- [My Pantry Note](#my-pantry-note)
+  - [About](#about)
+  - [Table of Contents](#table-of-contents)
+  - [Project Goals](#project-goals)
     - [User Goals](#user-goals)
     - [Business Owner Goals](#business-owner-goals)
-2. [User Experience](#user-experience)
+  - [User Experience](#user-experience)
     - [Target Audience](#target-audience)
     - [User Requirements and Expectations](#user-requirements-and-expectations)
     - [User Stories](#user-stories)
+      - [Users](#users)
+      - [Site Owner](#site-owner)
     - [Agile Methodologies](#agile-methodologies)
-3. [Design](#design)
+  - [Design](#design)
     - [Colors](#colors)
     - [Typhography](#typhography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
-4. [Database Diagram](#database-diagram)
-5. [Messages and Interaction With Users](#messages-and-interaction-with-users)
-6. [Admin Panel/Superuser](#admin-panelsuperuser)
-7. [Technologies Used](#technologies-used)
-   - [Languages](#languages)
-    - [Django Packages](#django-packages)
-   - [Libraries & Frameworks](#libraries-&-frameworks)
-8. [Features](#features)
-9. [Validation](#validation)
-10. [Accessibility](#accessibility)
-11. [Performance](#performance)
-12. [Device Testing](#device-testing)
-13. [Browser compatibility](#browser-compatibility)
-14. [Testing](#testing)
-15. [Creating the app using Django](#creating-the-app-using-django)
-16. [Bugs](#bugs)
-17. [Deployment](#deployment)
-18. [Credits](#credits)
-19. [Acknowledgements](#acknowledgements)
+  - [Database Diagram](#database-diagram)
+  - [Messages and Interaction With Users](#messages-and-interaction-with-users)
+  - [Admin Panel/Superuser](#admin-panelsuperuser)
+  - [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+      - [Django Packages](#django-packages)
+    - [Libraries \& Frameworks](#libraries--frameworks)
+  - [Features](#features)
+  - [Validation](#validation)
+  - [Accessibility](#accessibility)
+  - [Performance](#performance)
+  - [Device Testing](#device-testing)
+  - [Browser compatibility](#browser-compatibility)
+  - [Testing](#testing)
+  - [Creating the app using Django](#creating-the-app-using-django)
+  - [Bugs](#bugs)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+    - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -127,6 +133,7 @@ As an Admin I want to:
 - [Balsamiq](https://balsamiq.com/)
 - [CI Python Linter](https://pep8ci.herokuapp.com/)
 - [TinyPNG](https://tinypng.com/)
+- [jQuery](https://jquery.com/)
 
 ### Languages
 
@@ -207,7 +214,9 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - get_queryset(self) function in PantryStocklist class view based on <a href="https://github.com/4n4ru/CI-PP4-Meal-Planner">CI-PP4-Meal-Planner</a>
 
-- add_stocklist(request) view function inspired by <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
+- add_stocklist(request) and other view functions inspired by <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
+
+- JavaScript code for close messages after 3 seconds from <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
 
 - Unique slug fields found on: <a href="https://stackoverflow.com/questions/3816307/how-to-create-a-unique-slug-in-django">Stackoverflow</a>
 

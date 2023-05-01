@@ -6,10 +6,14 @@
 <div class="row">
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box d-flex flex-column">
         {% for stocklist in stocklist_list %}
-        <h2 class="text-center mt-5" id="stocklist-name"> {{ stocklist.name }} <a
-                href="{% url 'edit_stocklist' stocklist.slug %}"><i
-                    class="fa-solid fa-pen-to-square list-icon"></i></a><a
-                href="{% url 'delete_list' stocklist.slug %}"><i class="fa-regular fa-trash-can list-icon mx-2"></i></a>
+        <h2 class="text-center mt-5" id="stocklist-name">
+            <span class="ms-5"> {{ stocklist.name }} </span>
+            <span id="list-icons">
+                <a href="{% url 'edit_stocklist' stocklist.slug %}"><i
+                        class="fa-solid fa-pen-to-square list-icon"></i></a>
+                <a href="{% url 'delete_list' stocklist.slug %}"><i
+                        class="fa-regular fa-trash-can list-icon mx-2"></i></a>
+            </span>
         </h2>
         {% if "placeholder" in stocklist.list_image.url %}
         <img src="https://res.cloudinary.com/dwczzqdrv/image/upload/v1680766117/zero-waste-g55833f373_640_bjge74.jpg"

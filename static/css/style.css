@@ -104,6 +104,9 @@ h2 {
 }
 
 .list-icon {
+    margin-top: 1.5vh;
+    margin-right: 5px;
+    float: right;
     font-size: 40%;
 }
 
