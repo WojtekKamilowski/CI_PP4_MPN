@@ -16,12 +16,13 @@ from .forms import ContactForm
 
 def get_user_instance(request):
     """
-    retrieves user details if logged in
+    Retrieves user details if logged in
     """
-
+    user_username = request.user.username
     user_email = request.user.email
-    user = User.objects.filter(email=user_email).first()
+    user = User.objects.filter(email=user_email, username=user_username).first()
     return user
+
 
 # Displays the contact form for the user, autofills their email,
 # checks all data is valid before saving it
@@ -29,38 +30,38 @@ def get_user_instance(request):
 
 class ContactMessage(View):
     """
-    This view displays the contact form and if the user
-    is registered and inserts the user email into the
-    email field
+    Displays form for the user to contact the admin.
+    If user is registered inserts the user email  & name into the
+    relevant fields.
     """
-    template_name = 'contact.html'
-    success_message = 'Your message has been sent.'
+
+    template_name = "contact.html"
+    success_message = "Your message has been sent."
 
     def get(self, request, *args, **kwargs):
         """
-        Retrieves users email and inputs into email input
+        Retrieves users email & name and inputs into relevant input
         """
         if request.user.is_authenticated:
             email = request.user.email
-            contact_form = ContactForm(initial={'email': email})
+            name = request.user.username
+            form = ContactForm(initial={"email": email, "name": name})
         else:
-            contact_form = ContactForm()
-        return render(request, 'contact/contact.html',
-                      {'contact_form': contact_form})
+            form = ContactForm()
+        return render(request, "contact.html", {"form": form})
 
     def post(self, request):
         """
-        Checks that the provided info is valid format
-        and then posts to database
+        Checks if the details are in valid format
+        and then posts to database.
         """
-        contact_form = ContactForm(data=request.POST)
+        form = ContactForm(data=request.POST)
 
-        if contact_form.is_valid():
-            contact = contact_form.save(commit=False)
+        if form.is_valid():
+            contact = form.save(commit=False)
             contact.user = request.user
             contact.save()
-            messages.success(
-                request, "Your message has been sent")
-            return render(request, 'received.html')
+            messages.success(request, "Your message has been sent")
+            return render(request, "received.html")
 
-        return render(request, 'contact.html',
+        return render(request, "contact.html", {"form": form})
