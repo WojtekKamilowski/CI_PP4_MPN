@@ -251,6 +251,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 - Image replacing default Cloudinary placeholder for list_image from <a href="https://pixabay.com/photos/zero-waste-plastic-free-3749854/">Pixabay</a>.
 
 - Image replacing default Cloudinary placeholder for create stocklist image from <a href="https://console.cloudinary.com/console/c-7d0dc1f07855d3688919c6f201a8dd/media_library/search/asset/4f3bf051866c4e34e1f31c72fe08ade6/manage?q=&context=manage">Freepik</a>.
+  
+- Image of a broken jar with pasta for error messages from <a href="https://pixabay.com/photos/jar-broken-pasta-pasta-scattered-4258747/">Pixabay</a>.
 
 [Back to Table Of Contents](#table-of-contents)
 
