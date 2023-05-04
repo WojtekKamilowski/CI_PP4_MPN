@@ -32,7 +32,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["mypantrynote.herokuapp.com", "8000-wojtekkamilowski-ci-pp4--eicg89edwz.us2.codeanyapp.com"]
+ALLOWED_HOSTS = [
+    "mypantrynote.herokuapp.com",
+    "8000-wojtekkamilowski-ci-pp4--eicg89edwz.us2.codeanyapp.com",
+]
 
 
 # Application definition

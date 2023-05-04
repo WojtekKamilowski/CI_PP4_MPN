@@ -234,6 +234,9 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Delete confirmation inspired by <a href="https://stackoverflow.com/questions/31843145/deleteview-with-confirmation-template-and-post-method">Stackoverflow</a>
 
+- Fix deployment issue from <a href="https://stackoverflow.com/questions/71712258/error-could-not-build-wheels-for-backports-zoneinfo-which-is-required-to-insta">Stackoverflow</a>
+
+
 - based on <a href=""></a>
 
 ### Media
