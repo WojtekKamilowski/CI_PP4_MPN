@@ -59,7 +59,6 @@ class ContactMessage(View):
 
         if form.is_valid():
             contact = form.save(commit=False)
-            contact.user = request.user
             contact.save()
             messages.success(request, "Your message has been sent")
             return render(request, "received.html")
