@@ -99,6 +99,8 @@ As an Admin I want to:
 
 - #CAF3C8 from <a href="https://coolors.co/contrast-checker/000000-caf3c8">Coolors</a>. 
 
+- #9B0000 from <a href="https://coolors.co/contrast-checker/ffffff-9b0000">Coolors</a>.
+
 ### Typhography
 
 
