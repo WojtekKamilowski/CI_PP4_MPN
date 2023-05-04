@@ -162,6 +162,13 @@ a {
     color: #000000;
 }
 
+/* 403, 404 & 500 */
+
+.err-msg {
+    color: #FFFFFF;
+    background-color: #9B0000;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 576px) {
