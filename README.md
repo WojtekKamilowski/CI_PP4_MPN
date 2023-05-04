@@ -218,7 +218,7 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - JavaScript code for close messages after 3 seconds from <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
 
-- Contact app based on <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat">CI_PP4_the_diplomat</a>
+- Contact app with some adjustments from <a href="https://github.com/ArronBeale/CI_PP4_the_diplomat/tree/main/contact">CI_PP4_the_diplomat</a>
 
 - Unique slug fields found on: <a href="https://stackoverflow.com/questions/3816307/how-to-create-a-unique-slug-in-django">Stackoverflow</a>
 

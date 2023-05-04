@@ -1,11 +1,9 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.db import models
 from django.contrib.auth.models import User
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+# From CI_PP4_the_diplomat
 
 # Model for the contact item in the database
 
@@ -17,9 +15,6 @@ class Contact(models.Model):
 
     message_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="contact_user", null=True
-    )
     name = models.CharField(max_length=50, null=True)
     email = models.EmailField(max_length=254, default="")
     message = models.TextField()
