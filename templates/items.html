@@ -6,27 +6,27 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-lg-8 col-sm-10 container-md main-box">
-        <h2 id="storage-name" class="text-center my-5 py-2 text-break">{{ storage_space.storage_name }} <span id="storage-icons"><a
+        <h2 id="storage-name" class="text-center my-5 py-4 text-break">{{ storage_space.storage_name }} <span id="storage-icons"><a
                     href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a
                     href="{% url 'delete_storage' storage_space.slug %}"><i
                         class="fa-regular fa-trash-can"></i></a></span></h2>
         <div class="row">
             <div class="col-4 text-center">
-                <p>Temperature: {{ storage_space.temp }} °C</p>
+                <p class="text-break ms-2 ps-2">Temp.: {{ storage_space.temp }} °C</p>
             </div>
             <div class="col-8 text-center">
-                <p>Last updated: {{ storage_space.storage_updated_on }}</p>
+                <p class="text-break ms-2 ps-2">Last updated: {{ storage_space.storage_updated_on }}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-12 my-4">
                 <table id="items-table" class="mx-auto">
                     <tr class="cst-bg-yellow" style="max-width:95%;">
-                        <th>Pieces</th>
-                        <th>Unit</th>
-                        <th>Product</th>
-                        <th>Expiry Date</th>
-                        <th>Remarks</th>
+                        <th class="text-center">Pieces</th>
+                        <th class="text-center">Unit</th>
+                        <th class="text-center">Product</th>
+                        <th class="text-center">Expiry Date</th>
+                        <th class="text-center">Remarks</th>
                         <th class="px-1 text-center"><i class="fa-solid fa-gear"></i></th>
                     </tr>
                     {% for s in stock_item %}
