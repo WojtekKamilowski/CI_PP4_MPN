@@ -9,12 +9,12 @@
         <h2 class="text-center mt-5"> Your Storage Spaces:</h2>
         <div class="d-flex justify-content-center">
            <ul id="storagespaces-list" class="my-2 p-0">
-                <li>
+                <li class="d-flex flex-column">
                     {% for storagespace in storagespace_list %}
                     <a href="{% url 'items' storagespace.slug %}" class="text-decoration-none d-flex justify-content-center">
-                        <button class="storage-spaces-btn cst-bg-yellow my-2 row">
-                            <span class="col-8 p-0 ms-5" >{{ storagespace.storage_name }}</span>
-                            <span class="col-2"><i class="fa-regular fa-folder-open"></i></span>
+                        <button class="storage-spaces-btn cst-bg-yellow my-2 d-flex flex-row">
+                            <span class="mx-auto d-flex justify-content-center text-break" >{{ storagespace.storage_name }}</span>
+                            <span class="me-1 d-flex justify-content-right mt-1"><i class="fa-regular fa-folder-open"></i></span>
                         </button>
                     </a>
                     {% endfor %}
@@ -36,8 +36,8 @@
         </nav>
         {% endif %}
         <!-- Add Storage Space -->
-        <div class="mb-5 d-flex justify-content-center">
-            <a href="{% url 'add_storage' %}" class="text-decoration-none"><button class="cst-bg-green storage-spaces-btn">Add a new Storage Space <i class="fa-solid fa-circle-plus"></i></button></a>
+        <div class="mx-1 mb-5 d-flex justify-content-center">
+            <a href="{% url 'add_storage' %}" class="text-decoration-none text-center"><button class="cst-bg-green storage-spaces-btn">Add a new Storage Space <i class="fa-solid fa-circle-plus"></i></button></a>
         </div>
         <!-- Return -->
         <div class="mb-5 d-flex justify-content-center">
