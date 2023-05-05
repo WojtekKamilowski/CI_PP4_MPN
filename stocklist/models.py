@@ -6,7 +6,7 @@ import datetime
 
 
 class Stocklist(models.Model):
-    name = models.CharField(max_length=150)
+    name = models.CharField(max_length=20)
     slug = models.SlugField(max_length=200, unique=True)
     list_image = CloudinaryField('image', default='placeholder')
     user = models.OneToOneField(User, on_delete=models.CASCADE,
