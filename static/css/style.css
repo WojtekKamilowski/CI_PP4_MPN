@@ -220,6 +220,10 @@ a {
 
 @media screen and (max-width: 260px) {
 
+    input {
+        max-width: 95%;
+    }
+
     #items-table {
         font-size: 40%;
     }
