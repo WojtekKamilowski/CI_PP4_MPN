@@ -6,7 +6,7 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-lg-8 col-sm-10 container-md main-box">
-        <h2 id="storage-name" class="text-center my-5 py-2">{{ storage_space.storage_name }} <span id="storage-icons"><a
+        <h2 id="storage-name" class="text-center my-5 py-2 text-break">{{ storage_space.storage_name }} <span id="storage-icons"><a
                     href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a
                     href="{% url 'delete_storage' storage_space.slug %}"><i
                         class="fa-regular fa-trash-can"></i></a></span></h2>
@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-12 my-4">
                 <table id="items-table" class="mx-auto">
-                    <tr class="cst-bg-yellow">
+                    <tr class="cst-bg-yellow" style="max-width:95%;">
                         <th>Pieces</th>
                         <th>Unit</th>
                         <th>Product</th>
@@ -31,12 +31,12 @@
                     </tr>
                     {% for s in stock_item %}
                     <tr>
-                        <td class="text-center">{{ s.quantity }}</td>
-                        <td class="text-center">{{ s.uom }}</td>
-                        <td class="text-center">{{ s.item_name }}</td>
-                        <td class="text-center">{{ s.expiry_date }}</td>
-                        <td class="text-center">{{ s.remarks }}</td>
-                        <td class="text-center"><a href="{% url 'edit_item' s.slug %}"><i
+                        <td class="text-center text-break">{{ s.quantity }}</td>
+                        <td class="text-center text-break">{{ s.uom }}</td>
+                        <td class="text-center text-break">{{ s.item_name }}</td>
+                        <td class="text-center text-break">{{ s.expiry_date }}</td>
+                        <td class="text-center text-break">{{ s.remarks }}</td>
+                        <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
                                     class="fa-solid fa-pen-to-square"></i></a> <a
                                 href="{% url 'delete_item' s.slug %}"><i class="fa-regular fa-trash-can"></i></a></td>
                     </tr>
