@@ -128,6 +128,7 @@ As an Admin I want to:
 
 - [GitHub](https://github.com/)
 - [Gitpod](https://gitpod.io/)
+- [Codeanywhere](https://app.codeanywhere.com/)
 - [Heroku](https://id.heroku.com/)
 - [Lucidchart](https://lucid.app/)
 - [Fontawesome](https://fontawesome.com/)
