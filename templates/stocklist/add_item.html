@@ -8,8 +8,6 @@
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            {{ form.errors }}
-            {{ form.non_field_errors }}
             <div>
                 <p>
                     <button type="submit" class="cst-bg-green">Confirm <i class="fa-solid fa-check"></i></button>
@@ -18,7 +16,8 @@
         </form>
         <!-- Return -->
         <div class="mb-5 d-flex justify-content-left">
-            <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1">Return to Storage Spaces List <i class="fa-solid fa-rotate-left"></i></button></a>
+            <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1">Return to
+                    Storage Spaces List <i class="fa-solid fa-rotate-left"></i></button></a>
         </div>
     </div>
 </div>

@@ -8,6 +8,7 @@
         <!-- Inspired by https://stackoverflow.com/questions/31843145/deleteview-with-confirmation-template-and-post-method -->
         <form method="POST">
             {% csrf_token %}
+            {{ form.as_p }}
             <p class="d-flex justify-content-center m-1 text-center">Are you you sure you want to delete your
                 stocklist!?<br>
                 (all storagespaces & item data will be removed too)</p>

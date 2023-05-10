@@ -8,13 +8,16 @@
         <!-- Inspired by https://stackoverflow.com/questions/31843145/deleteview-with-confirmation-template-and-post-method -->
         <form method="POST">
             {% csrf_token %}
+            {{ form.as_p }}
             <p class="d-flex justify-content-center m-1 text-center">Are you you sure you want to delete this item?</p>
             <div class="d-flex justify-content-center">
-                <button type="submit" class="cst-bg-green py-1 my-2 ms-2">Confirm & Return to Storagespaces List <i class="fa-solid fa-check"></i></button>
+                <button type="submit" class="cst-bg-green py-1 my-2 ms-2">Confirm & Return to Storagespaces List <i
+                        class="fa-solid fa-check"></i></button>
             </div>
         </form>
         <div class="d-flex justify-content-center m-1 text-center">
-            <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1 m-2">Return to Storagespaces List <i class="fa-solid fa-rotate-left"></i></button></a>
+            <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1 m-2">Return
+                    to Storagespaces List <i class="fa-solid fa-rotate-left"></i></button></a>
         </div>
     </div>
 </div>
