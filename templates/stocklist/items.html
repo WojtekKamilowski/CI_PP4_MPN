@@ -5,14 +5,16 @@
 <!-- Items Box -->
 <div class="row">
     <!-- Items List -->
-    <div class="col-lg-8 col-sm-10 container-md main-box">
-        <h2 id="storage-name" class="text-center my-5 py-4 text-break">{{ storage_space.storage_name }} <span id="storage-icons"><a
-                    href="{% url 'edit_storage' storage_space.slug %}"><i class="fa-solid fa-pen-to-square"></i></a> <a
+    <div class="col-lg-10 col-sm-11 container-md main-box">
+        <h2 id="storage-name" class="text-center my-5 py-4 text-break">{{ storage_space.storage_name }} <span
+                id="storage-icons"><a href="{% url 'edit_storage' storage_space.slug %}"><i
+                        class="fa-solid fa-pen-to-square"></i></a> <a
                     href="{% url 'delete_storage' storage_space.slug %}"><i
                         class="fa-regular fa-trash-can"></i></a></span></h2>
         <div class="row">
             <div class="col-4 text-center">
-                <p class="text-break ms-2 ps-2">Temp.: {{ storage_space.temp }} °C</p>
+                <p class="text-break ms-2 ps-2">Temp.:
+                <p class="temp">{{ storage_space.temp }}</p> °C</p>
             </div>
             <div class="col-8 text-center">
                 <p class="text-break ms-2 ps-2">Last updated: {{ storage_space.storage_updated_on }}</p>
@@ -25,7 +27,8 @@
                         <th class="text-center">Pieces</th>
                         <th class="text-center">Unit</th>
                         <th class="text-center">Product</th>
-                        <th class="text-center">Expiry Date</th>
+                        <th class="text-center px-1">Expiry Date</th>
+                        <th class="text-center px-1">Temp. range°C</th>
                         <th class="text-center">Remarks</th>
                         <th class="px-1 text-center"><i class="fa-solid fa-gear"></i></th>
                     </tr>
@@ -35,6 +38,9 @@
                         <td class="text-center text-break">{{ s.uom }}</td>
                         <td class="text-center text-break">{{ s.item_name }}</td>
                         <td class="text-center text-break">{{ s.expiry_date }}</td>
+                        <td class="text-center text-break">
+                            <p class="min-temp">{{ s.min_temp }}</p> to <p class="max-temp">{{ s.max_temp }}</p>
+                        </td>
                         <td class="text-center text-break">{{ s.remarks }}</td>
                         <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
                                     class="fa-solid fa-pen-to-square"></i></a> <a
