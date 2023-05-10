@@ -35,7 +35,7 @@ class ContactMessage(View):
     relevant fields.
     """
 
-    template_name = "contact.html"
+    template_name = "contact/contact.html"
     success_message = "Your message has been sent."
 
     def get(self, request, *args, **kwargs):
@@ -48,7 +48,7 @@ class ContactMessage(View):
             form = ContactForm(initial={"email": email, "name": name})
         else:
             form = ContactForm()
-        return render(request, "contact.html", {"form": form})
+        return render(request, "contact/contact.html", {"form": form})
 
     def post(self, request):
         """
@@ -61,6 +61,6 @@ class ContactMessage(View):
             contact = form.save(commit=False)
             contact.save()
             messages.success(request, "Your message has been sent")
-            return render(request, "received.html")
+            return render(request, "contact/received.html")
 
-        return render(request, "contact.html", {"form": form})
+        return render(request, "contact/contact.html", {"form": form})

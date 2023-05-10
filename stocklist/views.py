@@ -23,7 +23,7 @@ def home(request):
 
 class PantryStocklist(generic.ListView):
     model = Stocklist
-    template_name = "list.html"
+    template_name = "stocklist/list.html"
 
     def get_queryset(self):
         """
@@ -44,7 +44,7 @@ class PantryStocklist(generic.ListView):
             messages.success(request, "Stocklist added!")
             return redirect("list")
 
-        return render(request, "add_stocklist.html", {"form": form})
+        return render(request, "stocklist/add_stocklist.html", {"form": form})
 
     def edit_stocklist(request, slug):
         """
@@ -60,7 +60,7 @@ class PantryStocklist(generic.ListView):
                 return redirect("list")
         form = StocklistForm(instance=stocklist)
         context = {"form": form}
-        return render(request, "edit_stocklist.html", context)
+        return render(request, "stocklist/edit_stocklist.html", context)
 
     def delete_stocklist(request, slug):
         """ """
@@ -69,12 +69,12 @@ class PantryStocklist(generic.ListView):
             stocklist.delete()
             messages.success(request, "Your stocklist deleted!")
             return redirect("list")
-        return render(request, "delete_list.html", {"stocklist": stocklist})
+        return render(request, "stocklist/delete_list.html", {"stocklist": stocklist})
 
 
 class PantryStoragespaces(generic.ListView):
     model = Storagespace
-    template_name = "spaces.html"
+    template_name = "stocklist/spaces.html"
     paginate_by = 6
 
     def get_queryset(self):
@@ -101,7 +101,7 @@ class PantryStoragespaces(generic.ListView):
         else:
             form = StorageForm()
 
-        template = "add_storage.html"
+        template = "stocklist/add_storage.html"
         context = {
             "form": form,
         }
@@ -122,7 +122,7 @@ class PantryStoragespaces(generic.ListView):
                 return redirect("spaces")
         form = StorageForm(instance=storagespace)
         context = {"form": form}
-        return render(request, "edit_storage.html", context)
+        return render(request, "stocklist/edit_storage.html", context)
 
     def delete_storagespace(request, slug):
         """
@@ -135,7 +135,9 @@ class PantryStoragespaces(generic.ListView):
             messages.success(request, "Storagespace deleted!")
             return redirect("spaces")
 
-        return render(request, "delete_storage.html", {"storagespace": storagespace})
+        return render(
+            request, "stocklist/delete_storage.html", {"storagespace": storagespace}
+        )
 
 
 class PantryStockitems(View):
@@ -156,7 +158,7 @@ class PantryStockitems(View):
 
         return render(
             request,
-            "items.html",
+            "stocklist/items.html",
             {
                 "storage_space": storage_space,
                 "stock_item": stock_item,
@@ -187,7 +189,7 @@ class PantryStockitems(View):
                 "stocklist"
             ).filter(stocklist__user=request.user)
 
-        template = "add_item.html"
+        template = "stocklist/add_item.html"
         context = {
             "form": form,
         }
@@ -212,7 +214,7 @@ class PantryStockitems(View):
             ).filter(stocklist__user=request.user)
 
         context = {"form": form}
-        return render(request, "edit_item.html", context)
+        return render(request, "stocklist/edit_item.html", context)
 
     def delete_stockitem(request, slug, *args, **kwargs):
         """
@@ -225,4 +227,4 @@ class PantryStockitems(View):
             messages.success(request, "Item deleted!")
             return redirect("spaces")
 
-        return render(request, "delete_item.html", {"stock_item": stock_item})
+        return render(request, "stocklist/delete_item.html", {"stock_item": stock_item})
