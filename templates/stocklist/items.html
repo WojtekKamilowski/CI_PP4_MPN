@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <!-- Items Box -->
@@ -38,9 +38,7 @@
                         <td class="text-center text-break">{{ s.uom }}</td>
                         <td class="text-center text-break">{{ s.item_name }}</td>
                         <td class="text-center text-break">{{ s.expiry_date }}</td>
-                        <td class="text-center text-break">
-                            <p class="min-temp">{{ s.min_temp }}</p> to <p class="max-temp">{{ s.max_temp }}</p>
-                        </td>
+                        <td class="text-center text-break">{{ s.min_temp }} to {{ s.max_temp }}</td>
                         <td class="text-center text-break">{{ s.remarks }}</td>
                         <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
                                     class="fa-solid fa-pen-to-square"></i></a> <a
