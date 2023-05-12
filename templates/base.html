@@ -43,8 +43,8 @@
                     {% if user.is_authenticated %}
 
                     <li class="nav-item">
-                        <a class="nav-link border-start border-black fs-3" href="{% url 'list' %}">
-                            {{ user.username }}'s Stocklist
+                        <a class="nav-link border-start border-black fs-3" href="{% url 'list' %}"> User:
+                            {{ user.username }}
                         </a>
                     </li>
                     <li class="nav-item">

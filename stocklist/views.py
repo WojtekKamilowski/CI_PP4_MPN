@@ -7,6 +7,7 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.http import HttpResponse
 import datetime
+
 # Internal:
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm, ItemForm
@@ -153,17 +154,12 @@ class PantryStockitems(View):
         )
         storage_space = get_object_or_404(storage_spaces, slug=slug)
 
-        expiry_date = Stockitem.objects.select_related("storage").filter(storage__slug=slug).get("expiry_date")
-
         return render(
             request,
             "stocklist/items.html",
             {
                 "storage_space": storage_space,
                 "stock_item": stock_item,
-                'is_expired': (
-                    expiry_date <= datetime.datetime.now()  
-                )
             },
         )
 

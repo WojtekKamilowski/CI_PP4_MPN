@@ -220,6 +220,11 @@ a {
     #items-table {
         font-size: 50%;
     }
+
+    .storage-info {
+        font-size: 60%;
+    }
+
 }
 
 @media screen and (max-width: 260px) {

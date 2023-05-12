@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load tz %}
 {% block content %}
 
 <!-- Items Box -->
@@ -13,10 +14,10 @@
                         class="fa-regular fa-trash-can"></i></a></span></h2>
         <div class="row">
             <div class="col-5 text-center">
-                <p class="text-break ms-5 ps-2">Temp.: {{ storage_space.temp }} °C</p>
+                <p class="ps-2 storage-info">Temp.: {{ storage_space.temp }} °C</p>
             </div>
             <div class="col-7 text-center">
-                <p class="text-break">Last updated: {{ storage_space.storage_updated_on }}</p>
+                <p class="text-break storage-info">Last updated: {{ storage_space.storage_updated_on }}</p>
             </div>
         </div>
         <div class="row">
@@ -36,16 +37,21 @@
                         <td class="text-center text-break">{{ s.quantity }}</td>
                         <td class="text-center text-break">{{ s.uom }}</td>
                         <td class="text-center text-break">{{ s.item_name }}</td>
-                        {% if is_expired %}
-                        <td class="text-center text-break bg-warning">{{ s.expiry_date }}</td>
-                        {% else %}
-                        <td class="text-center text-break">{{ s.expiry_date }}</td>
-                        {% endif %}
-                        <td class="text-center text-break">{{ s.min_temp }} to {{ s.max_temp }}</td>
-                        <td class="text-center text-break">{{ s.remarks }}</td>
-                        <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
-                                    class="fa-solid fa-pen-to-square"></i></a> <a
-                                href="{% url 'delete_item' s.slug %}"><i class="fa-regular fa-trash-can"></i></a></td>
+                        {% now "Y-m-d" as current_date %}
+                        {% with expiry_date=s.expiry_date|date:"Y-m-d" %}
+                        {% if expiry_date <= current_date %} <td class="text-center text-break bg-warning">
+                            {{s.expiry_date }}</td>
+                            {% else %}
+                            <td class="text-center text-break">{{ s.expiry_date }}</td>
+                            {% endif %}
+                            {% endwith %}
+
+                            <td class="text-center text-break">{{ s.min_temp }} to {{ s.max_temp }}</td>
+                            <td class="text-center text-break">{{ s.remarks }}</td>
+                            <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
+                                        class="fa-solid fa-pen-to-square"></i></a> <a
+                                    href="{% url 'delete_item' s.slug %}"><i class="fa-regular fa-trash-can"></i></a>
+                            </td>
                     </tr>
                     {% endfor %}
                 </table>
