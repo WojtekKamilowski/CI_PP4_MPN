@@ -45,13 +45,23 @@
                             <td class="text-center text-break">{{ s.expiry_date }}</td>
                             {% endif %}
                             {% endwith %}
-
-                            <td class="text-center text-break">{{ s.min_temp }} to {{ s.max_temp }}</td>
-                            <td class="text-center text-break">{{ s.remarks }}</td>
-                            <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
-                                        class="fa-solid fa-pen-to-square"></i></a> <a
-                                    href="{% url 'delete_item' s.slug %}"><i class="fa-regular fa-trash-can"></i></a>
-                            </td>
+                            {% with temp=storage_space.temp %}
+                            {% if temp < s.min_temp %} <td class="text-center text-break bg-info">
+                                {{s.min_temp }} to {{ s.max_temp }}
+                                </td>
+                                {% elif temp > s.max_temp %} <td class="text-center text-break bg-danger">
+                                    {{s.min_temp }} to {{ s.max_temp }}
+                                </td>
+                                {% else %}
+                                <td class="text-center text-break">{{s.min_temp }} to {{ s.max_temp }}</td>
+                                {% endif %}
+                                {% endwith %}
+                                <td class="text-center text-break">{{ s.remarks }}</td>
+                                <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
+                                            class="fa-solid fa-pen-to-square"></i></a> <a
+                                        href="{% url 'delete_item' s.slug %}"><i
+                                            class="fa-regular fa-trash-can"></i></a>
+                                </td>
                     </tr>
                     {% endfor %}
                 </table>
