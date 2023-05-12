@@ -1,18 +1,15 @@
 # Imports
-# ~~~~~~~~~~~~
 # 3rd party:
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic, View
 from django.urls import reverse
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
-
-# ~~~~~~~~~~~~
+from django.http import HttpResponse
+import datetime
 # Internal:
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm, ItemForm
-
-# ~~~~~~~~~~~~
 
 
 def home(request):
@@ -156,12 +153,17 @@ class PantryStockitems(View):
         )
         storage_space = get_object_or_404(storage_spaces, slug=slug)
 
+        expiry_date = Stockitem.objects.select_related("storage").filter(storage__slug=slug).get("expiry_date")
+
         return render(
             request,
             "stocklist/items.html",
             {
                 "storage_space": storage_space,
                 "stock_item": stock_item,
+                'is_expired': (
+                    expiry_date <= datetime.datetime.now()  
+                )
             },
         )
 

@@ -239,6 +239,7 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Fix deployment issue from <a href="https://stackoverflow.com/questions/71712258/error-could-not-build-wheels-for-backports-zoneinfo-which-is-required-to-insta">Stackoverflow</a>
 
+- Fix Django allauth OSError: [Errno 99] Address not available error <a href="https://stackoverflow.com/questions/69544594/django-allauth-oserror-errno-99-address-not-available">Stackoverflow</a>
 
 - based on <a href=""></a>
 

@@ -12,12 +12,11 @@
                     href="{% url 'delete_storage' storage_space.slug %}"><i
                         class="fa-regular fa-trash-can"></i></a></span></h2>
         <div class="row">
-            <div class="col-4 text-center">
-                <p class="text-break ms-2 ps-2">Temp.:
-                <p class="temp">{{ storage_space.temp }}</p> °C</p>
+            <div class="col-5 text-center">
+                <p class="text-break ms-5 ps-2">Temp.: {{ storage_space.temp }} °C</p>
             </div>
-            <div class="col-8 text-center">
-                <p class="text-break ms-2 ps-2">Last updated: {{ storage_space.storage_updated_on }}</p>
+            <div class="col-7 text-center">
+                <p class="text-break">Last updated: {{ storage_space.storage_updated_on }}</p>
             </div>
         </div>
         <div class="row">
@@ -37,7 +36,11 @@
                         <td class="text-center text-break">{{ s.quantity }}</td>
                         <td class="text-center text-break">{{ s.uom }}</td>
                         <td class="text-center text-break">{{ s.item_name }}</td>
+                        {% if is_expired %}
+                        <td class="text-center text-break bg-warning">{{ s.expiry_date }}</td>
+                        {% else %}
                         <td class="text-center text-break">{{ s.expiry_date }}</td>
+                        {% endif %}
                         <td class="text-center text-break">{{ s.min_temp }} to {{ s.max_temp }}</td>
                         <td class="text-center text-break">{{ s.remarks }}</td>
                         <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
