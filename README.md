@@ -101,6 +101,8 @@ As an Admin I want to:
 
 - #9B0000 from <a href="https://coolors.co/contrast-checker/ffffff-9b0000">Coolors</a>.
 
+- #C3CFB2 from <a href="https://coolors.co/contrast-checker/000000-c3cfb2">Coolors</a>.
+
 ### Typhography
 
 

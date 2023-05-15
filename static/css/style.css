@@ -69,7 +69,8 @@ h2 {
 #id_name,
 #id_storage_name,
 #id_temp,
-#id_message {
+#id_message,
+#id_oldpassword {
     background-color: #C8D363;
 }
 
