@@ -142,6 +142,8 @@ h2 {
     font-size: 60%;
 }
 
+/* Items table */
+
 #items-table {
     border: solid #000000;
     background-color: #CAF3C8;
@@ -150,6 +152,10 @@ h2 {
 #items-table th {
     padding: 2vh 3vw;
     border: solid #000000;
+}
+
+.row_highlight {
+    background-color: #F5E9F4;
 }
 
 /* Footer external platforms icons with links */

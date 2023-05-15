@@ -16,3 +16,13 @@ $(".create_box").on("mouseenter", function () {
 $(".create_box").on("mouseout", function () {
     $(".create_box").css("background-color", "#55D54E");
 });
+
+// Hihghlights items table row when mouse enters
+$(".item_details").on("mouseenter", function () {
+    $(this).addClass("row_highlight");
+});
+
+// Removes hihghlight of items table row when mouse leaves
+$(".item_details").on("mouseout", function () {
+    $(this).removeClass("row_highlight");
+});
