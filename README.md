@@ -243,6 +243,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Fix Django allauth OSError: [Errno 99] Address not available error <a href="https://stackoverflow.com/questions/69544594/django-allauth-oserror-errno-99-address-not-available">Stackoverflow</a>
 
+- Code inserted at the beginning of the testcase in test_models.py creates a user, logs them in, and allows the rest of the test to contiue from: <a href="https://stackoverflow.com/questions/36940384/how-do-i-setup-a-unit-test-user-for-django-app-the-unit-test-cant-login">Stackoverflow</a>
+
 - based on <a href=""></a>
 
 ### Media

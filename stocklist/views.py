@@ -7,7 +7,6 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.http import HttpResponse
 import datetime
-
 # Internal:
 from .models import Stocklist, Storagespace, Stockitem
 from .forms import StocklistForm, StorageForm, ItemForm
