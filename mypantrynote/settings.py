@@ -34,7 +34,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "mypantrynote.herokuapp.com",
-    "8000-wojtekkamilowski-ci-pp4--eicg89edwz.us2.codeanyapp.com",
+    "localhost",
 ]
 
 
