@@ -33,9 +33,13 @@ body::before {
     background-color: #CCC731;
 }
 
+/* h2 font */
+
 h2 {
     font-family: 'PT Serif', serif;
 }
+
+/* Navigation bar */
 
 .nav-item {
     font-family: 'PT Serif', serif;
@@ -49,6 +53,8 @@ h2 {
 .nav-link {
     color: #000000;
 }
+
+/* Main box */
 
 .main-box {
     margin-top: 15vh;

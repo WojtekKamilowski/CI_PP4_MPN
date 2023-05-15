@@ -1,17 +1,13 @@
 # Imports
-
 # 3rd party:
 from django.shortcuts import render
 from django.views import View
 from django.contrib.auth.models import User
 from django.contrib import messages
-
 # Internal:
 from .forms import ContactForm
 
 # From CI_PP4_the_diplomat
-
-# Get the user information
 
 
 def get_user_instance(request):
@@ -22,10 +18,6 @@ def get_user_instance(request):
     user_email = request.user.email
     user = User.objects.filter(email=user_email, username=user_username).first()
     return user
-
-
-# Displays the contact form for the user, autofills their email,
-# checks all data is valid before saving it
 
 
 class ContactMessage(View):

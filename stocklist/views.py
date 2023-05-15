@@ -14,6 +14,9 @@ from .forms import StocklistForm, StorageForm, ItemForm
 
 
 def home(request):
+    """
+    Displays home page
+    """
     template_name = "index.html"
     context = {}
     return render(request, template_name, context)
@@ -32,6 +35,7 @@ class PantryStocklist(generic.ListView):
 
     def add_stocklist(request):
         """
+        Displays form to create a new stocklist
         Inspired by CI_PP4_the_diplomat
         """
         form = StocklistForm(data=request.POST)
@@ -46,6 +50,7 @@ class PantryStocklist(generic.ListView):
 
     def edit_stocklist(request, slug):
         """
+        View to edit stocklist
         Inspired by HelloDjango
         """
         stocklist = get_object_or_404(Stocklist, slug=slug)
@@ -61,7 +66,9 @@ class PantryStocklist(generic.ListView):
         return render(request, "stocklist/edit_stocklist.html", context)
 
     def delete_stocklist(request, slug):
-        """ """
+        """
+        Delete stocklist with option to confirm
+        """
         stocklist = get_object_or_404(Stocklist, slug=slug)
         if request.method == "POST":
             stocklist.delete()
@@ -86,7 +93,9 @@ class PantryStoragespaces(generic.ListView):
         )
 
     def add_storagespace(request):
-        """ """
+        """
+        Displays form to create a new storagespace
+        """
         if request.method == "POST":
             form = StorageForm(request.POST, request.FILES)
             if form.is_valid():
@@ -108,6 +117,7 @@ class PantryStoragespaces(generic.ListView):
 
     def edit_storagespace(request, slug):
         """
+        Displays form to edit storagespace
         Inspired by HelloDjango
         """
         storagespace = get_object_or_404(Storagespace, slug=slug)
@@ -124,6 +134,7 @@ class PantryStoragespaces(generic.ListView):
 
     def delete_storagespace(request, slug):
         """
+        View to delete storagespace with prior confirmation
         Based on Stackoverflow & CI_PP4_the_diplomat
         """
         storagespace = get_object_or_404(Storagespace, slug=slug)
@@ -141,7 +152,7 @@ class PantryStoragespaces(generic.ListView):
 class PantryStockitems(View):
     def get(self, request, slug, *args, **kwargs):
         """
-        Returns items of a specific storagespace
+        Returns items in a specific storagespace
         """
         queryset = (
             Stockitem.objects.select_related("storage")
@@ -165,9 +176,9 @@ class PantryStockitems(View):
 
     def item_create(request, slug, *args, **kwargs):
         """
+        Displays form to create a new item
         Found on Stackoverflow
         """
-
         storage_spaces = Storagespace.objects.select_related("stocklist").filter(
             stocklist__user=request.user
         )
@@ -195,7 +206,9 @@ class PantryStockitems(View):
         return render(request, template, context)
 
     def edit_stockitem(request, slug, *args, **kwargs):
-        """ """
+        """
+        View to edit an item
+        """
         stockitem = get_object_or_404(Stockitem, slug=slug)
         if request.method == "POST":
             form = ItemForm(request.POST, instance=stockitem)
@@ -216,6 +229,7 @@ class PantryStockitems(View):
 
     def delete_stockitem(request, slug, *args, **kwargs):
         """
+        View for deleting a stockitem after user confirmed
         Based on Stackoverflow & CI_PP4_the_diplomat
         """
         stock_item = get_object_or_404(Stockitem, slug=slug)
