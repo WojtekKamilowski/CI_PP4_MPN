@@ -45,48 +45,54 @@
                         <td class="text-center text-break">{{ s.item_name }}</td>
                         {% now "Y-m-d" as current_date %}
                         {% with expiry_date=s.expiry_date|date:"Y-m-d" %}
-                        {% if expiry_date <= current_date %} <td class="text-center text-break bg-warning">
-                            {{s.expiry_date }}</td>
-                            {% else %}
-                            <td class="text-center text-break">{{ s.expiry_date }}</td>
-                            {% endif %}
-                            {% endwith %}
-                            {% with temp=storage_space.temp %}
-                            {% if temp < s.min_temp %} 
-                            <td class="text-center text-break bg-info">
-                                {{s.min_temp }} to {{ s.max_temp }}
-                            </td>
-                            {% elif temp > s.max_temp %}
-                            <td class="text-center text-break bg-danger">
-                                {{s.min_temp }} to {{ s.max_temp }}
-                            </td>
-                            {% else %}
-                            <td class="text-center text-break">{{s.min_temp }} to {{ s.max_temp }}</td>
-                            {% endif %}
-                            {% endwith %}
-                            <td class="text-center text-break">{{ s.remarks }}</td>
-                            <td class="text-center text-break">
-                                <a href="{% url 'edit_item' s.slug %}" aria-label="Link to edit item">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </a> 
-                                <a href="{% url 'delete_item' s.slug %}" aria-label="Link to delete item">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </a>
-                            </td>
+                        {% if expiry_date <= current_date %}
+                        <td class="text-center text-break bg-warning">
+                            {{s.expiry_date }}
+                        </td>
+                        {% else %}
+                        <td class="text-center text-break">{{ s.expiry_date }}</td>
+                        {% endif %}
+                        {% endwith %}
+                        {% with temp=storage_space.temp %}
+                        {% if temp < s.min_temp %} 
+                        <td class="text-center text-break bg-info">
+                             {{s.min_temp }} to {{ s.max_temp }}
+                        </td>
+                        {% elif temp > s.max_temp %}
+                        <td class="text-center text-break bg-danger">
+                            {{s.min_temp }} to {{ s.max_temp }}
+                        </td>
+                        {% else %}
+                        <td class="text-center text-break">{{s.min_temp }} to {{ s.max_temp }}</td>
+                        {% endif %}
+                        {% endwith %}
+                        <td class="text-center text-break">{{ s.remarks }}</td>
+                        <td class="text-center text-break">
+                            <a href="{% url 'edit_item' s.slug %}" aria-label="Link to edit item">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a> 
+                            <a href="{% url 'delete_item' s.slug %}" aria-label="Link to delete item">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </a>
+                        </td>
                     </tr>
                     {% endfor %}
                 </table>
             </div>
             <!-- Add Item -->
             <div class="mb-5 d-flex justify-content-center">
-                <a href="{% url 'add_item' storage_space.slug %}" class="text-decoration-none"><button
-                        class="cst-bg-green storage-spaces-btn create_box">Add a new Item <i
-                            class="fa-solid fa-plus"></i></button></a>
+                <a href="{% url 'add_item' storage_space.slug %}" class="text-decoration-none">
+                    <button class="cst-bg-green storage-spaces-btn create_box">
+                        Add a new Item <i class="fa-solid fa-plus"></i>
+                    </button></a>
             </div>
             <!-- Return -->
             <div class="mb-5 d-flex justify-content-center">
-                <a href="{% url 'spaces' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-2">Return
-                        <i class="fa-solid fa-rotate-left"></i></button></a>
+                <a href="{% url 'spaces' %}" class="text-decoration-none">
+                    <button class="cst-bg-green px-3 py-2">
+                        Return <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+                </a>
             </div>
         </div>
     </div>

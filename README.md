@@ -63,7 +63,8 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 - Find social media of the website to find more content about saving food and network with other users.
 
 ### Business Owner Goals
-
+- Allow users to organize information about stored food in storagespaces
+- 
 
 
 [Back to Table Of Contents](#table-of-contents)
