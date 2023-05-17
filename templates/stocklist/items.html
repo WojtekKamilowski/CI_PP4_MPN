@@ -9,12 +9,8 @@
     <div class="col-lg-10 col-sm-11 container-md main-box">
         <h2 id="storage-name" class="text-center my-5 py-4 text-break">{{ storage_space.storage_name }} 
             <span id="storage-icons">
-                <a href="{% url 'edit_storage' storage_space.slug %}" aria-label="Link to edit storagespace">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </a>
-                <a href="{% url 'delete_storage' storage_space.slug %}" aria-label="Link to delete storagespace">
-                    <i class="fa-regular fa-trash-can"></i>
-                </a>
+                <a href="{% url 'edit_storage' storage_space.slug %}" aria-label="Link to edit storagespace"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href="{% url 'delete_storage' storage_space.slug %}" aria-label="Link to delete storagespace"><i class="fa-regular fa-trash-can"></i></a>
             </span>
         </h2>
         <div class="row">
@@ -68,12 +64,8 @@
                         {% endwith %}
                         <td class="text-center text-break">{{ s.remarks }}</td>
                         <td class="text-center text-break">
-                            <a href="{% url 'edit_item' s.slug %}" aria-label="Link to edit item">
-                                <i class="fa-solid fa-pen-to-square"></i>
-                            </a> 
-                            <a href="{% url 'delete_item' s.slug %}" aria-label="Link to delete item">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </a>
+                            <a href="{% url 'edit_item' s.slug %}" aria-label="Link to edit item"><i class="fa-solid fa-pen-to-square"></i></a> 
+                            <a href="{% url 'delete_item' s.slug %}" aria-label="Link to delete item"><i class="fa-regular fa-trash-can"></i></a>
                         </td>
                     </tr>
                     {% endfor %}
