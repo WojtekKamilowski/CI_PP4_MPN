@@ -7,11 +7,16 @@
 <div class="row">
     <!-- Items List -->
     <div class="col-lg-10 col-sm-11 container-md main-box">
-        <h2 id="storage-name" class="text-center my-5 py-4 text-break">{{ storage_space.storage_name }} <span
-                id="storage-icons"><a href="{% url 'edit_storage' storage_space.slug %}"><i
-                        class="fa-solid fa-pen-to-square"></i></a> <a
-                    href="{% url 'delete_storage' storage_space.slug %}"><i
-                        class="fa-regular fa-trash-can"></i></a></span></h2>
+        <h2 id="storage-name" class="text-center my-5 py-4 text-break">{{ storage_space.storage_name }} 
+            <span id="storage-icons">
+                <a href="{% url 'edit_storage' storage_space.slug %}" aria-label="Link to edit storagespace">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </a>
+                <a href="{% url 'delete_storage' storage_space.slug %}" aria-label="Link to delete storagespace">
+                    <i class="fa-regular fa-trash-can"></i>
+                </a>
+            </span>
+        </h2>
         <div class="row">
             <div class="col-5 text-center">
                 <p class="ps-2 storage-info">Temp.: {{ storage_space.temp }} °C</p>
@@ -31,7 +36,7 @@
                         <th class="text-center px-1">Expiry Date</th>
                         <th class="text-center px-1">Temp. range°C</th>
                         <th class="text-center">Remarks</th>
-                        <th class="px-1 text-center"><i class="fa-solid fa-gear"></i></th>
+                        <th class="px-1 text-center" aria-label="Settings column"><i class="fa-solid fa-gear"></i></th>
                     </tr>
                     {% for s in stock_item %}
                     <tr class="item_details">
@@ -47,22 +52,27 @@
                             {% endif %}
                             {% endwith %}
                             {% with temp=storage_space.temp %}
-                            {% if temp < s.min_temp %} <td class="text-center text-break bg-info">
+                            {% if temp < s.min_temp %} 
+                            <td class="text-center text-break bg-info">
                                 {{s.min_temp }} to {{ s.max_temp }}
-                                </td>
-                                {% elif temp > s.max_temp %} <td class="text-center text-break bg-danger">
-                                    {{s.min_temp }} to {{ s.max_temp }}
-                                </td>
-                                {% else %}
-                                <td class="text-center text-break">{{s.min_temp }} to {{ s.max_temp }}</td>
-                                {% endif %}
-                                {% endwith %}
-                                <td class="text-center text-break">{{ s.remarks }}</td>
-                                <td class="text-center text-break"><a href="{% url 'edit_item' s.slug %}"><i
-                                            class="fa-solid fa-pen-to-square"></i></a> <a
-                                        href="{% url 'delete_item' s.slug %}"><i
-                                            class="fa-regular fa-trash-can"></i></a>
-                                </td>
+                            </td>
+                            {% elif temp > s.max_temp %}
+                            <td class="text-center text-break bg-danger">
+                                {{s.min_temp }} to {{ s.max_temp }}
+                            </td>
+                            {% else %}
+                            <td class="text-center text-break">{{s.min_temp }} to {{ s.max_temp }}</td>
+                            {% endif %}
+                            {% endwith %}
+                            <td class="text-center text-break">{{ s.remarks }}</td>
+                            <td class="text-center text-break">
+                                <a href="{% url 'edit_item' s.slug %}" aria-label="Link to edit item">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </a> 
+                                <a href="{% url 'delete_item' s.slug %}" aria-label="Link to delete item">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </a>
+                            </td>
                     </tr>
                     {% endfor %}
                 </table>
