@@ -111,6 +111,26 @@ As an Admin I want to:
 
 ### Agile Methodologies
 
+<a href="https://github.com/users/WojtekKamilowski/projects/2/views/1">Github Project</a>
+
+<a href="https://github.com/WojtekKamilowski/CI_PP4_MPN/issues">User Stories</a>
+
+<details>
+    <summary>Kanban</summary>
+    
+![Kanban](docs/agile/kanban-1.png)
+![Kanban](docs/agile/kanban-2.png)
+![Kanban](docs/agile/kanban-3.png)
+![Kanban](docs/agile/kanban-4.png)
+![Kanban](docs/agile/kanban-5.png)
+![Kanban](docs/agile/kanban-6.png)
+![Kanban](docs/agile/kanban-7.png)
+![Kanban](docs/agile/kanban-8.png)
+
+</details>
+
+<img src="">
+
 [Back to Table Of Contents](#table-of-contents)
 
 ## Design
