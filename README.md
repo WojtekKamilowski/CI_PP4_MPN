@@ -92,11 +92,22 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 #### Users
 
 As a User I want to:
-
+- Register an account.
+- Login.
+- View the food stock list 
+- Add a new storage space
+- Add a new stock item.
+- Update a stock item.
+- Remove an item from the stock list.
+- Contact Site's Admin
+- See items are expired
+- See items that have different temperature range than in the storage
 
 #### Site Owner
 
 As an Admin I want to:
+- Access admin panel.
+- Review messages sent by users .
 
 ### Agile Methodologies
 
