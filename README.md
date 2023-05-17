@@ -53,7 +53,14 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 ## Project Goals
 
 ### User Goals
-
+- Control stock levels of food at home.
+- Reduce food waste.
+- Reduce money waste.
+- Avoid leaving expired food in storage areas.
+- Better plan where to store food according to temperature requirements.
+- Easy navigation through the website.
+- Ask questions or provide feedback for the website owner by using the contact form.
+- Find social media of the website to find more content about saving food and network with other users.
 
 ### Business Owner Goals
 
