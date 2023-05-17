@@ -75,10 +75,12 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 ## User Experience
 
 ### Target Audience
-
+- People who would like to reduce costs of living by avoiding buying groceries in excess.
+- Users who would like to have better control where they store their food.
+- People who like to plan their grocery shopping to easier buy what is needed.
 
 ### User Requirements and Expectations
-
+- Accessible and responsive website.
 
 ### User Stories
 
