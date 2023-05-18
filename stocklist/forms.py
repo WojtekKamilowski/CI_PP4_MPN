@@ -45,3 +45,16 @@ class ItemForm(forms.ModelForm):
         user = kwargs.get("stocklist")
         if user:
             fields["storage"].queryset = user.storage_set.all()
+
+    # From Stackoverflow
+    def clean(self):
+        cleaned_data = super().clean()
+        min_temp = cleaned_data.get("min_temp")
+        max_temp = cleaned_data.get("max_temp")
+
+        if min_temp and max_temp:
+            # Only do something if both fields are valid so far.
+            if min_temp > max_temp:
+                raise forms.ValidationError(
+                    "Min temp. has to be less then max temp."
+                )

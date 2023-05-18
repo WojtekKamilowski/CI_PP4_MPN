@@ -379,6 +379,10 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 - Code inserted at the beginning of the testcase in test_models.py creates a user, logs them in, and allows the rest of the test to contiue from: <a href="https://stackoverflow.com/questions/36940384/how-do-i-setup-a-unit-test-user-for-django-app-the-unit-test-cant-login">Stackoverflow</a>
 
+- Django's built-in MinValueValidator & MaxValueValidator validators from <a href="https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model">Stackoverflow</a>
+
+- Validation of min. & max. temp. for ItemForm from <a href="https://stackoverflow.com/questions/58068844/django-how-to-validate-validator-a-greater-then-between-two-formfields">Stackoverflow</a>
+
 - based on <a href=""></a>
 
 ### Media

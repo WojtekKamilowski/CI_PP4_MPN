@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 import datetime
+from django.db.models import IntegerField, Model
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class Stocklist(models.Model):
@@ -85,12 +87,12 @@ class Stockitem(models.Model):
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)
     min_temp = models.IntegerField(default=-30, validators=[
-            MaxValueValidator(max_temp),
+            MaxValueValidator(30),
             MinValueValidator(-30)
         ])
     max_temp = models.IntegerField(default=30, validators=[
             MaxValueValidator(30),
-            MinValueValidator('min_temp')
+            MinValueValidator(-30)
         ])
     quantity = models.IntegerField(default=1)
     uom = models.CharField(
