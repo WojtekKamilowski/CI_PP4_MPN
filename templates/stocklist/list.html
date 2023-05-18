@@ -9,8 +9,8 @@
         <h2 class="mt-5 d-flex flex-column" id="stocklist-name">
             <span class="d-flex justify-content-center mx-auto mt-4" style="max-width:95%;">{{ stocklist.name }} </span>
             <span class="mb-1" id="list-icons">
-                <a href="{% url 'edit_stocklist' stocklist.slug %}" aria-label="Link to edit stocklist"><i class="fa-solid fa-pen-to-square list-icon"></i></a>
-                <a href="{% url 'delete_list' stocklist.slug %}" aria-label="Link to delete stocklist"><i class="fa-regular fa-trash-can list-icon mx-2"></i></a>
+                <a href="{% url 'delete_list' stocklist.slug %}" aria-label="Link to delete stocklist"><i class="fa-regular fa-trash-can list-icon"></i></a>
+                <a href="{% url 'edit_stocklist' stocklist.slug %}" aria-label="Link to edit stocklist"><i class="fa-solid fa-pen-to-square list-icon mx-1"></i></a>
             </span>
         </h2>
         {% if "placeholder" in stocklist.list_image.url %}

@@ -84,8 +84,14 @@ class Stockitem(models.Model):
     storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)
-    min_temp = models.IntegerField(default=-30)
-    max_temp = models.IntegerField(default=30)
+    min_temp = models.IntegerField(default=-30, validators=[
+            MaxValueValidator(max_temp),
+            MinValueValidator(-30)
+        ])
+    max_temp = models.IntegerField(default=30, validators=[
+            MaxValueValidator(30),
+            MinValueValidator('min_temp')
+        ])
     quantity = models.IntegerField(default=1)
     uom = models.CharField(
         max_length=50,
