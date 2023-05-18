@@ -129,28 +129,84 @@ As an Admin I want to:
 
 </details>
 
-<img src="">
-
 [Back to Table Of Contents](#table-of-contents)
 
 ## Design
 
+### Design Choices
+
+The main theme was to create a simple website to help users keep their food storage organized and under control. 
+The users can organize their lists into different storage spaces that can be useful to find the items, for exmaple in the physical locations when cooking or check stock levels on mobile devices during shopping. The logo is a clipboard list which is to inform user of the main purpose of this website: list food items. The name: MyPantryNote relates to personalized service where users can keep record of their own food stock, the lst word note was chosen to highlight the simplicity of the idea. Design of all elements of the website represent a message for users that controlling stock levels can be easy using an intuitive website.
 
 ### Colors
 
+The main color of the website is green #7EC63F that is to represent nature & organic harmony to relate reducing waste as a way into more sustainable way of living for an individual user.
+There is also tone of yellow, kept in the natural/ organic food theme to differentiate certain elements of the website.
+Error messages are in white with red background to break from the color theme and clearly inform the user that something went wrong .
+
 - #7EC63F from <a href="https://coolors.co/contrast-checker/000000-7ec63f">Coolors</a>.
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-green-black.png)
+
+</details>
 
 - #C8D363 from <a href="https://coolors.co/contrast-checker/000000-defdc3">Coolors</a>.
 
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-lgreen-black.png)
+
+</details>
+
 - #55D54E from <a href="https://coolors.co/contrast-checker/000000-55d54e">Coolors</a>.
+
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-dgreen-black.png)
+
+</details>
 
 - #CCC731 from <a href="https://coolors.co/contrast-checker/000000-ccc731">Coolors</a>.
 
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-yellow-black.png)
+
+</details>
+
 - #CAF3C8 from <a href="https://coolors.co/contrast-checker/000000-caf3c8">Coolors</a>. 
+
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-llgreen-black.png)
+
+</details>
 
 - #9B0000 from <a href="https://coolors.co/contrast-checker/ffffff-9b0000">Coolors</a>.
 
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-red-white.png)
+
+</details>
+
 - #C3CFB2 from <a href="https://coolors.co/contrast-checker/000000-c3cfb2">Coolors</a>.
+
+<details>
+    <summary>Contrast</summary> 
+
+![Colors](docs/colors/contrast-graygreen-black.png)
+
+</details>
+
+[Back to Table Of Contents](#table-of-contents)
 
 ### Typhography
 
