@@ -26,8 +26,8 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
     - [Agile Methodologies](#agile-methodologies)
   - [Design](#design)
     - [Colors](#colors)
-    - [Typhography](#typhography)
-    - [Imagery](#imagery)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
     - [Wireframes](#wireframes)
   - [Database Diagram](#database-diagram)
   - [Messages and Interaction With Users](#messages-and-interaction-with-users)
@@ -208,10 +208,15 @@ Error messages are in white with red background to break from the color theme an
 
 [Back to Table Of Contents](#table-of-contents)
 
-### Typhography
+### Fonts
+
+_Fira Sans_ was chosen as the main font with _Sans-serif_ as the fallback font. For h1, h2 & .nav-item elements it was _PT Serif_ with _Serif_ as the fallback font.
+Fonts found on Google Fonts.
+
+[Back to Table Of Contents](#table-of-contents)
 
 
-### Imagery
+### Structure
 
 
 ### Wireframes

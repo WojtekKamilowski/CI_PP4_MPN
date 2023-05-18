@@ -33,9 +33,9 @@ body::before {
     background-color: #CCC731;
 }
 
-/* h2 font */
+/* h1 & h2 font */
 
-h2 {
+h1, h2 {
     font-family: 'PT Serif', serif;
 }
 
