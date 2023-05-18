@@ -16,7 +16,7 @@ def home(request):
     """
     Displays home page
     """
-    template_name = "index.html"
+    template_name = "stocklist/index.html"
     context = {}
     return render(request, template_name, context)
 

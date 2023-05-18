@@ -218,6 +218,30 @@ Fonts found on Google Fonts.
 
 ### Structure
 
+The website consists of two django applications: stocklist & contact. The content of the website is placed in the center. The logo and the name of the website is placed on the top, the main container in the middle and the footer placed on the bottom. There are four icons in the footer: three with links to social media platforms and envelope linking to the contact page of the website.
+
+There is base.html that contains main structure of the website, the navbar &  the footer.
+
+Stocklist app has 13 pages:
+
+- index.html - home page containing some info about the website.
+- list.html - its main part with options to create(add_stocklist.html), edit(edit_stocklist.html) or delete(delete_list.html) user's stocklist and naviagate to spaces.html
+- spaces.html - contains list of created storagespaces and a button to create a new storage space(add_storage.html). 
+- items.html - this is where after clicking on a storagespace, users can view items in the chosen storagespace and click on edit(edit_storage.html, edit_item.html) or delete(delete_storage.html, delete_item.html) options for storagespace itself or its items or add a new item(add_item.html).
+
+Contact app contains 2 pages:
+
+- contact.html with contact form
+- received.html with a short confirmation for users after submitting the contact form.
+
+There are also a few customised pages related to user's authentication option with Alluath:
+
+- login.html
+- logout.html
+- password_change.html
+- password_reset.html
+- password_reset_done.html
+- signup.html
 
 ### Wireframes
 
