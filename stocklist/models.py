@@ -37,7 +37,10 @@ class Storagespace(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space', null=True)
     storage_updated_on = models.DateField(auto_now=True, null=True)
-    temp = models.IntegerField(default=21)
+    temp = models.IntegerField(default=21, validators=[
+            MaxValueValidator(30),
+            MinValueValidator(-30)
+        ])
 
     def __str__(self):
         return self.storage_name
