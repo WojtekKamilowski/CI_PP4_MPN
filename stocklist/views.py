@@ -88,7 +88,7 @@ class PantryStoragespaces(generic.ListView):
         return (
             Storagespace.objects.select_related("stocklist")
             .filter(stocklist__user=self.request.user)
-            .order_by("-storage_updated_on")
+            .order_by("storage_updated_on")
         )
 
     def add_storagespace(request):
