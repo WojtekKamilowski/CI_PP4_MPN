@@ -245,7 +245,99 @@ There are also a few customised pages related to user's authentication option wi
 
 ### Wireframes
 
+<details>
+    <summary>Desktop</summary> 
 
+![Wireframes](docs/wireframes/1.a-home-notloggedin-desktop.png)
+![Wireframes](docs/wireframes/2.b-register-desktop.png)
+![Wireframes](docs/wireframes/3.c-login-desktop.png)
+![Wireframes](docs/wireframes/3.cc-password-reset-desktop.png)
+![Wireframes](docs/wireframes/3.ccc-password-reset-done-desktop.png)
+![Wireframes](docs/wireframes/4.d-home-loggedin-desktop.png)
+![Wireframes](docs/wireframes/4.dd-change-password-desktop.png)
+![Wireframes](docs/wireframes/5.e-nostocklist-desktop.png)
+![Wireframes](docs/wireframes/6.f-create-stocklist-desktop.png)
+![Wireframes](docs/wireframes/6.f-spaces-desktop.png)
+![Wireframes](docs/wireframes/7.g-create-storage-desktop.png)
+![Wireframes](docs/wireframes/7.g-stocklist-desktop.png)
+![Wireframes](docs/wireframes/7.gg-create-item-desktop.png)
+![Wireframes](docs/wireframes/7.gg-edit-stocklist-desktop.png)
+![Wireframes](docs/wireframes/7.ggg-delete-stocklist-desktop.png)
+![Wireframes](docs/wireframes/8.h-items-desktop.png)
+![Wireframes](docs/wireframes/8.hh-edit-storage-desktop.png)
+![Wireframes](docs/wireframes/8.hhh-delete-storage-desktop.png)
+![Wireframes](docs/wireframes/8.hhhh-edit-item-desktop.png)
+![Wireframes](docs/wireframes/8.hhhhh-delete-item-desktop.png)
+![Wireframes](docs/wireframes/9.i-contact-desktop.png)
+![Wireframes](docs/wireframes/10.j-received-desktop.png)
+![Wireframes](docs/wireframes/10.jj-logout-desktop.png)
+![Wireframes](docs/wireframes/11.k-error-desktop.png)
+
+</details>
+
+[Back to Table Of Contents](#table-of-contents)
+
+<details>
+    <summary>Tablet</summary> 
+
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+
+</details
+
+[Back to Table Of Contents](#table-of-contents)
+
+<details>
+    <summary>Mobile</summary> 
+
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+![Wireframes](docs/wireframes/.png)
+
+</details
 
 [Back to Table Of Contents](#table-of-contents)
 
