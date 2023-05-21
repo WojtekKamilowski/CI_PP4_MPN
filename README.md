@@ -343,7 +343,13 @@ There are also a few customised pages related to user's authentication option wi
 
 ## Database Diagram
 
-![Database Diagram](./docs/database-diagram.png)
+- Stocklist:
+![Database Diagram](docs/stocklist.png)
+
+- Contact:
+
+
+[Back to Table Of Contents](#table-of-contents)
 
 ## Messages and Interaction With Users
 
