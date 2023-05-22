@@ -34,8 +34,8 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
   - [Admin Panel/Superuser](#admin-panelsuperuser)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
-      - [Django Packages](#django-packages)
-    - [Libraries \& Frameworks](#libraries--frameworks)
+    - [Libraries & Frameworks](#libraries--frameworks)
+    - [Django Packages](#django-packages)
   - [Features](#features)
   - [Validation](#validation)
   - [Accessibility](#accessibility)
@@ -412,14 +412,29 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 - [TinyPNG](https://tinypng.com/)
 - [jQuery](https://jquery.com/)
 
+[Back to Table Of Contents](#table-of-contents)
+
 ### Languages
 
-#### Django Packages
+- HTML5
+- CSS3
+- JavaScript
+- Python
 
+[Back to Table Of Contents](#table-of-contents)
 
 ### Libraries & Frameworks
 
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
+[Back to Table Of Contents](#table-of-contents)
+
+### Django Packages
+
+- [Cloudinary](https://cloudinary.com/)
+- [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+- [Summernote](https://summernote.org/)
 
 [Back to Table Of Contents](#table-of-contents)
 
