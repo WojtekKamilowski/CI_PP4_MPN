@@ -354,6 +354,36 @@ There are also a few customised pages related to user's authentication option wi
 
 ## Messages and Interaction With Users
 
+Messages updating the user on interactions status.
+
+- Login
+![Messages and Interaction With Users](docs/messages/login.png)
+- Stocklist added
+![Messages and Interaction With Users](docs/messages/stocklist-added.png)
+- Stocklist edit
+![Messages and Interaction With Users](docs/messages/stocklist-edit.png)
+- Stocklist delete
+![Messages and Interaction With Users](docs/messages/stocklist-delete.png)
+- Storage add
+![Messages and Interaction With Users](docs/messages/storage-add.png)
+- Storage edit
+![Messages and Interaction With Users](docs/messages/storage-edit.png)
+- Storage delete
+![Messages and Interaction With Users](docs/messages/storage-delete.png)
+- Item add
+![Messages and Interaction With Users](docs/messages/item-add.png)
+- Item edit
+![Messages and Interaction With Users](docs/messages/item-edit.png)
+- Item delete
+![Messages and Interaction With Users](docs/messages/item-delete.png)
+- Message sent
+![Messages and Interaction With Users](docs/messages/message-sent.png)
+- Password change
+![Messages and Interaction With Users](docs/messages/password-change.png)
+- Sign out
+![Messages and Interaction With Users](docs/messages/sign-out.png)
+
+[Back to Table Of Contents](#table-of-contents)
 
 ## Admin Panel/Superuser
 
