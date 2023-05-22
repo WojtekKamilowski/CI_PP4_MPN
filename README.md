@@ -411,6 +411,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 - [CI Python Linter](https://pep8ci.herokuapp.com/)
 - [TinyPNG](https://tinypng.com/)
 - [jQuery](https://jquery.com/)
+- [WAVE](https://wave.webaim.org/)
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -450,6 +451,35 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 [Back to Table Of Contents](#table-of-contents)
 
 ## Accessibility
+
+<details>
+    <summary>WAVE</summary> 
+
+![Accessibility](docs/accessibility/wave-404.png)
+![Accessibility](docs/accessibility/wave-500.png)
+![Accessibility](docs/accessibility/wave-add-item.png)
+![Accessibility](docs/accessibility/wave-add-storage.png)
+![Accessibility](docs/accessibility/wave-contact.png)
+![Accessibility](docs/accessibility/wave-create-list.png)
+![Accessibility](docs/accessibility/wave-delete-item.png)
+![Accessibility](docs/accessibility/wave-delete-stocklist.png)
+![Accessibility](docs/accessibility/wave-edit-item.png)
+![Accessibility](docs/accessibility/wave-edit-stocklist.png)
+![Accessibility](docs/accessibility/wave-highlights.png)
+![Accessibility](docs/accessibility/wave-home-loggedin.png)
+![Accessibility](docs/accessibility/wave-home.png)
+![Accessibility](docs/accessibility/wave-items.png)
+![Accessibility](docs/accessibility/wave-list-created.png)
+![Accessibility](docs/accessibility/wave-list-mt.png)
+![Accessibility](docs/accessibility/wave-login.png)
+![Accessibility](docs/accessibility/wave-logout.png)
+![Accessibility](docs/accessibility/wave-pass-reset.png)
+![Accessibility](docs/accessibility/wave-pass-reset-sent.png)
+![Accessibility](docs/accessibility/wave-received.png)
+![Accessibility](docs/accessibility/wave-register.png)
+![Accessibility](docs/accessibility/wave-spaces.png)
+
+</details>
 
 ## Performance
 
