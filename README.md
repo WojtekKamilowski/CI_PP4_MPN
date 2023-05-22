@@ -344,10 +344,11 @@ There are also a few customised pages related to user's authentication option wi
 ## Database Diagram
 
 - Stocklist:
-![Database Diagram](docs/stocklist.png)
+![Database Diagram](docs/database/stocklist.png)
 
 - Contact:
 
+![Database Diagram](docs/database/contact.png)
 
 [Back to Table Of Contents](#table-of-contents)
 

@@ -12,7 +12,6 @@ class Contact(models.Model):
     """
     Contact model class
     """
-
     message_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=50, null=True)
