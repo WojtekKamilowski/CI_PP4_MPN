@@ -481,11 +481,32 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
+
 ## Performance
 
 ## Device Testing
 
+List of devices used to test the website:
+
+- HP Pavilion 14
+- Acer Nitro 5 without and with an external monitor (HP V22)
+- Sony Xperia L2
+- Motorola Moto G20
+
+The website was also tested using Google Chrome Developer Tools, Toggle Device Toolbar simulating view from twenty-five listed devices, including popular amongst users iPad and iPhone 5.
+
+[Back to Table Of Contents](#table-of-contents)
+
 ## Browser compatibility
+
+Following browsers were used to test the website:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+[Back to Table Of Contents](#table-of-contents)
 
 ## Testing
 
