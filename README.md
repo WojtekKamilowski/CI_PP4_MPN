@@ -305,7 +305,7 @@ There are also a few customised pages related to user's authentication option wi
 ![Wireframes](docs/wireframes/23.yy-logout-tablet.png)
 ![Wireframes](docs/wireframes/24.z-error-tablet.png)
 
-</details
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -337,7 +337,7 @@ There are also a few customised pages related to user's authentication option wi
 ![Wireframes](docs/wireframes/36.lll-logout-mobile.png)
 ![Wireframes](docs/wireframes/37.mm-error-mobile.png)
 
-</details
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -354,7 +354,8 @@ There are also a few customised pages related to user's authentication option wi
 
 ## Messages and Interaction With Users
 
-Messages updating the user on interactions status.
+<details>
+    <summary>Messages updating the user on interactions status.</summary> 
 
 - Login
 ![Messages and Interaction With Users](docs/messages/login.png)
@@ -383,9 +384,17 @@ Messages updating the user on interactions status.
 - Sign out
 ![Messages and Interaction With Users](docs/messages/sign-out.png)
 
+</details>
+
 [Back to Table Of Contents](#table-of-contents)
 
 ## Admin Panel/Superuser
+
+On Admin Panel, admin/ superuser has full access to CRUD functionality to control users' stocklists, status or to address messages sent via the contact form.
+
+![Admin Panel/Superuser](docs/admin/admin.png)
+![Admin Panel/Superuser](docs/admin/user.png)
+![Admin Panel/Superuser](docs/admin/contact.png)
 
 [Back to Table Of Contents](#table-of-contents)
 
