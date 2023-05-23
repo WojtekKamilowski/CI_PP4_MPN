@@ -457,10 +457,18 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![PEP8 Validation](docs/validation/pep8/stocklist-urls.png)
 - stocklist: views.py
 ![PEP8 Validation](docs/validation/pep8/stocklist-views.png)
+- stocklist: forms.py
+![PEP8 Validation](docs/validation/pep8/stocklist-forms.png)
 - stocklist: test_models.py
 ![PEP8 Validation](docs/validation/pep8/stocklist-test_models.png)
-
-![PEP8 Validation](docs/validation/.png)
+- contact: admin.py
+![PEP8 Validation](docs/validation/pep8/contact-admin.png)
+- contact: models.py
+![PEP8 Validation](docs/validation/pep8/contact-models.png)
+- contact: urls.py
+![PEP8 Validation](docs/validation/pep8/contact-urls.png)
+- contact: views.py
+![PEP8 Validation](docs/validation/pep8/contact-views.png)
 
 </details>
 

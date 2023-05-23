@@ -16,7 +16,8 @@ def get_user_instance(request):
     """
     user_username = request.user.username
     user_email = request.user.email
-    user = User.objects.filter(email=user_email, username=user_username).first()
+    user = User.objects.filter(email=user_email,
+                               username=user_username).first()
     return user
 
 
