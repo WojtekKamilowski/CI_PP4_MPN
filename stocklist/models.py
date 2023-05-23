@@ -35,7 +35,8 @@ class Stocklist(models.Model):
 class Storagespace(models.Model):
     storage_name = models.CharField(max_length=20)
     slug = models.SlugField(max_length=200, unique=True)
-    stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE, related_name='storage_space', null=True)
+    stocklist = models.ForeignKey(Stocklist, on_delete=models.CASCADE,
+                                  related_name='storage_space', null=True)
     storage_updated_on = models.DateField(auto_now=True, null=True)
     temp = models.IntegerField(default=21, validators=[
             MaxValueValidator(30),
@@ -86,7 +87,8 @@ UOM_CHOICES = [
 class Stockitem(models.Model):
     item_name = models.CharField(max_length=50)
     slug = models.SlugField(max_length=200, unique=True)
-    storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE, related_name='stock_item', null=True)
+    storage = models.ForeignKey(Storagespace, on_delete=models.CASCADE,
+                                related_name='stock_item', null=True)
     expiry_date = models.DateField(null=True, blank=False)
     remarks = models.TextField(blank=True)
     min_temp = models.IntegerField(default=-30, validators=[

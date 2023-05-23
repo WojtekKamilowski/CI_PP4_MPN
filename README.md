@@ -347,7 +347,6 @@ There are also a few customised pages related to user's authentication option wi
 ![Database Diagram](docs/database/stocklist.png)
 
 - Contact:
-
 ![Database Diagram](docs/database/contact.png)
 
 [Back to Table Of Contents](#table-of-contents)
@@ -443,10 +442,23 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 
 [Back to Table Of Contents](#table-of-contents)
 
-## Validation 
+## Validation
 
-[CI Python Linter](https://pep8ci.herokuapp.com/) was used to perform the check if the code meets PEP8 requirements. All clear, no errors found:
-<img src="">
+### PEP8 Validation
+
+<details>
+    <summary>[CI Python Linter](https://pep8ci.herokuapp.com/) was used to perform the check if the code meets PEP8 requirements. All clear, no errors found:</summary> 
+
+- stocklist: admin.py
+![PEP8 Validation](docs/validation/pep8/stocklist-admin.png)
+- stocklist: models.py
+![PEP8 Validation](docs/validation/pep8/stocklist-models.png)
+
+![PEP8 Validation](docs/validation/.png)
+
+</details>
+
+
 
 [Back to Table Of Contents](#table-of-contents)
 
