@@ -444,10 +444,34 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 
 ## Validation
 
+### HTML Validation
+
+<details>
+    <summary>To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37NqVmxg37_tfuFOF4BJoyH8h_H-2n-Ed-64KJpoP1nEgLduNPO227mvE">the W3C Markup Validation Service</a> was used. The results have no errors.</summary>
+
+- base.html
+![HTML Validation](docs/validation/html/.png)
+
+</details>
+
+[Back to Table Of Contents](#table-of-contents)
+
+### CSS Validation
+
+<details>
+    <summary>To validate style.css <a href="https://jigsaw.w3.org/css-validator/?fbclid=IwAR2zBUIZHTXAGa9KEvR__gsTkB05ZifTcd-us-pR0Kud0bLVaIPET-V-Hi4#validate_by_upload">the W3C Jigsaw CSS Validation Service</a> was used. There were no errors found.</summary>
+
+![CSS Validation](docs/validation/css/style.png)
+
+</details>
+
+[Back to Table Of Contents](#table-of-contents)
+
+
 ### PEP8 Validation
 
 <details>
-    <summary><a href="https://pep8ci.herokuapp.com">CI Python Linter</a> was used to perform the check if the code meets PEP8 requirements. All clear, no errors found:</summary> 
+    <summary><a href="https://pep8ci.herokuapp.com">CI Python Linter</a> was used to perform the check if the code meets PEP8 requirements. All clear, no errors found:</summary>
 
 - urls.py
 ![PEP8 Validation](docs/validation/pep8/urls.png)
@@ -475,8 +499,6 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![PEP8 Validation](docs/validation/pep8/contact-forms.png)
 
 </details>
-
-
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -562,7 +584,7 @@ Following browsers were used to test the website:
 | ------- | ------- |
 | Heroku error during the early deployment: "Failed building wheel for backports.zoneinfo" |  Edit requirements.txt file. update backports from backports.zoneinfo==0.2.1 to
 backports.zoneinfo==0.2.1;python_version<"3.9" |
-|  |  |
+| Continuation line under-indented for visual indent (E128) | Check best practice on Flake8 Rules |
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -616,6 +638,8 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 - Django's built-in MinValueValidator & MaxValueValidator validators from <a href="https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model">Stackoverflow</a>
 
 - Validation of min. & max. temp. for ItemForm from <a href="https://stackoverflow.com/questions/58068844/django-how-to-validate-validator-a-greater-then-between-two-formfields">Stackoverflow</a>
+
+- Continuation line under-indented for visual indent (E128) PEP8 validation errors fix from <a href="https://www.flake8rules.com/rules/E128.html">Flake8 Rules</a>
 
 - based on <a href=""></a>
 
