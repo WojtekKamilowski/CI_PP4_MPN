@@ -453,6 +453,9 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![PEP8 Validation](docs/validation/pep8/stocklist-admin.png)
 - stocklist: models.py
 ![PEP8 Validation](docs/validation/pep8/stocklist-models.png)
+- stocklist: urls.py
+![PEP8 Validation](docs/validation/pep8/stocklist-urls.png)
+
 
 ![PEP8 Validation](docs/validation/.png)
 
