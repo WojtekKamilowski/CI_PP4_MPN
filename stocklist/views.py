@@ -73,7 +73,8 @@ class PantryStocklist(generic.ListView):
             stocklist.delete()
             messages.success(request, "Your stocklist deleted!")
             return redirect("list")
-        return render(request, "stocklist/delete_list.html", {"stocklist": stocklist})
+        return render(request, "stocklist/delete_list.html",
+                      {"stocklist": stocklist})
 
 
 class PantryStoragespaces(generic.ListView):
@@ -144,7 +145,8 @@ class PantryStoragespaces(generic.ListView):
             return redirect("spaces")
 
         return render(
-            request, "stocklist/delete_storage.html", {"storagespace": storagespace}
+            request, "stocklist/delete_storage.html",
+                     {"storagespace": storagespace}
         )
 
 
@@ -159,10 +161,10 @@ class PantryStockitems(View):
             .order_by("expiry_date")
         )
         stock_item = queryset
-        storage_spaces = Storagespace.objects.select_related("stocklist").filter(
+        str_spaces = Storagespace.objects.select_related("stocklist").filter(
             stocklist__user=self.request.user
         )
-        storage_space = get_object_or_404(storage_spaces, slug=slug)
+        storage_space = get_object_or_404(str_spaces, slug=slug)
 
         return render(
             request,
@@ -178,10 +180,10 @@ class PantryStockitems(View):
         Displays form to create a new item
         Found on Stackoverflow
         """
-        storage_spaces = Storagespace.objects.select_related("stocklist").filter(
+        str_spaces = Storagespace.objects.select_related("stocklist").filter(
             stocklist__user=request.user
         )
-        storage_space = get_object_or_404(storage_spaces, slug=slug)
+        storage_space = get_object_or_404(str_spaces, slug=slug)
 
         if request.method == "POST":
             form = ItemForm(request.POST, request.FILES)
@@ -193,10 +195,10 @@ class PantryStockitems(View):
                 return redirect(reverse("items", args=[slug]))
         else:
             form = ItemForm()
-            form.fields["storage"].queryset = Storagespace.objects.select_related(
-                "stocklist"
-            ).filter(stocklist__user=request.user)
-
+            str_select = Storagespace.objects.select_related(
+                    "stocklist"
+                ).filter(stocklist__user=request.user)
+            form.fields["storage"].queryset = str_select
         template = "stocklist/add_item.html"
         context = {
             "form": form,
@@ -219,10 +221,10 @@ class PantryStockitems(View):
                 return redirect("spaces")
         else:
             form = ItemForm(instance=stockitem)
-            form.fields["storage"].queryset = Storagespace.objects.select_related(
+            str_select = Storagespace.objects.select_related(
                 "stocklist"
             ).filter(stocklist__user=request.user)
-
+            form.fields["storage"].queryset = str_select
         context = {"form": form}
         return render(request, "stocklist/edit_item.html", context)
 
@@ -238,4 +240,5 @@ class PantryStockitems(View):
             messages.success(request, "Item deleted!")
             return redirect("spaces")
 
-        return render(request, "stocklist/delete_item.html", {"stock_item": stock_item})
+        return render(request, "stocklist/delete_item.html",
+                      {"stock_item": stock_item})
