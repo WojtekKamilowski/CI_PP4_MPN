@@ -447,8 +447,10 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ### PEP8 Validation
 
 <details>
-    <summary>[CI Python Linter](https://pep8ci.herokuapp.com/) was used to perform the check if the code meets PEP8 requirements. All clear, no errors found:</summary> 
+    <summary><a href="https://pep8ci.herokuapp.com">CI Python Linter</a> was used to perform the check if the code meets PEP8 requirements. All clear, no errors found:</summary> 
 
+- urls.py
+![PEP8 Validation](docs/validation/pep8/urls.png)
 - stocklist: admin.py
 ![PEP8 Validation](docs/validation/pep8/stocklist-admin.png)
 - stocklist: models.py
@@ -469,6 +471,8 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![PEP8 Validation](docs/validation/pep8/contact-urls.png)
 - contact: views.py
 ![PEP8 Validation](docs/validation/pep8/contact-views.png)
+- contact: forms.py
+![PEP8 Validation](docs/validation/pep8/contact-forms.png)
 
 </details>
 
