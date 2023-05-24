@@ -449,8 +449,10 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 <details>
     <summary>To validate HTML of the website<a href="https://validator.w3.org/?fbclid=IwAR37NqVmxg37_tfuFOF4BJoyH8h_H-2n-Ed-64KJpoP1nEgLduNPO227mvE">the W3C Markup Validation Service</a> was used. The results have no errors.</summary>
 
-- base.html
-![HTML Validation](docs/validation/html/.png)
+- home
+![HTML Validation](docs/validation/html/html-home.png)
+- signup
+![HTML Validation](docs/validation/html/html-signup.png)
 
 </details>
 
