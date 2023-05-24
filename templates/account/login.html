@@ -22,13 +22,15 @@
           <button class="primaryAction cst-bg-green" type="submit">{% trans "Login!" %} <i class="fa-solid fa-right-to-bracket"></i></button>
         </form>     
         <div class="mt-3">
-          <a href="{{ signup_url }}" class="my-auto secondaryAction offset-md-3 cst-bg-green" id="not-registered">
+          <a href="{{ signup_url }}" class="my-auto" id="not-registered">
           {% blocktrans %}
-              <div class="mt-1">
-                <p>Not registered yet? Register now! <i class="fa-solid fa-user-plus"></i></p>
-              </div>
+            <div class="mt-1 secondaryAction offset-md-3 btn cst-bg-green border border-dark">
+              <p>
+                Not registered yet? Register now! <i class="fa-solid fa-user-plus"></i>
+              </p>
+            </div>
           {% endblocktrans %}
-          </a>
+          </a> 
         </div>
       </div>
   </div>
