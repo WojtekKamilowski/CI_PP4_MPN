@@ -453,6 +453,8 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![HTML Validation](docs/validation/html/html-home.png)
 - signup
 ![HTML Validation](docs/validation/html/html-signup.png)
+- login
+![HTML Validation](docs/validation/html/html-login.png)
 
 </details>
 
