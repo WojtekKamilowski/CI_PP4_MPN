@@ -12,7 +12,7 @@
   <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
       <h2 class="text-center my-4"><i class="fa-solid fa-user-large"></i> {% trans "Login" %}</h2>
       <div class="my-4">         
-        <form class="login offset-md-3" method="POST" action="{% url 'account_login' %}">
+        <form class="login offset-3 mx-3" method="POST" action="{% url 'account_login' %}">
           {% csrf_token %}
           {{ form.as_p }}
           {% if redirect_field_value %}
@@ -21,12 +21,15 @@
           <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
           <button class="primaryAction cst-bg-green" type="submit">{% trans "Login!" %} <i class="fa-solid fa-right-to-bracket"></i></button>
         </form>     
-        <div class="mt-3 mx-5">
+        <div class="mt-3 row">
           <a href="{{ signup_url }}" class="my-auto" id="not-registered">
           {% blocktrans %}
-            <div class="mt-1 secondaryAction cst-bg-green container border border-dark">
+            <div class="mt-1 secondaryAction cst-bg-green container border border-dark col-8">
               <p class="text-center my-1">
-                Not registered yet? Register now! <i class="fa-solid fa-user-plus"></i>
+                Not registered yet?
+              </p>
+              <p class="text-center my-1">
+                Register now! <i class="fa-solid fa-user-plus"></i>
               </p>
             </div>
           {% endblocktrans %}

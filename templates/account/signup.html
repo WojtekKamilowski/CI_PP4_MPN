@@ -11,7 +11,7 @@
   <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 container-md main-box">
       <h2 class="text-center my-4"><i class="fa-solid fa-user-plus"></i> {% trans "Register" %}</h2>
       <div class="my-4">  
-        <form class="signup offset-md-3" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        <form class="signup offset-3 mx-3" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
           {{ form.as_p }}
           {% if redirect_field_value %}
@@ -19,12 +19,15 @@
           {% endif %}
           <button type="submit" class="cst-bg-green">{% trans "Register" %} &raquo;</button>
         </form>
-        <div class="mt-4 mx-5">
+        <div class="mt-4 row">
           <a href="{{ login_url }}" class="my-auto" id="registered">
           {% blocktrans %}
-            <div class="mt-1 secondaryAction cst-bg-green container border border-dark">
+            <div class="mt-1 secondaryAction cst-bg-green container border border-dark col-8">
               <p class="text-center my-1">
-                Already have an account? Then please Login <i class="fa-solid fa-user-large"></i>
+                Already have an account?
+              </p>
+              <p class="text-center my-1"> 
+                Then please Login <i class="fa-solid fa-user-large"></i>
               </p>
             </div>
           {% endblocktrans %}
