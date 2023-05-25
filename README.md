@@ -1,7 +1,7 @@
 # My Pantry Note
 (Developer: Kamil Wojciechowski)
 
-![Mockup image]()
+![Mockup image](docs/responsive.png)
 
 [Live webpage](https://mypantrynote.herokuapp.com/)
 
