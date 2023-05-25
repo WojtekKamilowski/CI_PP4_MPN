@@ -464,6 +464,13 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![HTML Validation](docs/validation/html/html-add-stocklist.png)
 - added list 
 ![HTML Validation](docs/validation/html/html-list-added.png)
+- edit_stocklist
+![HTML Validation](docs/validation/html/html-edit-stocklist.png)
+- spaces
+![HTML Validation](docs/validation/html/html-spaces.png)
+- add_storage
+![HTML Validation](docs/validation/html/html-add-storage.png)
+
 
 </details>
 
