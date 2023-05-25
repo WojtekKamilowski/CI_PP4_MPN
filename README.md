@@ -411,6 +411,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 - [TinyPNG](https://tinypng.com/)
 - [jQuery](https://jquery.com/)
 - [WAVE](https://wave.webaim.org/)
+- [amiresponsive?](https://ui.dev/amiresponsive?)
 
 [Back to Table Of Contents](#table-of-contents)
 
