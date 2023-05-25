@@ -10,15 +10,19 @@
             {{ form.as_p }}
             <div>
                 <p>
-                    <button type="submit" class="cst-bg-green">Submit your message <i
-                            class="fa-solid fa-check"></i></button>
+                    <button type="submit" class="cst-bg-green">
+                        Submit your message <i class="fa-solid fa-check"></i>
+                    </button>
                 </p>
             </div>
         </form>
         <!-- Home -->
         <div class="mb-5 d-flex justify-content-left">
-            <a href="{% url 'home' %}" class="text-decoration-none"><button class="cst-bg-green px-3 py-1">Home <i
-                        class="fa-solid fa-house"></i></button></a>
+            <a href="{% url 'home' %}" class="text-decoration-none">
+                <p class="cst-bg-green px-3 py-1 container border border-dark">
+                    Home <i class="fa-solid fa-house"></i>
+                </p>
+            </a>
         </div>
     </div>
 </div>
