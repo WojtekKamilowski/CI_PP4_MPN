@@ -456,6 +456,14 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![HTML Validation](docs/validation/html/html-signup.png)
 - login
 ![HTML Validation](docs/validation/html/html-login.png)
+- loggedin home
+![HTML Validation](docs/validation/html/html-loggedin.png)
+- list
+![HTML Validation](docs/validation/html/html-list.png)
+- add_stocklist
+![HTML Validation](docs/validation/html/html-add-stocklist.png)
+- added list 
+![HTML Validation](docs/validation/html/html-list-added.png)
 
 </details>
 
