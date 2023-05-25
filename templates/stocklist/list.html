@@ -20,18 +20,14 @@
         <img src=" {{ stocklist.list_image.url }} " text="center" alt="{{ stocklist.name }} image" class="mt-4">
         {% endif %}
         <div class="my-5 d-flex justify-content-center">
-            <a href="{% url 'spaces' %}" class="text-decoration-none">
-                <button class="cst-bg-yellow storage-spaces-btn">
-                    Storage Spaces <i class="fa-solid fa-box"></i>
-                </button>
+            <a href="{% url 'spaces' %}" class="text-decoration-none cst-bg-yellow storage-spaces-btn container border border-dark my-1 text-center">
+                Storage Spaces <i class="fa-solid fa-box"></i>
             </a>
         </div>
         {% empty %}
         <div class="mt-5 d-flex justify-content-center">
-            <a href="{% url 'add_stocklist' %}" class="text-decoration-none">
-                <button class="cst-bg-green storage-spaces-btn create_box">
-                    Create your stocklist now! <i class="fa-solid fa-file-circle-plus"></i>
-                </button>
+            <a href="{% url 'add_stocklist' %}" class="text-decoration-none cst-bg-green storage-spaces-btn create_box container border border-dark my-1 text-center">
+                Create your stocklist now! <i class="fa-solid fa-file-circle-plus"></i>
             </a>
         </div>
         <img src="https://res.cloudinary.com/dwczzqdrv/image/upload/v1681043598/common-ash-leaves-with-copy-space_epc4gd.jpg"
