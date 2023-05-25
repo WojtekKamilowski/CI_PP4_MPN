@@ -32,7 +32,7 @@
                         <th class="text-center px-1">Expiry Date</th>
                         <th class="text-center px-1">Temp. range°C</th>
                         <th class="text-center">Remarks</th>
-                        <th class="px-1 text-center" aria-label="Settings column"><i class="fa-solid fa-gear"></i></th>
+                        <th class="px-1 text-center"><i class="fa-solid fa-gear"></i></th>
                     </tr>
                     {% for s in stock_item %}
                     <tr class="item_details">
@@ -74,16 +74,17 @@
             <!-- Add Item -->
             <div class="mb-5 d-flex justify-content-center">
                 <a href="{% url 'add_item' storage_space.slug %}" class="text-decoration-none">
-                    <button class="cst-bg-green storage-spaces-btn create_box">
+                    <p class="cst-bg-green storage-spaces-btn create_box container border border-dark text-center">
                         Add a new Item <i class="fa-solid fa-plus"></i>
-                    </button></a>
+                    </p>
+                </a>
             </div>
             <!-- Return -->
             <div class="mb-5 d-flex justify-content-center">
                 <a href="{% url 'spaces' %}" class="text-decoration-none">
-                    <button class="cst-bg-green px-3 py-2">
+                    <p class="cst-bg-green px-3 py-2 container border border-dark text-center">
                         Return <i class="fa-solid fa-rotate-left"></i>
-                    </button>
+                    </p>
                 </a>
             </div>
         </div>
