@@ -472,8 +472,12 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![HTML Validation](docs/validation/html/html-list-added.png)
 - edit_stocklist
 ![HTML Validation](docs/validation/html/html-edit-stocklist.png)
+- delete_stocklist
+![HTML Validation](docs/validation/html/html-delete-stocklist.png)
 - spaces
 ![HTML Validation](docs/validation/html/html-spaces.png)
+- items
+![HTML Validation](docs/validation/html/html-items.png)
 - add_storage
 ![HTML Validation](docs/validation/html/html-add-storage.png)
 - edit_storage
@@ -486,6 +490,14 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ![HTML Validation](docs/validation/html/html-edit-item.png)
 - delete_item
 ![HTML Validation](docs/validation/html/html-delete-item.png)
+- logout
+![HTML Validation](docs/validation/html/html-logout.png)
+- contact
+![HTML Validation](docs/validation/html/html-contact.png)
+- received
+![HTML Validation](docs/validation/html/html-received.png)
+- error
+![HTML Validation](docs/validation/html/html-error.png)
 
 </details>
 
