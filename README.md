@@ -514,6 +514,12 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 
 [Back to Table Of Contents](#table-of-contents)
 
+### JavaScript Validation
+
+<a href="https://jshint.com/">JSHint</a> JS Validation Serviced was used to validate the Javascript code for the website with no major issues found.
+Two undefined variables message appears for jQuery $ sign & bootstrap.
+
+![JavaScript Validation](docs/validation/js/js.png)
 
 ### PEP8 Validation
 
