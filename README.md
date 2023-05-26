@@ -596,19 +596,19 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - home
 ![Performance](docs/performance/desktop-home.png)
 - signup
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-signup.png)
 - login
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-login.png)
 - password_reset
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-password-reset.png)
 - password_reset_done
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-desktop-password-reset-done.png)
 - loggedin home
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-home-loggedin.png)
 - password_change
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-password-change.png)
 - list
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-list.png)
 - add_stocklist
 ![Performance](docs/performance/desktop-png)
 - added list 
@@ -650,19 +650,19 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - home
 ![Performance](docs/performance/mobile-home.png)
 - signup
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-signup.png)
 - login
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-login.png)
 - password_reset
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-password-reset.png)
 - password_reset_done
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-password-reset-done.png)
 - loggedin home
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-home-loggedin.png)
 - password_change
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-password-change.png)
 - list
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-list.png)
 - add_stocklist
 ![Performance](docs/performance/mobile-png)
 - added list 
