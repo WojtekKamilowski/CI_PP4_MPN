@@ -610,9 +610,9 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - list
 ![Performance](docs/performance/desktop-list.png)
 - add_stocklist
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-add-stocklist.png)
 - added list 
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-list-added.png)
 - edit_stocklist
 ![Performance](docs/performance/desktop-png)
 - delete_stocklist
@@ -664,9 +664,9 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - list
 ![Performance](docs/performance/mobile-list.png)
 - add_stocklist
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-add-stocklist.png)
 - added list 
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-list-added.png)
 - edit_stocklist
 ![Performance](docs/performance/mobile-png)
 - delete_stocklist
