@@ -590,6 +590,114 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 
 ## Performance
 
+<details>
+    <summary>Desktop</summary> 
+
+- home
+![Performance](docs/performance/desktop-home.png)
+- signup
+![Performance](docs/performance/desktop-png)
+- login
+![Performance](docs/performance/desktop-png)
+- password_reset
+![Performance](docs/performance/desktop-png)
+- password_reset_done
+![Performance](docs/performance/desktop-png)
+- loggedin home
+![Performance](docs/performance/desktop-png)
+- password_change
+![Performance](docs/performance/desktop-png)
+- list
+![Performance](docs/performance/desktop-png)
+- add_stocklist
+![Performance](docs/performance/desktop-png)
+- added list 
+![Performance](docs/performance/desktop-png)
+- edit_stocklist
+![Performance](docs/performance/desktop-png)
+- delete_stocklist
+![Performance](docs/performance/desktop-png)
+- spaces
+![Performance](docs/performance/desktop-png)
+- items
+![Performance](docs/performance/desktop-png)
+- add_storage
+![Performance](docs/performance/desktop-png)
+- edit_storage
+![Performance](docs/performance/desktop-png)
+- delete_storage
+![Performance](docs/performance/desktop-png)
+- add_item
+![Performance](docs/performance/desktop-png)
+- edit_item
+![Performance](docs/performance/desktop-png)
+- delete_item
+![Performance](docs/performance/desktop-png)
+- logout
+![Performance](docs/performance/desktop-png)
+- contact
+![Performance](docs/performance/desktop-png)
+- received
+![Performance](docs/performance/desktop-png)
+- error
+![Performance](docs/performance/desktop-png)
+
+</details>
+
+<details>
+    <summary>Mobile</summary> 
+
+- home
+![Performance](docs/performance/mobile-home.png)
+- signup
+![Performance](docs/performance/mobile-png)
+- login
+![Performance](docs/performance/mobile-png)
+- password_reset
+![Performance](docs/performance/mobile-png)
+- password_reset_done
+![Performance](docs/performance/mobile-png)
+- loggedin home
+![Performance](docs/performance/mobile-png)
+- password_change
+![Performance](docs/performance/mobile-png)
+- list
+![Performance](docs/performance/mobile-png)
+- add_stocklist
+![Performance](docs/performance/mobile-png)
+- added list 
+![Performance](docs/performance/mobile-png)
+- edit_stocklist
+![Performance](docs/performance/mobile-png)
+- delete_stocklist
+![Performance](docs/performance/mobile-png)
+- spaces
+![Performance](docs/performance/mobile-png)
+- items
+![Performance](docs/performance/mobile-png)
+- add_storage
+![Performance](docs/performance/mobile-png)
+- edit_storage
+![Performance](docs/performance/mobile-png)
+- delete_storage
+![Performance](docs/performance/mobile-png)
+- add_item
+![Performance](docs/performance/mobile-png)
+- edit_item
+![Performance](docs/performance/mobile-png)
+- delete_item
+![Performance](docs/performance/mobile-png)
+- logout
+![Performance](docs/performance/mobile-png)
+- contact
+![Performance](docs/performance/mobile-png)
+- received
+![Performance](docs/performance/mobile-png)
+- error
+![Performance](docs/performance/mobile-png)
+
+</details>
+
 ## Device Testing
 
 List of devices used to test the website:
