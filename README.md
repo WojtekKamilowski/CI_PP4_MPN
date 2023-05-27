@@ -43,6 +43,8 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
   - [Device Testing](#device-testing)
   - [Browser compatibility](#browser-compatibility)
   - [Testing](#testing)
+    - [Automated Testing](#automated-testing)
+    - [Manual Testing](#manual-testing)
   - [Creating the app using Django](#creating-the-app-using-django)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
@@ -717,7 +719,18 @@ Following browsers were used to test the website:
 
 ## Testing
 
-<details><summary>Click to see user stories testing</summary>
+### Automated Testing
+
+<details><summary>Automated Testing</summary>
+
+- stocklist.test_models.py
+![Automated Testing](docs/testing/test_models.png)
+
+</details>
+
+### Manual Testing
+
+<details><summary>Manual Testing</summary>
 
 ---------------------------------------------------------------
 
@@ -765,6 +778,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 16. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 17. Choose a branch to deploy: main
 18. Click on Deploy Branch button
+19. For Automatic deploys click on Enable Automatic Deploys button
 
 [Back to Table Of Contents](#table-of-contents)
 
