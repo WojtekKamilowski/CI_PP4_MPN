@@ -477,7 +477,9 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 - spaces
 ![HTML Validation](docs/validation/html/html-spaces.png)
 - items
+Warning of possible misuse of aria-label: aria-label added to fix an accessibility error "Empty table header"
 ![HTML Validation](docs/validation/html/html-items.png)
+![HTML Validation](docs/validation/html/html-items-accessibility.png)
 - add_storage
 ![HTML Validation](docs/validation/html/html-add-storage.png)
 - edit_storage
@@ -746,6 +748,7 @@ Following browsers were used to test the website:
 | Heroku error during the early deployment: "Failed building wheel for backports.zoneinfo" |  Edit requirements.txt file. update backports from backports.zoneinfo==0.2.1 to
 backports.zoneinfo==0.2.1;python_version<"3.9" |
 | Continuation line under-indented for visual indent (E128) | Check best practice on Flake8 Rules |
+| Accessibility error: Empty table header | Add aria-label "Settings column" to th element |
 
 [Back to Table Of Contents](#table-of-contents)
 
