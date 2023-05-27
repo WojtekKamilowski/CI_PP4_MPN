@@ -204,8 +204,7 @@ a {
 
     #items-table th,
     #items-table {
-        max-width: 95%;
-        font-size: 70%;
+        max-width: 99%;
         border: none;
         height: auto;
         padding: 5px;
