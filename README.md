@@ -680,7 +680,7 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - delete_storage
 ![Performance](docs/performance/mobile-delete-storage.png)
 - add_item
-![Performance](docs/performance/mobile--add-item.png)
+![Performance](docs/performance/mobile-add-item.png)
 - edit_item
 ![Performance](docs/performance/mobile-edit-item.png)
 - delete_item
