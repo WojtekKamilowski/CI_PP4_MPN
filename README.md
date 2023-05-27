@@ -94,22 +94,24 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 #### Users
 
 As a User I want to:
-- Register an account.
-- Login.
-- View the food stock list 
-- Add a new storage space
-- Add a new stock item.
-- Update a stock item.
-- Remove an item from the stock list.
-- Contact Site's Admin
-- See items are expired
-- See items that have different temperature range than in the storage
+1. Register an account.
+2. Login.
+3. View the food stock list.
+4. Add a new storage space.
+5. Add a new stock item.
+6. Update a stock item.
+7. Remove an item from the stock list.
+8. Contact Site's Admin.
+9. See items are expired.
+10. See items that have different temperature range than in the storage.
+11. Easily navigate on the website.
 
 #### Site Owner
 
 As an Admin I want to:
-- Access admin panel.
-- Review messages sent by users .
+12. Access admin panel.
+13. Review messages sent by users.
+14. Deliver an intuitive website for the users.
 
 ### Agile Methodologies
 
@@ -442,6 +444,23 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 [Back to Table Of Contents](#table-of-contents)
 
 ## Features
+
+<details><summary>Logo and website name</summary>
+
+It is included on all pages.
+The logo includes an icon. The logo and the website name are clickable link to Home page which is a common feature on many websites so users expect it.
+Logo and website name are responsive, the font size reduces for smaller screens.
+User stories covered: 11, 14.
+
+![Features](docs/features/logo-name.png)
+
+</details>
+
+<details><summary></summary>
+
+![](docs/.png)
+
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
 
