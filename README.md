@@ -628,21 +628,17 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - edit_storage
 ![Performance](docs/performance/desktop-edit-storage.png)
 - delete_storage
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-delete-storage.png)
 - add_item
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-add-item.png)
 - edit_item
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-edit-item.png)
 - delete_item
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-delete-item.png)
 - logout
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-logout.png)
 - contact
-![Performance](docs/performance/desktop-png)
-- received
-![Performance](docs/performance/desktop-png)
-- error
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-contact.png)
 
 </details>
 
@@ -682,21 +678,17 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - edit_storage
 ![Performance](docs/performance/mobile-edit-storage.png)
 - delete_storage
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-delete-storage.png)
 - add_item
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile--add-item.png)
 - edit_item
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-edit-item.png)
 - delete_item
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-delete-item.png)
 - logout
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-logout.png)
 - contact
-![Performance](docs/performance/mobile-png)
-- received
-![Performance](docs/performance/mobile-png)
-- error
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-contact.png)
 
 </details>
 
