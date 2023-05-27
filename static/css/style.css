@@ -157,7 +157,7 @@ h1, h2 {
 }
 
 #items-table th {
-    padding: 2vh 3vw;
+    padding: 1vh 1vw;
     border: solid #000000;
 }
 
@@ -201,6 +201,13 @@ a {
         padding: 1px;
         width: 90%;
     }
+
+    #items-table th,
+    #items-table {
+        border: none;
+        height: auto;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -216,13 +223,6 @@ a {
     .storage-spaces-btn {
         min-width: 100px;
         width: 90%;
-    }
-
-    #items-table th,
-    #items-table {
-        border: none;
-        height: auto;
-        padding: 5px;
     }
 
     .storage-info {
