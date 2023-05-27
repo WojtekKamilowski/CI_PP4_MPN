@@ -730,9 +730,6 @@ Following browsers were used to test the website:
 
 [Back to Table Of Contents](#table-of-contents)
 
-
-## Creating the app using Django
-
 ## Bugs
 
 | Bug  | Fix  |
@@ -746,6 +743,28 @@ backports.zoneinfo==0.2.1;python_version<"3.9" |
 
 ## Deployment
 
+- This site was deployed using Heroku in following steps: 
+
+Before deployment remember to set DEBUG = False & ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
+
+1. Log in to Heroku or create an account
+2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create new app
+3. You must enter a unique app name
+4. Next select your region
+5. Click on the Create App button
+6. Click Reveal Config Vars and add a new record with the SECRET_KEY
+7. Add another record to Config Vars with the CLOUDINARY_URL
+8. Add another record to Config Vars with the DATABASE_URL
+9. Add another record to Config Vars with DISABLE_COLLECTSTATIC = 1
+10. Add another record to Config Vars with PORT = 8000
+11. Below Config Vars in Buildpacks select heroku/python
+12. Go to the Deploy Tab
+13. Choose Deployment method GitHub and click Save Changes
+14. Confirm you want to connect to GitHub
+15. Search for the repository name and click the connect button
+16. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
+17. Choose a branch to deploy: main
+18. Click on Deploy Branch button
 
 [Back to Table Of Contents](#table-of-contents)
 
