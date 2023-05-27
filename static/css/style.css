@@ -204,6 +204,7 @@ a {
 
     #items-table th,
     #items-table {
+        font-size: 90%;
         max-width: 99%;
         border: none;
         height: auto;
