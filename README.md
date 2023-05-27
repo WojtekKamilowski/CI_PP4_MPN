@@ -622,7 +622,7 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - spaces
 ![Performance](docs/performance/desktop-spaces.png)
 - items
-![Performance](docs/performance/desktop-png)
+![Performance](docs/performance/desktop-items.png)
 - add_storage
 ![Performance](docs/performance/desktop-png)
 - edit_storage
@@ -676,7 +676,7 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 - spaces
 ![Performance](docs/performance/mobile-spaces.png)
 - items
-![Performance](docs/performance/mobile-png)
+![Performance](docs/performance/mobile-items.png)
 - add_storage
 ![Performance](docs/performance/mobile-png)
 - edit_storage
