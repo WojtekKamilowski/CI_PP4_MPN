@@ -201,11 +201,6 @@ a {
         padding: 1px;
         width: 90%;
     }
-
-    #items-table {
-        font-size: 70%;
-    }
-
 }
 
 @media screen and (max-width: 350px) {
@@ -230,14 +225,9 @@ a {
         padding: 5px;
     }
 
-    #items-table {
-        font-size: 50%;
-    }
-
     .storage-info {
         font-size: 60%;
     }
-
 }
 
 @media screen and (max-width: 260px) {
@@ -245,9 +235,4 @@ a {
     input {
         max-width: 95%;
     }
-
-    #items-table {
-        font-size: 40%;
-    }
-
 }
