@@ -94,6 +94,7 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 #### Users
 
 As a User I want to:
+
 1. Register an account.
 2. Login.
 3. View the food stock list.
@@ -109,6 +110,7 @@ As a User I want to:
 #### Site Owner
 
 As an Admin I want to:
+
 12. Access admin panel.
 13. Review messages sent by users.
 14. Deliver an intuitive website for the users.
@@ -445,7 +447,9 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 
 ## Features
 
-<details><summary>Logo and website name</summary>
+<details>
+
+<summary>Logo and Website Name</summary>
 
 It is included on all pages.
 The logo includes an icon. The logo and the website name are clickable link to Home page which is a common feature on many websites so users expect it.
@@ -456,9 +460,148 @@ User stories covered: 11, 14.
 
 </details>
 
-<details><summary></summary>
+<details>
 
-![](docs/.png)
+<summary>Navigation Bar</summary>
+
+Appears on all pages.
+When user is not loggedin contains links to navigate to Home, Register or Login pages.
+If the user is authenticated displays options to navigate to the home, main stocklist, password change or logout.
+Reflects to the user about the current login state by displaying user's name.
+User stories covered: 1, 2, 3, 11, 14.
+
+![Features](docs/features/nav-bar.png)
+![Features](docs/features/nav-bar-loggedin.png)
+
+</details>
+
+<details>
+
+<summary>Footer</summary>
+
+Appears on all pages.
+Contains icons with links to Facebook, Pinterest, Youtube & the contact page.
+User stories covered: 8, 11, 14.
+
+![Features](docs/features/footer.png)
+
+</details>
+
+<details>
+
+<summary>Register</summary>
+
+It is included on signup.html
+Taken from Allauth & customised.
+Allows user to register an account using own username & password with an optional input of user's email address.
+Gives user an option to navigate to login page if the user already created own account.
+User stories covered: 1, 11, 14.
+
+![Features](docs/features/register.png)
+
+</details>
+
+<details>
+
+<summary>Login</summary>
+
+It is included on login.html
+Taken from Allauth & customised.
+Allows user to login to the earlier created account by giving the username & password with an option to remember username.
+Gives user an option to navigate to the password reset page if the user forgot the password or to the register page if user has not created an account yet.
+User stories covered: 2, 11, 14.
+
+![Features](docs/features/login.png)
+
+</details>
+
+<details>
+
+<summary>Password Reset</summary>
+
+![Features](docs/features/.png)
+
+</details>
+
+<details>
+
+<summary>Password Change</summary>
+
+![Features](docs/features/.png)
+
+</details>
+
+<details>
+
+<summary>Our Mission Box</summary>
+
+Appears in the center of the home page.
+Displays info about the website, giving some background to the user what this application is for. 
+Includes links to the signup & login pages when user is not authenticated or to the main stocklist page(list.html) when the user is logged-in. 
+User stories covered: 3, 11, 14.
+
+![Features](docs/features/mission.png)
+![Features](docs/features/mission-loggedin.png)
+
+</details>
+
+<details>
+
+<summary>Main Stocklist Page</summary>
+
+Central element list.html
+If there is no stocklist already created it displays an option to create a new stocklist.
+In case the user already created own stocklist with a chosen stocklist name, it gives options to edit or delete the stocklist and displays the link to the storage spaces list.
+User stories covered: 3, 11, 14.
+
+![Features](docs/features/list.png)
+![Features](docs/features/list-created.png)
+
+</details>
+
+<details>
+
+<summary>Storage Spaces List</summary>
+
+Main part of spaces.html
+It shows list of all storage spaces in user's stocklist and displays an option to create a new storage space.
+Storagespaces names contain links to view the details including items table.
+User stories covered: 4, 11, 14.
+
+![Features](docs/features/spaces.png)
+
+</details>
+
+<details>
+
+<summary>Storagespace Details & Items Table</summary>
+
+Appears in the center of items.html
+Allows user to edit or delete the storagespace.
+Informs the user about the temperature in the storagespace & when it was last time updated.
+Allows user to read list of all items in the storagespace. Items on the list that are expired or will expire next day have highlited expiry date in orange.
+Items requiring lower temperature have temp. range highlighted in red & items that can be in a warmer environment have highlighted temp. range in blue.
+The items table includes options to edit or delete item of the selected row.
+Below the items table there is element to create a new item.
+User stories covered: 3, 5, 6, 7, 9, 10, 11, 14.
+
+![Features](docs/features/items.png)
+
+</details>
+
+<details>
+
+<summary>Contact</summary>
+
+![Features](docs/features/.png)
+
+</details>
+
+<details>
+
+<summary></summary>
+
+![Features](docs/features/.png)
 
 </details>
 
