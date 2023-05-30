@@ -519,7 +519,13 @@ User stories covered: 2, 11, 14.
 
 <summary>Password Reset</summary>
 
-![Features](docs/features/.png)
+It is included on password_reset.html  
+
+Taken from Allauth & customised.  
+Requests user’s email address (if given during the registration) to send user an Allauth email with a link allowing password reset. It has a link to the contact page so the user can interact with the site’s admin in case Allauth’s solution fails or there are any problems.  
+User stories covered: 2, 8, 11, 14. 
+
+![Features](docs/features/password-reset.png)
 
 </details>
 
@@ -527,7 +533,12 @@ User stories covered: 2, 11, 14.
 
 <summary>Password Change</summary>
 
-![Features](docs/features/.png)
+It is included on password_change.html 
+Taken from Allauth & customised. 
+User can change the current password to a new password. 
+User stories covered: 2, 11, 14. 
+
+![Features](docs/features/password-change.png)
 
 </details>
 
@@ -582,7 +593,7 @@ Informs the user about the temperature in the storagespace & when it was last ti
 Allows user to read list of all items in the storagespace. Items on the list that are expired or will expire next day have highlited expiry date in orange.
 Items requiring lower temperature have temp. range highlighted in red & items that can be in a warmer environment have highlighted temp. range in blue.
 The items table includes options to edit or delete item of the selected row.
-Below the items table there is element to create a new item.
+Below the items table there is element navigating to the create a new item form.
 User stories covered: 3, 5, 6, 7, 9, 10, 11, 14.
 
 ![Features](docs/features/items.png)
@@ -593,15 +604,47 @@ User stories covered: 3, 5, 6, 7, 9, 10, 11, 14.
 
 <summary>Contact</summary>
 
-![Features](docs/features/.png)
+Central part of the contact page.
+Contains a contact form allowing user to submit a message to site's admins.
+If user is authenticated it automatically takes user's name & e-mail(if given during the registration).
+Informs the user about message receipt after submitting the message.
+User stories covered: 8, 11, 14.
+
+![Features](docs/features/contact.png)
+![Features](docs/features/received.png)
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary>Logout</summary>
 
-![Features](docs/features/.png)
+Taken from Allauth & customised.
+Positioned in the center of logout.html appears after clicking Logout in the navbar.
+Asks the user to confirm the choice of logging out.
+User stories covered: 11, 14. 
+
+
+![Features](docs/features/logout.png)
+
+</details>
+
+details>
+
+<summary>Admin</summary>
+
+From Django Admin, customised.
+Included on admin page accessed on https://mypantrynote.herokuapp.com/admin
+Contains following main optios for the superuser:
+
+- review Users, 
+- change user's password
+- read user's messages sent via the contact feature
+- manage stocklists, storagespaces & stockitems
+
+User stories: 12, 13.
+
+![Features](docs/features/admin.png)
 
 </details>
 
