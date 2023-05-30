@@ -807,6 +807,8 @@ Two undefined variables message appears for jQuery $ sign & bootstrap.
 ![Accessibility](docs/accessibility/wave-register.png)
 ![Accessibility](docs/accessibility/wave-spaces.png)
 
+*There is an alert for a redundant link to the home page. It was purposely designed to be included both in the logo and in the navbar.
+
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
@@ -966,10 +968,11 @@ Following browsers were used to test the website:
 
 | Bug  | Fix  |
 | ------- | ------- |
-| Heroku error during the early deployment: "Failed building wheel for backports.zoneinfo" |  Edit requirements.txt file. update backports from backports.zoneinfo==0.2.1 to
-backports.zoneinfo==0.2.1;python_version<"3.9" |
+| Heroku error during the early deployment: "Failed building wheel for backports.zoneinfo" | Edit requirements.txt file* |
 | Continuation line under-indented for visual indent (E128) | Check best practice on Flake8 Rules |
 | Accessibility error: Empty table header | Add aria-label "Settings column" to th element |
+
+* update backports from backports.zoneinfo==0.2.1 to backports zoneinfo==0.2.1;python_version<"3.9"
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -1048,8 +1051,6 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Validation of min. & max. temp. for ItemForm from <a href="https://stackoverflow.com/questions/58068844/django-how-to-validate-validator-a-greater-then-between-two-formfields">Stackoverflow</a>
 
 - Continuation line under-indented for visual indent (E128) PEP8 validation errors fix from <a href="https://www.flake8rules.com/rules/E128.html">Flake8 Rules</a>
-
-- based on <a href=""></a>
 
 ### Media
 
