@@ -482,7 +482,7 @@ Appears on all pages.
 When user is not loggedin contains links to navigate to Home, Register or Login pages.
 If the user is authenticated displays options to navigate to the home, main stocklist, password change or logout.
 Reflects to the user about the current login state by displaying user's name.
-User stories covered: 1, 2, 3, 11, 15.
+User stories covered: 11, 15.
 
 ![Features](docs/features/nav-bar.png)
 ![Features](docs/features/nav-bar-loggedin.png)
@@ -945,7 +945,7 @@ Following browsers were used to test the website:
 <details><summary>Automated Testing</summary>
 
 - stocklist.test_models.py
-![Automated Testing](docs/testing/test_models.png)
+![Automated Testing](docs/testing/auto/test_models.png)
 
 </details>
 
@@ -954,6 +954,31 @@ Following browsers were used to test the website:
 <details><summary>Manual Testing</summary>
 
 ---------------------------------------------------------------
+
+Testing user stories:
+
+1. As a User I want to register an account.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Register | From the navigation bar choose 'Register' fill-up the form and press Register button |  | Works as expected |
+
+![Manual Testing](docs/testing/manual/register.png)
+
+2. As a User I want to login.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Login | | From the navigation bar choose 'Login' input registered Username & Password and press Login! button | Works as expected |
+
+![Manual Testing](docs/testing/manual/login.png)
+
+3. As a User I want to view the food stock list.
+
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| | |  |  |
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
