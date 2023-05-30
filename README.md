@@ -608,7 +608,7 @@ Allows user to read list of all items in the storagespace. Items on the list tha
 Items requiring lower temperature have temp. range highlighted in red & items that can be in a warmer environment have highlighted temp. range in blue.
 The items table includes options to edit or delete item of the selected row.
 Below the items table there is element navigating to the create a new item form.
-User stories covered: 3, 5, 6, 7, 9, 10, 11, 15.
+User stories covered: 5, 6, 7, 9, 10, 11, 15.
 
 ![Features](docs/features/items.png)
 
@@ -963,7 +963,7 @@ Testing user stories:
 | ------- | ------- | --------------- | ------------- |
 | Register | From the navigation bar choose 'Register' fill-up the form and press Register button |  | Works as expected |
 
-![Manual Testing](docs/testing/manual/register.png)
+![Manual Testing](docs/testing/manual/1.png)
 
 2. As a User I want to login.
 
@@ -971,14 +971,18 @@ Testing user stories:
 | ------- | ------- | --------------- | ------------- |
 | Login | | From the navigation bar choose 'Login' input registered Username & Password and press Login! button | Works as expected |
 
-![Manual Testing](docs/testing/manual/login.png)
+![Manual Testing](docs/testing/manual/2.png)
 
 3. As a User I want to view the food stock list.
 
-
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| | |  |  |
+| Our Mission Box | After logging in on the home page click on 'Manage Your Pantry Now'  | Navigates to the Main Stocklist page | Works as expected |
+| Main Stocklist Page | Click on User: Name or access it via Our Mission Box as per above, create stocklist if not created yet or navigate to storage spaces | Creates new stocklist | Works as expected |
+
+![Manual Testing](docs/testing/manual/3-a.png)
+![Manual Testing](docs/testing/manual/3-b.png)
+![Manual Testing](docs/testing/manual/3-c.png)
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
