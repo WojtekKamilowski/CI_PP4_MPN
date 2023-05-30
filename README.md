@@ -81,6 +81,8 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 - Users who would like to have better control where they store their food.
 - People who like to plan their grocery shopping to easier buy what is needed.
 
+[Back to Table Of Contents](#table-of-contents)
+
 ### User Requirements and Expectations
 - Accessible and responsive website.
 - Intuitive website with a layout allowing to easily navigate through it.
@@ -88,6 +90,8 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 - Links and features that function in accordance with their intended purpose.
 - Connection with the community on the social media platforms.
 - A contact form to contact the website owner.
+
+[Back to Table Of Contents](#table-of-contents)
 
 ### User Stories
 
@@ -107,13 +111,19 @@ As a User I want to:
 10. See items that have different temperature range than in the storage.
 11. Easily navigate on the website.
 
+[Back to Table Of Contents](#table-of-contents)
+
 #### Site Owner
 
 As an Admin I want to:
 
 12. Access admin panel.
 13. Review messages sent by users.
-14. Deliver an intuitive website for the users.
+14. Manage messages sent by users.
+15. Deliver an intuitive website for the users.
+
+
+[Back to Table Of Contents](#table-of-contents)
 
 ### Agile Methodologies
 
@@ -132,6 +142,8 @@ As an Admin I want to:
 ![Kanban](docs/agile/kanban-6.png)
 ![Kanban](docs/agile/kanban-7.png)
 ![Kanban](docs/agile/kanban-8.png)
+![Kanban](docs/agile/kanban-9.png)
+
 
 </details>
 
@@ -454,7 +466,7 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 It is included on all pages.
 The logo includes an icon. The logo and the website name are clickable link to Home page which is a common feature on many websites so users expect it.
 Logo and website name are responsive, the font size reduces for smaller screens.
-User stories covered: 11, 14.
+User stories covered: 11, 15.
 
 ![Features](docs/features/logo-name.png)
 
@@ -468,7 +480,7 @@ Appears on all pages.
 When user is not loggedin contains links to navigate to Home, Register or Login pages.
 If the user is authenticated displays options to navigate to the home, main stocklist, password change or logout.
 Reflects to the user about the current login state by displaying user's name.
-User stories covered: 1, 2, 3, 11, 14.
+User stories covered: 1, 2, 3, 11, 15.
 
 ![Features](docs/features/nav-bar.png)
 ![Features](docs/features/nav-bar-loggedin.png)
@@ -481,7 +493,7 @@ User stories covered: 1, 2, 3, 11, 14.
 
 Appears on all pages.
 Contains icons with links to Facebook, Pinterest, Youtube & the contact page.
-User stories covered: 8, 11, 14.
+User stories covered: 8, 11, 15.
 
 ![Features](docs/features/footer.png)
 
@@ -495,7 +507,7 @@ It is included on signup.html
 Taken from Allauth & customised.
 Allows user to register an account using own username & password with an optional input of user's email address.
 Gives user an option to navigate to login page if the user already created own account.
-User stories covered: 1, 11, 14.
+User stories covered: 1, 11, 15.
 
 ![Features](docs/features/register.png)
 
@@ -509,7 +521,7 @@ It is included on login.html
 Taken from Allauth & customised.
 Allows user to login to the earlier created account by giving the username & password with an option to remember username.
 Gives user an option to navigate to the password reset page if the user forgot the password or to the register page if user has not created an account yet.
-User stories covered: 2, 11, 14.
+User stories covered: 2, 11, 15.
 
 ![Features](docs/features/login.png)
 
@@ -523,7 +535,7 @@ It is included on password_reset.html
 
 Taken from Allauth & customised.  
 Requests user’s email address (if given during the registration) to send user an Allauth email with a link allowing password reset. It has a link to the contact page so the user can interact with the site’s admin in case Allauth’s solution fails or there are any problems.  
-User stories covered: 2, 8, 11, 14. 
+User stories covered: 2, 8, 11, 15. 
 
 ![Features](docs/features/password-reset.png)
 
@@ -536,7 +548,7 @@ User stories covered: 2, 8, 11, 14.
 It is included on password_change.html 
 Taken from Allauth & customised. 
 User can change the current password to a new password. 
-User stories covered: 2, 11, 14. 
+User stories covered: 2, 11, 15. 
 
 ![Features](docs/features/password-change.png)
 
@@ -549,7 +561,7 @@ User stories covered: 2, 11, 14.
 Appears in the center of the home page.
 Displays info about the website, giving some background to the user what this application is for. 
 Includes links to the signup & login pages when user is not authenticated or to the main stocklist page(list.html) when the user is logged-in. 
-User stories covered: 3, 11, 14.
+User stories covered: 3, 11, 15.
 
 ![Features](docs/features/mission.png)
 ![Features](docs/features/mission-loggedin.png)
@@ -563,7 +575,7 @@ User stories covered: 3, 11, 14.
 Central element list.html
 If there is no stocklist already created it displays an option to create a new stocklist.
 In case the user already created own stocklist with a chosen stocklist name, it gives options to edit or delete the stocklist and displays the link to the storage spaces list.
-User stories covered: 3, 11, 14.
+User stories covered: 3, 11, 15.
 
 ![Features](docs/features/list.png)
 ![Features](docs/features/list-created.png)
@@ -577,7 +589,7 @@ User stories covered: 3, 11, 14.
 Main part of spaces.html
 It shows list of all storage spaces in user's stocklist and displays an option to create a new storage space.
 Storagespaces names contain links to view the details including items table.
-User stories covered: 4, 11, 14.
+User stories covered: 4, 11, 15.
 
 ![Features](docs/features/spaces.png)
 
@@ -594,7 +606,7 @@ Allows user to read list of all items in the storagespace. Items on the list tha
 Items requiring lower temperature have temp. range highlighted in red & items that can be in a warmer environment have highlighted temp. range in blue.
 The items table includes options to edit or delete item of the selected row.
 Below the items table there is element navigating to the create a new item form.
-User stories covered: 3, 5, 6, 7, 9, 10, 11, 14.
+User stories covered: 3, 5, 6, 7, 9, 10, 11, 15.
 
 ![Features](docs/features/items.png)
 
@@ -608,7 +620,7 @@ Central part of the contact page.
 Contains a contact form allowing user to submit a message to site's admins.
 If user is authenticated it automatically takes user's name & e-mail(if given during the registration).
 Informs the user about message receipt after submitting the message.
-User stories covered: 8, 11, 14.
+User stories covered: 8, 11, 15.
 
 ![Features](docs/features/contact.png)
 ![Features](docs/features/received.png)
@@ -622,7 +634,7 @@ User stories covered: 8, 11, 14.
 Taken from Allauth & customised.
 Positioned in the center of logout.html appears after clicking Logout in the navbar.
 Asks the user to confirm the choice of logging out.
-User stories covered: 11, 14. 
+User stories covered: 11, 15. 
 
 
 ![Features](docs/features/logout.png)
@@ -642,7 +654,7 @@ Contains following main optios for the superuser:
 - read user's messages sent via the contact feature
 - manage stocklists, storagespaces & stockitems
 
-User stories: 12, 13.
+User stories: 12, 13, 14.
 
 ![Features](docs/features/admin.png)
 
