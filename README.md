@@ -537,7 +537,7 @@ It is included on password_reset.html
 
 Taken from Allauth & customised.  
 Requests user’s email address (if given during the registration) to send user an Allauth email with a link allowing password reset. It has a link to the contact page so the user can interact with the site’s admin in case Allauth’s solution fails or there are any problems.  
-User stories covered: 2, 8, 11, 15. 
+User stories covered: 2, 11, 15. 
 
 ![Features](docs/features/password-reset.png)
 
@@ -1017,7 +1017,24 @@ Testing user stories:
 ![Manual Testing](docs/testing/manual/6-b.png)
 ![Manual Testing](docs/testing/manual/6-c.png)
 
-7. As a User I want to
+7. As a User I want to remove an item from the stock list.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Storagespace Details & Items Table | From Storagespace Details & Items Table click on the trash can icon in the row for the item to be deleted then choose 'Confirm & Return to Storagespaces List'| Item removed from the storagespace | Works as expected |
+
+![Manual Testing](docs/testing/manual/7-a.png)
+![Manual Testing](docs/testing/manual/7-b.png)
+![Manual Testing](docs/testing/manual/7-c.png)
+
+8. As a User I want to contact Site's Admin.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Contact | Go to the contact page by clicking on the envelope icon in the footer, complete the contact form and click on 'Submit your message' | User is informed that the message has been sent & the received message information is displayed | Works as expected |
+
+![Manual Testing](docs/testing/manual/8-a.png)
+![Manual Testing](docs/testing/manual/8-b.png)
 
 </details>
 
