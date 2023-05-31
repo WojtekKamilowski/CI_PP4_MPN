@@ -50,7 +50,7 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
   - [Deployment](#deployment)
   - [Credits](#credits)
     - [Media](#media)
-  - [Further Development](further-development)
+  - [Further Development](#further-development)
   - [Acknowledgements](#acknowledgements)
 
 ## Project Goals
@@ -1073,15 +1073,40 @@ Testing user stories:
 | Footer | Click on Facebook/ Pinterest/ YT/ envelope icons | Facebook/ Pinterest/ YT/ open in separate tabs. For envelope the contact page is open | Works as expected |
 | Register | Click on Register in the navbar / Our Mission Box | Register page with the form opens | Works as expected |
 | Login | Click on Login in the navbar / Our Mission Box | Login page with the form opens | Works as expected |
-| Password Reset | Click on Forgot Password? link on Login or Password Change pages | Password Reset page opens | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
-|  |  |  | Works as expected |
+| Password Reset | Click on 'Forgot Password?' link on Login or Password Change pages | Password Reset page opens | Works as expected |
+| Password Change | Click on the gear icon in the nav-bar, complete the form and click 'Change Password'| User can login using the update password | Works as expected |
+| Our Mission Box | Open Home page | Links to Login/Reset/Stocklist open | Works as expected |
+| Main Stocklist Page | Click on User: Name or access it via Our Mission Box, click on options(Create your stocklist now/edit stocklist/delete stocklist/ Storage Spaces) | Relevant pages open | Works as expected |
+| Storage Spaces List | Access Storage Spaces List from Main Stocklist Page, click on 'Add a new Storage Space' or 'Return' | Relevant options open | Works as expected |
+| Storagespace Details & Items Table | Access Storagespace Details & Items Table Storage Spaces List then click on options(edit storagespace/delete storagespace/ add a new item/ edit item/ delete item/return) | Relevant options open | Works as expected |
+| Contact | Access Contact by clicking the envelope icon in the footer | Contact page opens with the form, username & email are filled-up automatically if user is logged-in and entered e-mail address during the registration | Works as expected |
+| Logout | Click on Logout in the nav-bar and confirm by clicking Logout button | User is logged-out | Works as expected |
+| Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials | Admin panel opens | Works as expected |
+
+12. As an Admin I want to access admin panel.
+
+13. As an Admin I want to review messages sent by users.
+
+14. As an Admin I want to manage messages sent by users.
+
+15. As an Admin I want to deliver an intuitive website for the users.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Logo and Website Name | Click on the logo or website name | Home page is loaded | Works as expected  |
+| Navigation Bar | Click on options: Home/Register/Login/ Change Password | Relevant pages open | Works as expected |
+| Footer | Click on Facebook/ Pinterest/ YT/ envelope icons | Facebook/ Pinterest/ YT/ open in separate tabs. For envelope the contact page is open | Works as expected |
+| Register | Click on Register in the navbar / Our Mission Box | Register page with the form opens | Works as expected |
+| Login | Click on Login in the navbar / Our Mission Box | Login page with the form opens | Works as expected |
+| Password Reset | Click on 'Forgot Password?' link on Login or Password Change pages | Password Reset page opens | Works as expected |
+| Password Change | Click on the gear icon in the nav-bar, complete the form and click 'Change Password'| User can login using the update password | Works as expected |
+| Our Mission Box | Open Home page | Links to Login/Reset/Stocklist open | Works as expected |
+| Main Stocklist Page | Click on User: Name or access it via Our Mission Box, click on options(Create your stocklist now/edit stocklist/delete stocklist/ Storage Spaces) | Relevant pages open | Works as expected |
+| Storage Spaces List | Access Storage Spaces List from Main Stocklist Page, click on 'Add a new Storage Space' or 'Return' | Relevant options open | Works as expected |
+| Storagespace Details & Items Table | Access Storagespace Details & Items Table Storage Spaces List then click on options(edit storagespace/delete storagespace/ add a new item/ edit item/ delete item/return) | Relevant options open | Works as expected |
+| Contact | Access Contact by clicking the envelope icon in the footer | Contact page opens with the form, username & email are filled-up automatically if user is logged-in and entered e-mail address during the registration | Works as expected |
+| Logout | Click on Logout in the nav-bar and confirm by clicking Logout button | User is logged-out | Works as expected |
+| Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials | Admin panel opens | Works as expected |
 
 </details>
 
