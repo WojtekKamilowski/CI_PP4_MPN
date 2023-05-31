@@ -1085,9 +1085,27 @@ Testing user stories:
 
 12. As an Admin I want to access admin panel.
 
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials | Admin panel opens | Works as expected |
+
 13. As an Admin I want to review messages sent by users.
 
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials, click on Contacts and on MESSAGE ID to view details | Message opens displaying received details | Works as expected |
+
+![Manual Testing](docs/testing/manual/13.png)
+![Manual Testing](docs/testing/manual/13-a.png)
+
 14. As an Admin I want to manage messages sent by users.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials, click on Contacts | Delete read messages | Works as expected |
+
+![Manual Testing](docs/testing/manual/14-a.png)
+![Manual Testing](docs/testing/manual/14-b.png)
 
 15. As an Admin I want to deliver an intuitive website for the users.
 
@@ -1109,11 +1127,6 @@ Testing user stories:
 | Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials | Admin panel opens | Works as expected |
 
 </details>
-
-
-| Feature | Action  | Expected Result | Actual Result |
-| ------- | ------- | --------------- | ------------- |
-|  |  |  |  |
 
 [Back to Table Of Contents](#table-of-contents)
 
