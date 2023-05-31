@@ -50,6 +50,7 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
   - [Deployment](#deployment)
   - [Credits](#credits)
     - [Media](#media)
+  - [Further Development](further-development)
   - [Acknowledgements](#acknowledgements)
 
 ## Project Goals
@@ -961,7 +962,7 @@ Testing user stories:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| Register | From the navigation bar choose 'Register' fill-up the form and press Register button |  | Works as expected |
+| Register | From the navigation bar choose 'Register' fill-up the form and press Register button | User registers own account & is automatically logged in | Works as expected |
 
 ![Manual Testing](docs/testing/manual/1.png)
 
@@ -970,8 +971,19 @@ Testing user stories:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Login | | From the navigation bar choose 'Login' input registered Username & Password and press Login! button | Works as expected |
+| Password Reset | Click on 'Forgot Password?' link on Login page then click 'Reset My Password', check your emails if you do not receive it for a longer time contact Site's Admin | Email from Allauth is received | Allauth feature does not work. Contacting Site's Admins alternative works as expected |
 
 ![Manual Testing](docs/testing/manual/2.png)
+![Manual Testing](docs/testing/manual/2-a.png)
+![Manual Testing](docs/testing/manual/2-b.png)
+![Manual Testing](docs/testing/manual/2-c.png)
+![Manual Testing](docs/testing/manual/2-d.png)
+![Manual Testing](docs/testing/manual/2-e.png)
+![Manual Testing](docs/testing/manual/2-f.png)
+![Manual Testing](docs/testing/manual/2-g.png)
+![Manual Testing](docs/testing/manual/2-h.png)
+![Manual Testing](docs/testing/manual/2-i.png)
+![Manual Testing](docs/testing/manual/2-j.png)
 
 3. As a User I want to view the food stock list.
 
@@ -1057,7 +1069,18 @@ Testing user stories:
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | Logo and Website Name | Click on the logo or website name | Home page is loaded | Works as expected  |
-| Navigation Bar |  |  | Works as expected |
+| Navigation Bar | Click on options: Home/Register/Login/ Change Password | Relevant pages open | Works as expected |
+| Footer | Click on Facebook/ Pinterest/ YT/ envelope icons | Facebook/ Pinterest/ YT/ open in separate tabs. For envelope the contact page is open | Works as expected |
+| Register | Click on Register in the navbar / Our Mission Box | Register page with the form opens | Works as expected |
+| Login | Click on Login in the navbar / Our Mission Box | Login page with the form opens | Works as expected |
+| Password Reset | Click on Forgot Password? link on Login or Password Change pages | Password Reset page opens | Works as expected |
+|  |  |  | Works as expected |
+|  |  |  | Works as expected |
+|  |  |  | Works as expected |
+|  |  |  | Works as expected |
+|  |  |  | Works as expected |
+|  |  |  | Works as expected |
+|  |  |  | Works as expected |
 |  |  |  | Works as expected |
 
 </details>
@@ -1174,6 +1197,17 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 - Image replacing default Cloudinary placeholder for create stocklist image from <a href="https://console.cloudinary.com/console/c-7d0dc1f07855d3688919c6f201a8dd/media_library/search/asset/4f3bf051866c4e34e1f31c72fe08ade6/manage?q=&context=manage">Freepik</a>.
   
 - Image of a broken jar with pasta for error messages from <a href="https://pixabay.com/photos/jar-broken-pasta-pasta-scattered-4258747/">Pixabay</a>.
+
+[Back to Table Of Contents](#table-of-contents)
+
+## Further Development
+
+1. Add extra functionality to the storagespace form to prevent Error 500 appearing when user attempts to add a storagespace with an existing name.
+
+![Further Development](docs/storage-development.png)
+![Further Development](docs/storage-development-error.png)
+
+2. Automatic Password Reset funtionality.
 
 [Back to Table Of Contents](#table-of-contents)
 
