@@ -1036,6 +1036,30 @@ Testing user stories:
 ![Manual Testing](docs/testing/manual/8-a.png)
 ![Manual Testing](docs/testing/manual/8-b.png)
 
+9. As a User I want to see items are expired.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Storagespace Details & Items Table | On the Items Table see items' expiry dates | expiry dates of expired items are highlited in orange | Works as expected |
+
+![Manual Testing](docs/testing/manual/9.png)
+
+10. As a User I want to see items that have different temperature range than in the storage.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Storagespace Details & Items Table | On the Items Table see items' temp ranges | temp ranges of items that should be in a colder environment are highlited in red & items that can be stored in a warmer place in blue | Works as expected |
+
+![Manual Testing](docs/testing/manual/10.png)
+
+11. As a User I want to easily navigate on the website.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Logo and Website Name | Click on the logo or website name | Home page is loaded | Works as expected  |
+| Navigation Bar |  |  | Works as expected |
+|  |  |  | Works as expected |
+
 </details>
 
 
