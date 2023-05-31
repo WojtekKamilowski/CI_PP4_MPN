@@ -1006,13 +1006,25 @@ Testing user stories:
 ![Manual Testing](docs/testing/manual/5-a.png)
 ![Manual Testing](docs/testing/manual/5-b.png)
 
+6. As a User I want to update a stock item.
+
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| | |  |  |
+| Storagespace Details & Items Table | From Storagespace Details & Items Table click on the pen to square icon in the row corresponding to item to be updated, edit detail on the form as required & click on 'Confirm & Return to Storagespaces List' then navigate back to the storagespace details of the storagespace relevant to the item as updated | Item's details are updated and is moved to a different storagespace if applicable | Works as expected  |
+
+![Manual Testing](docs/testing/manual/6-a.png)
+![Manual Testing](docs/testing/manual/6-b.png)
+![Manual Testing](docs/testing/manual/6-c.png)
+
+7. As a User I want to
 
 </details>
 
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+|  |  |  |  |
 
 [Back to Table Of Contents](#table-of-contents)
 
