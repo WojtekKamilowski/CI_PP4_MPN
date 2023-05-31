@@ -50,7 +50,7 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
   - [Deployment](#deployment)
   - [Credits](#credits)
     - [Media](#media)
-  - [Further Development](#further-development)
+  - [Further Developments](#further-developments)
   - [Acknowledgements](#acknowledgements)
 
 ## Project Goals
@@ -71,7 +71,6 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 - Help users to better organize their food storage.
 - Collect feedback or answer questions from the users by using the contact form.
 - Allow users to easily visit social media pages of the owner.
-
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -496,7 +495,7 @@ User stories covered: 11, 15.
 
 Appears on all pages.
 Contains icons with links to Facebook, Pinterest, Youtube & the contact page.
-User stories covered: 8, 11, 15.
+User stories covered: 11, 15.
 
 ![Features](docs/features/footer.png)
 
@@ -972,6 +971,7 @@ Testing user stories:
 | ------- | ------- | --------------- | ------------- |
 | Login | | From the navigation bar choose 'Login' input registered Username & Password and press Login! button | Works as expected |
 | Password Reset | Click on 'Forgot Password?' link on Login page then click 'Reset My Password', check your emails if you do not receive it for a longer time contact Site's Admin | Email from Allauth is received | Allauth feature does not work. Contacting Site's Admins alternative works as expected |
+| Password Change | Click on the gear icon in the nav-bar, complete the form and click 'Change Password' | user's password is updated | Works as expected |
 
 ![Manual Testing](docs/testing/manual/2.png)
 ![Manual Testing](docs/testing/manual/2-a.png)
@@ -1238,7 +1238,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 [Back to Table Of Contents](#table-of-contents)
 
-## Further Development
+## Further Developments
 
 1. Add extra functionality to the storagespace form to prevent Error 500 appearing when user attempts to add a storagespace with an existing name.
 
