@@ -997,6 +997,16 @@ Testing user stories:
 ![Manual Testing](docs/testing/manual/4-a.png)
 ![Manual Testing](docs/testing/manual/4-b.png)
 
+5. As a User I want to add a new stock item.
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Storagespace Details & Items Table | From Storagespace Details & Items Table click on 'Add a new item' complete the form and click 'Confirm' | Creates a new item with the inserted details | Works as expected |
+
+![Manual Testing](docs/testing/manual/5-a.png)
+![Manual Testing](docs/testing/manual/5-b.png)
+
+
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
 | | |  |  |
