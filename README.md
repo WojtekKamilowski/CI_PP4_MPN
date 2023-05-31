@@ -608,7 +608,7 @@ Allows user to read list of all items in the storagespace. Items on the list tha
 Items requiring lower temperature have temp. range highlighted in red & items that can be in a warmer environment have highlighted temp. range in blue.
 The items table includes options to edit or delete item of the selected row.
 Below the items table there is element navigating to the create a new item form.
-User stories covered: 5, 6, 7, 9, 10, 11, 15.
+User stories covered: 3, 5, 6, 7, 9, 10, 11, 15.
 
 ![Features](docs/features/items.png)
 
@@ -979,10 +979,23 @@ Testing user stories:
 | ------- | ------- | --------------- | ------------- |
 | Our Mission Box | After logging in on the home page click on 'Manage Your Pantry Now'  | Navigates to the Main Stocklist page | Works as expected |
 | Main Stocklist Page | Click on User: Name or access it via Our Mission Box as per above, create stocklist if not created yet or navigate to storage spaces | Creates new stocklist | Works as expected |
+| Storagespace Details & Items Table | From Main Stocklist Page, navigate to Storage Spaces using the option at the bottom of the box then click on one of the Storage Spaces created earlier an view the items displayed on the table that were earlier created and assigned to the given Storage Space | User sees stockitems in the table | Works as expected |
 
 ![Manual Testing](docs/testing/manual/3-a.png)
 ![Manual Testing](docs/testing/manual/3-b.png)
 ![Manual Testing](docs/testing/manual/3-c.png)
+![Manual Testing](docs/testing/manual/3-d.png)
+![Manual Testing](docs/testing/manual/3-e.png)
+![Manual Testing](docs/testing/manual/3-f.png)
+
+4. As a User I want to add a new storage space
+
+| Feature | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Storage Spaces List | From Home page proceed to Main Stocklist Page, then navigate to Storage Spaces using the option at the bottom of the box and click on 'Add a new Storage Space' option. Choose a unique name for your new storage space, instert its temperature and press 'Confirm' | Just created new Storage Space appears on the storage spaces list  | Works as expected |
+
+![Manual Testing](docs/testing/manual/4-a.png)
+![Manual Testing](docs/testing/manual/4-b.png)
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
