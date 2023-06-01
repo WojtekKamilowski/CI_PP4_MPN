@@ -1176,6 +1176,7 @@ JavaScript testing:
 | Heroku error during the early deployment: "Failed building wheel for backports.zoneinfo" | Edit requirements.txt file* |
 | Continuation line under-indented for visual indent (E128) | Check best practice on Flake8 Rules |
 | Accessibility error: Empty table header | Add aria-label "Settings column" to th element |
+| Admin Panel has no styles | Remove DISABLE_COLLECTSTATIC = 1 from Config Vars on Heroku |
 
 *update backports from backports.zoneinfo==0.2.1 to backports zoneinfo==0.2.1;python_version<"3.9"
 
@@ -1207,24 +1208,23 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 9. Add another record to Config Vars with the DATABASE_URL
 ![Deployment](docs/deployment/database-1.png)
 ![Deployment](docs/deployment/database-2.png)
-10. Add another record to Config Vars with DISABLE_COLLECTSTATIC = 1
-11. Add another record to Config Vars with PORT = 8000
+10. Add another record to Config Vars with PORT = 8000
 ![Deployment](docs/deployment/vars.png)
-12. Below Config Vars in Buildpacks select python
+11. Below Config Vars in Buildpacks select python
 ![Deployment](docs/deployment/buildpack.png)
 ![Deployment](docs/deployment/python.png)
-13. Go to the Deploy Tab
-14. Choose Deployment method GitHub and click Save Changes
-15. Confirm you want to connect to GitHub
-16. Search for the repository name and click the connect button
+12. Go to the Deploy Tab
+13. Choose Deployment method GitHub and click Save Changes
+14. Confirm you want to connect to GitHub
+15. Search for the repository name and click the connect button
 ![Deployment](docs/deployment/github.png)
-17. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
+16. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 ![Deployment](docs/deployment/auto-manual.png)
-18. Choose a branch to deploy: main
-19. Click on Deploy Branch button & wait until the app is succesfully deployed/ address log errors
+17. Choose a branch to deploy: main
+18. Click on Deploy Branch button & wait until the app is succesfully deployed/ address log errors
 ![Deployment](docs/deployment/manual.png)
 ![Deployment](docs/deployment/deployed.png)
-20. For Automatic deploys click on Enable Automatic Deploys button
+19. For Automatic deploys click on Enable Automatic Deploys button
 ![Deployment](docs/deployment/auto.png)
 
 </details>
