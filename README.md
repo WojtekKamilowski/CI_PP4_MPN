@@ -1142,7 +1142,7 @@ Testing user stories:
 | Continuation line under-indented for visual indent (E128) | Check best practice on Flake8 Rules |
 | Accessibility error: Empty table header | Add aria-label "Settings column" to th element |
 
-* update backports from backports.zoneinfo==0.2.1 to backports zoneinfo==0.2.1;python_version<"3.9"
+*update backports from backports.zoneinfo==0.2.1 to backports zoneinfo==0.2.1;python_version<"3.9"
 
 [Back to Table Of Contents](#table-of-contents)
 
