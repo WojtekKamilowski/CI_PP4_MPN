@@ -1247,6 +1247,18 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 2. Automatic Password Reset funtionality.
 
+3. Improved navigation for the Storagespace Details & Items Table.
+
+![Further Development](docs/return.png)
+
+4. Autoselect of the Storage field in the Create a New Item form corresponding to the Storagespace from where the user clicked on the option.
+
+![Further Development](docs/autoselect.png)
+
+5. Option for users to upload own stocklist image.
+
+![Further Development](docs/image.png)
+
 [Back to Table Of Contents](#table-of-contents)
 
 ## Acknowledgements
