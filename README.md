@@ -1323,7 +1323,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 
 ![Further Development](docs/image.png)
 
-6. Use & customise other Allauth included functionalities such Social Authentication.
+6. Use & customise other Allauth included functionalities, for example Social Authentication.
 
 [Back to Table Of Contents](#table-of-contents)
 
