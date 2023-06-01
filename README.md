@@ -370,8 +370,7 @@ Diagram:
 Implemented models as per diagram:
 
 ![Database Diagram](docs/database/stocklist-model.png)
-![Database Diagram](docs/database/storagespace-model-1.png)
-![Database Diagram](docs/database/storagespace-model-2.png)
+![Database Diagram](docs/database/storagespace-model.png)
 ![Database Diagram](docs/database/stockitem-model-1.png)
 ![Database Diagram](docs/database/stockitem-model-2.png)
 
