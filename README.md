@@ -942,7 +942,9 @@ Following browsers were used to test the website:
 
 ### Automated Testing
 
-<details><summary>Automated Testing</summary>
+<details>
+
+<summary>Automated Testing</summary>
 
 - stocklist.test_models.py
 ![Automated Testing](docs/testing/auto/test_models.png)
@@ -951,7 +953,9 @@ Following browsers were used to test the website:
 
 ### Manual Testing
 
-<details><summary>Manual Testing</summary>
+<details>
+
+<summary>Manual Testing</summary>
 
 ---------------------------------------------------------------
 
@@ -1144,7 +1148,9 @@ Testing user stories:
 
 ## Deployment
 
-- This site was deployed using Heroku in following steps: 
+<details>
+
+<summary>This site was deployed using Heroku in following steps:</summary>
 
 Before deployment remember to set DEBUG = False & ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
 
@@ -1152,24 +1158,41 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 ![Deployment](docs/deployment/requirements.png)
 
 1. Log in to Heroku or create an account
+![Deployment](docs/deployment/heroku-login.png)
 2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create new app
+![Deployment](docs/deployment/new.png)
 3. You must enter a unique app name
 4. Next select your region
 5. Click on the Create App button
-6. Click Reveal Config Vars and add a new record with the SECRET_KEY
-7. Add another record to Config Vars with the CLOUDINARY_URL
-8. Add another record to Config Vars with the DATABASE_URL
-9. Add another record to Config Vars with DISABLE_COLLECTSTATIC = 1
-10. Add another record to Config Vars with PORT = 8000
-11. Below Config Vars in Buildpacks select heroku/python
-12. Go to the Deploy Tab
-13. Choose Deployment method GitHub and click Save Changes
-14. Confirm you want to connect to GitHub
-15. Search for the repository name and click the connect button
-16. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
-17. Choose a branch to deploy: main
-18. Click on Deploy Branch button
-19. For Automatic deploys click on Enable Automatic Deploys button
+![Deployment](docs/deployment/create.png)
+6. Go to the Settings tab
+7. Click Reveal Config Vars and add a new record with the SECRET_KEY
+8. Add another record to Config Vars with the CLOUDINARY_URL
+![Deployment](docs/deployment/cloudinary.png)
+9. Add another record to Config Vars with the DATABASE_URL
+![Deployment](docs/deployment/database-1.png)
+![Deployment](docs/deployment/database-2.png)
+10. Add another record to Config Vars with DISABLE_COLLECTSTATIC = 1
+11. Add another record to Config Vars with PORT = 8000
+![Deployment](docs/deployment/vars.png)
+12. Below Config Vars in Buildpacks select python
+![Deployment](docs/deployment/buildpack.png)
+![Deployment](docs/deployment/python.png)
+13. Go to the Deploy Tab
+14. Choose Deployment method GitHub and click Save Changes
+15. Confirm you want to connect to GitHub
+16. Search for the repository name and click the connect button
+![Deployment](docs/deployment/github.png)
+17. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
+![Deployment](docs/deployment/auto-manual.png)
+18. Choose a branch to deploy: main
+19. Click on Deploy Branch button & wait until the app is succesfully deployed/ address log errors
+![Deployment](docs/deployment/manual.png)
+![Deployment](docs/deployment/deployed.png)
+20. For Automatic deploys click on Enable Automatic Deploys button
+![Deployment](docs/deployment/auto.png)
+
+</details>
 
 [Back to Table Of Contents](#table-of-contents)
 
