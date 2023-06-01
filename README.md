@@ -56,21 +56,21 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 ## Project Goals
 
 ### User Goals
-- Control stock levels of food at home.
-- Reduce food waste.
-- Reduce money waste.
-- Avoid leaving expired food in storage areas.
-- Better plan where to store food according to temperature requirements.
-- Easy navigation through the website.
-- Ask questions or provide feedback for the website owner by using the contact form.
-- Find social media of the website to find more content about saving food and network with other users.
+- Control stock levels of food at home. (user stories: 1 - 7, 9, 10)
+- Reduce food waste. (user stories: 1 - 7, 9, 10)
+- Reduce money waste. (user stories: 1 - 7, 9, 10)
+- Avoid leaving expired food in storage areas. (user story: 9)
+- Better plan where to store food according to temperature requirements. (user story: 10)
+- Easy navigation through the website. (user story: 11)
+- Ask questions or provide feedback for the website owner by using the contact form. (user story: 8)
+- Find social media of the website to find more content about saving food and network with other users. (user story: 11)
 
 ### Business Owner Goals
-- Allow users to organize information about stored food in storagespaces.
-- Provide users with a simple application helping to reduce food waste.
-- Help users to better organize their food storage.
-- Collect feedback or answer questions from the users by using the contact form.
-- Allow users to easily visit social media pages of the owner.
+- Allow users to organize information about stored food in storagespaces. (user stories: 1 - 7, 9, 10 & 15)
+- Provide users with a simple application helping to reduce food waste. (user stories: 1 - 7, 9, 10 & 15)
+- Help users to better organize their food storage. (user stories: 1 - 7, 9, 10 & 15)
+- Collect feedback or answer questions from the users by using the contact form. (user stories: 8, 12, 13, 14)
+- Allow users to easily visit social media pages of the owner. (user story: 15)
 
 [Back to Table Of Contents](#table-of-contents)
 
