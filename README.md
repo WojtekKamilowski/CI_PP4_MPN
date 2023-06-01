@@ -1148,6 +1148,9 @@ Testing user stories:
 
 Before deployment remember to set DEBUG = False & ensure requirements.txt is updated using terminal command: pip3 freeze --local requirements.txt
 
+![Deployment](docs/deployment/debug.png)
+![Deployment](docs/deployment/requirements.png)
+
 1. Log in to Heroku or create an account
 2. On the main page click the button labelled New in the top right corner and from the drop-down menu select Create new app
 3. You must enter a unique app name
