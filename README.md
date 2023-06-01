@@ -1147,6 +1147,24 @@ Testing user stories:
 | Logout | Click on Logout in the nav-bar and confirm by clicking Logout button | User is logged-out | Works as expected |
 | Admin | Go to https://mypantrynote.herokuapp.com/admin & login using superuser's credentials | Admin panel opens | Works as expected |
 
+JavaScript testing:
+
+| JS | Action  | Expected Result | Actual Result |
+| ------- | ------- | --------------- | ------------- |
+| Close messages after 3 seconds | Use one of Create, Update or Delete functionalities | Message informing about the changes to the data notified to the user closes after 3 seconds | Works as expected |
+| Changes color of create_box buttons when mouse on | Hover mouse on: 'Create your stocklist now!'/ 'Add a new Storage Space'/'Add a new item' | Color changes from green to yellow | Works as expected |
+| Changes color of create_box buttons when mouse out | Move mouse from: 'Create your stocklist now!'/ 'Add a new Storage Space'/'Add a new item' | Color changes from yellow to green | Works as expected |
+| Hihghlights items table row when mouse enters | Move mouse on an items table row | Row that the mouse is on is highlited in a darker shade of gray | Works as expected |
+| Removes hihghlight of items table row when mouse leaves | Move mouse from the row that the mouse is on |  Row that the mouse was on is highlited in the same shade of gray as the other rows | Works as expected |
+
+![Manual Testing](docs/testing/manual/js-msg-1.png)
+![Manual Testing](docs/testing/manual/js-msg-2.png)
+![Manual Testing](docs/testing/manual/mouse-on.png)
+![Manual Testing](docs/testing/manual/mouse-out.png)
+![Manual Testing](docs/testing/manual/row-highlighted.png)
+![Manual Testing](docs/testing/manual/other-row.png)
+![Manual Testing](docs/testing/manual/row-standard.png)
+
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
