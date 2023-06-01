@@ -154,13 +154,13 @@ As an Admin I want to:
 ### Design Choices
 
 The main theme was to create a simple website to help users keep their food storage organized and under control. 
-The users can organize their lists into different storage spaces that can be useful to find the items, for exmaple in the physical locations when cooking or check stock levels on mobile devices during shopping. The logo is a clipboard list which is to inform user of the main purpose of this website: list food items. The name: MyPantryNote relates to personalized service where users can keep record of their own food stock, the lst word note was chosen to highlight the simplicity of the idea. Design of all elements of the website represent a message for users that controlling stock levels can be easy using an intuitive website.
+The users can organize their lists into different storage spaces that can be useful to find the items, for example in the physical locations when cooking or check stock levels on mobile devices during shopping. The logo is a clipboard list which is to inform user of the main purpose of this website: list food items. The name: MyPantryNote relates to personalized service where users can keep record of their own food stock, the list word note was chosen to highlight the simplicity of the idea. Design of all elements of the website represent a message for users that controlling stock levels can be easy using an intuitive website.
 
 ### Colors
 
 The main color of the website is green #7EC63F that is to represent nature & organic harmony to relate reducing waste as a way into more sustainable way of living for an individual user.
 There is also tone of yellow, kept in the natural/ organic food theme to differentiate certain elements of the website.
-Error messages are in white with red background to break from the color theme and clearly inform the user that something went wrong .
+Error messages are in white with red background to break from the color theme and clearly inform the user that something went wrong.
 
 - #7EC63F from <a href="https://coolors.co/contrast-checker/000000-7ec63f">Coolors</a>.
 <details>
@@ -243,7 +243,7 @@ There is base.html that contains main structure of the website, the navbar &  th
 Stocklist app has 13 pages:
 
 - index.html - home page containing some info about the website.
-- list.html - its main part with options to create(add_stocklist.html), edit(edit_stocklist.html) or delete(delete_list.html) user's stocklist and naviagate to spaces.html
+- list.html - its main part with options to create(add_stocklist.html), edit(edit_stocklist.html) or delete(delete_list.html) user's stocklist and navigate to spaces.html
 - spaces.html - contains list of created storagespaces and a button to create a new storage space(add_storage.html). 
 - items.html - this is where after clicking on a storagespace, users can view items in the chosen storagespace and click on edit(edit_storage.html, edit_item.html) or delete(delete_storage.html, delete_item.html) options for storagespace itself or its items or add a new item(add_item.html).
 
@@ -437,8 +437,8 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 ## Technologies Used
 
 - [GitHub](https://github.com/)
-- [Gitpod](https://gitpod.io/)
-- [Codeanywhere](https://app.codeanywhere.com/)
+- [Gitpod](https://gitpod.io/) *
+- [Codeanywhere](https://app.codeanywhere.com/) *
 - [Heroku](https://id.heroku.com/)
 - [Lucidchart](https://lucid.app/)
 - [Fontawesome](https://fontawesome.com/)
@@ -449,6 +449,9 @@ On Admin Panel, admin/ superuser has full access to CRUD functionality to contro
 - [jQuery](https://jquery.com/)
 - [WAVE](https://wave.webaim.org/)
 - [amiresponsive?](https://ui.dev/amiresponsive?)
+
+*Initial workspace created on Gitpod, then migrated to Codeanywhere as nominated by Code Institute. 
+Migrated again back to Gitpod to complete the project due to inconsistent performance and availability issues of Codeanywhere.
 
 [Back to Table Of Contents](#table-of-contents)
 
@@ -496,7 +499,7 @@ User stories covered: 11, 15.
 <summary>Navigation Bar</summary>
 
 Appears on all pages.
-When user is not loggedin contains links to navigate to Home, Register or Login pages.
+When user is not logged-in contains links to navigate to Home, Register or Login pages.
 If the user is authenticated displays options to navigate to the home, main stocklist, password change or logout.
 Reflects to the user about the current login state by displaying user's name.
 User stories covered: 11, 15.
@@ -621,7 +624,7 @@ User stories covered: 4, 11, 15.
 Appears in the center of items.html
 Allows user to edit or delete the storagespace.
 Informs the user about the temperature in the storagespace & when it was last time updated.
-Allows user to read list of all items in the storagespace. Items on the list that are expired or will expire next day have highlited expiry date in orange.
+Allows user to read list of all items in the storagespace. Items on the list that are expired or will expire next day have highlighted expiry date in orange.
 Items requiring lower temperature have temp. range highlighted in red & items that can be in a warmer environment have highlighted temp. range in blue.
 The items table includes options to edit or delete item of the selected row.
 Below the items table there is element navigating to the create a new item form.
@@ -1025,7 +1028,7 @@ Testing user stories:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| Storage Spaces List | From Home page proceed to Main Stocklist Page, then navigate to Storage Spaces using the option at the bottom of the box and click on 'Add a new Storage Space' option. Choose a unique name for your new storage space, instert its temperature and press 'Confirm' | Just created new Storage Space appears on the storage spaces list  | Works as expected |
+| Storage Spaces List | From Home page proceed to Main Stocklist Page, then navigate to Storage Spaces using the option at the bottom of the box and click on 'Add a new Storage Space' option. Choose a unique name for your new storage space, insert its temperature and press 'Confirm' | Just created new Storage Space appears on the storage spaces list  | Works as expected |
 
 ![Manual Testing](docs/testing/manual/4-a.png)
 ![Manual Testing](docs/testing/manual/4-b.png)
@@ -1073,7 +1076,7 @@ Testing user stories:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| Storagespace Details & Items Table | On the Items Table see items' expiry dates | expiry dates of expired items are highlited in orange | Works as expected |
+| Storagespace Details & Items Table | On the Items Table see items' expiry dates | expiry dates of expired items are highlighted in orange | Works as expected |
 
 ![Manual Testing](docs/testing/manual/9.png)
 
@@ -1081,7 +1084,7 @@ Testing user stories:
 
 | Feature | Action  | Expected Result | Actual Result |
 | ------- | ------- | --------------- | ------------- |
-| Storagespace Details & Items Table | On the Items Table see items' temp ranges | temp ranges of items that should be in a colder environment are highlited in red & items that can be stored in a warmer place in blue | Works as expected |
+| Storagespace Details & Items Table | On the Items Table see items' temp ranges | temp ranges of items that should be in a colder environment are highlighted in red & items that can be stored in a warmer place in blue | Works as expected |
 
 ![Manual Testing](docs/testing/manual/10.png)
 
@@ -1154,16 +1157,16 @@ JavaScript testing:
 | Close messages after 3 seconds | Use one of Create, Update or Delete functionalities | Message informing about the changes to the data notified to the user closes after 3 seconds | Works as expected |
 | Changes color of create_box buttons when mouse on | Hover mouse on: 'Create your stocklist now!'/ 'Add a new Storage Space'/'Add a new item' | Color changes from green to yellow | Works as expected |
 | Changes color of create_box buttons when mouse out | Move mouse from: 'Create your stocklist now!'/ 'Add a new Storage Space'/'Add a new item' | Color changes from yellow to green | Works as expected |
-| Hihghlights items table row when mouse enters | Move mouse on an items table row | Row that the mouse is on is highlited in a darker shade of gray | Works as expected |
-| Removes hihghlight of items table row when mouse leaves | Move mouse from the row that the mouse is on |  Row that the mouse was on is highlited in the same shade of gray as the other rows | Works as expected |
+| Highlights items table row when mouse enters | Move mouse on an items table row | Row that the mouse is on is highlighted in a darker shade of gray | Works as expected |
+| Removes highlight of items table row when mouse leaves | Move mouse from the row that the mouse is on |  Row that the mouse was on is highlighted in the same shade of gray as the other rows | Works as expected |
 
 ![Manual Testing](docs/testing/manual/js-msg-1.png)
 ![Manual Testing](docs/testing/manual/js-msg-2.png)
-![Manual Testing](docs/testing/manual/mouse-on.png)
-![Manual Testing](docs/testing/manual/mouse-out.png)
-![Manual Testing](docs/testing/manual/row-highlighted.png)
-![Manual Testing](docs/testing/manual/other-row.png)
-![Manual Testing](docs/testing/manual/row-standard.png)
+![Manual Testing](docs/testing/manual/mouse-on.jpg)
+![Manual Testing](docs/testing/manual/mouse-out.jpg)
+![Manual Testing](docs/testing/manual/row-highlighted.jpg)
+![Manual Testing](docs/testing/manual/other-row.jpg)
+![Manual Testing](docs/testing/manual/row-standard.jpg)
 
 </details>
 
@@ -1221,7 +1224,7 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 16. Scroll to the bottom of the deploy page and select the preferred deployment type ( Automatic deploys or Manual deploy)
 ![Deployment](docs/deployment/auto-manual.png)
 17. Choose a branch to deploy: main
-18. Click on Deploy Branch button & wait until the app is succesfully deployed/ address log errors
+18. Click on Deploy Branch button & wait until the app is successfully deployed/ address log errors
 ![Deployment](docs/deployment/manual.png)
 ![Deployment](docs/deployment/deployed.png)
 19. For Automatic deploys click on Enable Automatic Deploys button
@@ -1306,13 +1309,13 @@ Before deployment remember to set DEBUG = False & ensure requirements.txt is upd
 ![Further Development](docs/storage-development.png)
 ![Further Development](docs/storage-development-error.png)
 
-2. Automatic Password Reset funtionality.
+2. Automatic Password Reset functionality.
 
 3. Improved navigation for the Storagespace Details & Items Table.
 
 ![Further Development](docs/return.png)
 
-4. Autoselect of the Storage field in the Create a New Item form corresponding to the Storagespace from where the user clicked on the option.
+4. Auto-select of the Storage field in the Create a New Item form corresponding to the Storagespace from where the user clicked on the option.
 
 ![Further Development](docs/autoselect.png)
 
