@@ -45,7 +45,6 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
   - [Testing](#testing)
     - [Automated Testing](#automated-testing)
     - [Manual Testing](#manual-testing)
-  - [Creating the app using Django](#creating-the-app-using-django)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
   - [Credits](#credits)
