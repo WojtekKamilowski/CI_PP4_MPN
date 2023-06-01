@@ -511,7 +511,7 @@ User stories covered: 11, 15.
 <summary>Footer</summary>
 
 Appears on all pages.
-Contains icons with links to Facebook, Pinterest, Youtube & the contact page.
+Contains icons with links to Facebook, Pinterest, YouTube & the contact page.
 User stories covered: 11, 15.
 
 ![Features](docs/features/footer.png)
