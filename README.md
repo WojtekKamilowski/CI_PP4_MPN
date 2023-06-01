@@ -363,11 +363,29 @@ There are also a few customised pages related to user's authentication option wi
 
 - Stocklist:
 
+Diagram:
+
 ![Database Diagram](docs/database/stocklist.png)
+
+Implemented models as per diagram:
+
+![Database Diagram](docs/database/stocklist-model.png)
+![Database Diagram](docs/database/storagespace-model-1.png)
+![Database Diagram](docs/database/storagespace-model-2.png)
+![Database Diagram](docs/database/stockitem-model-1.png)
+![Database Diagram](docs/database/stockitem-model-2.png)
+
+[Back to Table Of Contents](#table-of-contents)
 
 - Contact:
 
+Diagram:
+
 ![Database Diagram](docs/database/contact.png)
+
+Implemented model as per diagram:
+
+![Database Diagram](docs/database/contact-model.png)
 
 [Back to Table Of Contents](#table-of-contents)
 
