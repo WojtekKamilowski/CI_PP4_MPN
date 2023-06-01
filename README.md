@@ -56,21 +56,21 @@ My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Develo
 ## Project Goals
 
 ### User Goals
-- Control stock levels of food at home. (user stories: 1 - 7, 9, 10)
-- Reduce food waste. (user stories: 1 - 7, 9, 10)
-- Reduce money waste. (user stories: 1 - 7, 9, 10)
-- Avoid leaving expired food in storage areas. (user story: 9)
-- Better plan where to store food according to temperature requirements. (user story: 10)
-- Easy navigation through the website. (user story: 11)
-- Ask questions or provide feedback for the website owner by using the contact form. (user story: 8)
-- Find social media of the website to find more content about saving food and network with other users. (user story: 11)
+- Control stock levels of food at home. (related user stories: 1 - 7, 9, 10)
+- Reduce food waste. (related user stories: 1 - 7, 9, 10)
+- Reduce money waste. (related user stories: 1 - 7, 9, 10)
+- Avoid leaving expired food in storage areas. (related user story: 9)
+- Better plan where to store food according to temperature requirements. (related user story: 10)
+- Easy navigation through the website. (related user story: 11)
+- Ask questions or provide feedback for the website owner by using the contact form. (related user story: 8)
+- Find social media of the website to find more content about saving food and network with other users. (related user story: 11)
 
 ### Business Owner Goals
-- Allow users to organize information about stored food in storagespaces. (user stories: 1 - 7, 9, 10 & 15)
-- Provide users with a simple application helping to reduce food waste. (user stories: 1 - 7, 9, 10 & 15)
-- Help users to better organize their food storage. (user stories: 1 - 7, 9, 10 & 15)
-- Collect feedback or answer questions from the users by using the contact form. (user stories: 8, 12, 13, 14)
-- Allow users to easily visit social media pages of the owner. (user story: 15)
+- Allow users to organize information about stored food in storagespaces. (related user stories: 1 - 7, 9, 10 & 15)
+- Provide users with a simple application helping to reduce food waste. (related user stories: 1 - 7, 9, 10 & 15)
+- Help users to better organize their food storage. (related user stories: 1 - 7, 9, 10 & 15)
+- Collect feedback or answer questions from the users by using the contact form. (related user stories: 8, 12, 13, 14)
+- Allow users to easily visit social media pages of the owner. (related user story: 15)
 
 [Back to Table Of Contents](#table-of-contents)
 
