@@ -3,8 +3,6 @@
 
 ![Mockup image](docs/responsive.png)
 
-[Live webpage](https://mypantrynote.herokuapp.com/)
-
 ## About 
 
 My Pantry Note - 4th Portfolio Project for Diploma in Full Stack Software Development with Code Institute. It is a full stack website built using Django to help users keep track of their food stock at home. The idea was inspired by the hardships of the cost of living crisis to provide for users a simple mean useful in avoiding spending money for food products that often may expire and be wasted before consumers want to eat them. 
